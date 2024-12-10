@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- plagins css  -->
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/intl-tel-input/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/favicon.svg">
+  <title>Главная - fastbuy365.by</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-desk">
+          <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+            <img class="logo__img" src="img/logo.webp" alt="Logo">
+          </a>
+          <nav class="header__nav">
+            <ul class="header-menu__list menu">
+              <li class="menu__item menu__item-catalog">
+                <a class="menu__link menu__catalog-btn catalog-btn btn" href="">
+                  <span class="catalog-btn__icon">
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                  </span>
+                  <span class="catalog-btn__text">Каталог</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  База знаний
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="menu__item dropdown">
+                <a class="menu__link" href="">
+                  О нас
+                </a>
+                <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                  <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
+                  </svg>
+                </button>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Где купить?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="" class="header__instagram-link" target="_blank" aria-label="Instagram">
+            <img src="img/icons/inst.svg" alt="">
+          </a>
+          <div class="header__search search-form-wrap">
+            <button type="button" class="header__search-open header__top-btn" aria-label="Открыть поиск">
+              <img src="img/icons/search.svg" alt="" class="header__search-open-icon">
+            </button>
+            <div class="header__search-wrap">
+              <input type="text" class="form-input" placeholder="Поиск..">
+              <button type="button" class="header__search-close-btn">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <select class="header__lang" name="lang">
+            <option value="BYN" selected>BYN</option>
+            <option value="RU">RU</option>
+          </select>
+        </div>
+        <div class="header__top-mob">
+          <div class="header__address">
+            г. Минск ул. Маяковского, 24 | 9:00&nbsp;до&nbsp;21:00 без выходных
+          </div>
+          <div class="header__mob-wrap">
+            <button class="header__mob-btn" headerBtn_JS>
+              <span class="header__mob-btn-line"></span>
+            </button>
+            <div class="header__mob-content">
+              <div class="header__mob-top-wrap">
+                <div class="header__mob-title">
+                  Меню
+                </div>
+                <button class="header__mob-btn-close">
+                  <img src="img/close-icon.svg" alt="" class="header__mob-btn-close-icon">
+                </button>
+              </div>
+              <nav class="header__nav">
+                <ul class="header-menu__list menu">
+                  <li class="menu__item dropdown">
+                    <a class="menu__link" href="">
+                      Каталог
+                    </a>
+                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                      <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
+                      </svg>
+                    </button>
+                    <ul class="menu__submenu submenu">
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Двери для объектов
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Двери для помещений
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Двери из массива производства ПОКОШ
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Двери межкомнатные ПМЦ
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Двери по функционалу
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Межкомнатные двери из экошпона
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item dropdown">
+                    <a class="menu__link" href="">
+                      О компании
+                    </a>
+                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                      <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
+                      </svg>
+                    </button>
+                    <ul class="menu__submenu submenu">
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Сертификаты
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Производство
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Возврат товара
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Контакты
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Доставка и монтаж
+                    </a>
+                  </li>
+                  <li class="menu__item dropdown">
+                    <a class="menu__link" href="">
+                      Партнеры
+                    </a>
+                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                      <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
+                      </svg>
+                    </button>
+                    <ul class="menu__submenu submenu">
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Дизайнерам
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Архитекторам
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Застройщикам
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__mob-messengers">
+                <ul class="messangers__list">
+                  <li class="messangers__item">
+                    <a href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank">
+                      <img class="messangers__link-icon" src="img/viber.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="messangers__item">
+                    <a href="" class="messangers__link" aria-label="Instagram ссылка" target="_blank">
+                      <img class="messangers__link-icon" src="img/telegram.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="messangers__item">
+                    <a href="" class="messangers__link" aria-label="Почта ссылка" target="_blank">
+                      <img class="messangers__link-icon" src="img/whats.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__mob-worktime header__worktime">
+                <p class="header__worktime-title">
+                  Время работы:
+                </p>
+                <p class="header__worktime-content">
+                  Пн-пт с 9:00 до 21:00<br> Пт-Вс с 10:00 до 18:00<br>Приём заказов и заявок круглосуточно на почту и месенджеры
+                </p>
+              </div>
+              <button class="header__btn header__btn_mob btn animated" popupOpen="zamer">
+                Бесплатный замер
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-wrap">
+          <div class="header__catalog-categories">
+            <div class="header__catalog-nav-wrap">
+              <ul class="header__catalog-nav catalog-nav">
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/stirka-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для стирки</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/posuda-icons.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для посуды</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/clean-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для уборки</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/child-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для детей</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/shoes-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для обуви</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/body-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для тела</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__marketplace-links-wrap">
+            <button class="header__marketplace-links-btn btn-dropdown">
+              Заказать
+            </button>
+
+            <div class="header__catalog-search-form-wrap">
+              <form action="#" class="header__catalog-search-form">
+                <label for="search" class="header__catalog-search-label">
+                  <input type="text" name="search" class="header__catalog-search-input" placeholder="Поиск по товарам">
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section-hero section-top">
+      <div class="container">
+        <div class="section-hero__img-wrap">
+          <img src="img/hero.webp" alt="" class="section-hero__img">
+        </div>
+        <div class="section-hero__content">
+          <h1 style="display: none;">Производство входных и межкомнатных дверей</h1>
+          <div class="section-hero__title-wrap">
+            <span class="section-hero__title-text">
+              Мы уже сделали
+            </span>
+            <span class="section-hero__title-number number-js" data-number="52143"></span>
+            <span class="section-hero__title-text">
+              бесплатных замеров
+            </span>
+          </div>
+          <ul class="section-hero__adv">
+            <li class="section-hero__adv-item">
+              <div class="section-hero__adv-icon">
+                <img src="img/icons/fast.svg" alt="" class="section-hero__adv-icon-img">
+              </div>
+              <div class="section-hero__adv-title">
+                Оперативность
+              </div>
+              <p class="section-hero__adv-text">
+                Доставка на следующий день, после оформления заказа, без предоплаты.
+              </p>
+            </li>
+            <li class="section-hero__adv-item">
+              <div class="section-hero__adv-icon">
+                <img src="img/icons/service.svg" alt="" class="section-hero__adv-icon-img">
+              </div>
+              <div class="section-hero__adv-title">
+                Сервис
+              </div>
+              <p class="section-hero__adv-text">
+                Точно замеряем. Быстро доставляем. Качественно устанавливаем.
+              </p>
+            </li>
+            <li class="section-hero__adv-item">
+              <div class="section-hero__adv-icon">
+                <img src="img/icons/otvets.svg" alt="" class="section-hero__adv-icon-img">
+              </div>
+              <div class="section-hero__adv-title">
+                Ответственность
+              </div>
+              <p class="section-hero__adv-text">
+                Предоставляем гарантию на двери и установку сроком на один год.
+              </p>
+            </li>
+            <li class="section-hero__adv-item">
+              <div class="section-hero__adv-icon">
+                <img src="img/icons/kachestvo.svg" alt="" class="section-hero__adv-icon-img">
+              </div>
+              <div class="section-hero__adv-title">
+                Качество
+              </div>
+              <p class="section-hero__adv-text">
+                Сотрудничаем только с проверенными фабриками дверей и фурнитуры.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section section-products-swiper section-hits">
+      <div class="section-products-swiper__title-wrap">
+        <div class="section-products-swiper__title">
+          <img src="img/title-bg.webp" alt="" class="section-products-swiper__title-bg">
+          <h2 class="section-products-swiper__title-text">
+            Хит<br>Продаж
+          </h2>
+        </div>
+        <div class="section-products-swiper__navigation-wrap">
+          <div class="container section-products-swiper__navigation-container">
+            <a href="" class="section-products-swiper__catalog-link">
+              Смотреть все
+            </a>
+            <div class="swiper__navigation section-products-swiper__swiper-navigation">
+              <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+                <svg class="swiper__navigation-btn-icon"  viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.585846 16.4142C-0.195202 15.6332 -0.195202 14.3668 0.585846 13.5858L13.3138 0.857864C14.0948 0.0768156 15.3611 0.0768156 16.1422 0.857864C16.9232 1.63891 16.9232 2.90524 16.1422 3.68629L4.82849 15L16.1422 26.3137C16.9232 27.0948 16.9232 28.3611 16.1422 29.1421C15.3611 29.9232 14.0948 29.9232 13.3138 29.1421L0.585846 16.4142ZM33.01 17H2.00006V13H33.01V17Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="swiper__navigation-btn-next swiper__navigation-btn">
+                <svg class="swiper__navigation-btn-icon" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32.4242 16.4142C33.2052 15.6332 33.2052 14.3668 32.4242 13.5858L19.6962 0.857864C18.9152 0.0768156 17.6489 0.0768156 16.8678 0.857864C16.0868 1.63891 16.0868 2.90524 16.8678 3.68629L28.1815 15L16.8678 26.3137C16.0868 27.0948 16.0868 28.3611 16.8678 29.1421C17.6489 29.9232 18.9152 29.9232 19.6962 29.1421L32.4242 16.4142ZM0 17H31.01V13H0L0 17Z" fill="white"/>
+              </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-products-swiper__swiper-wrap">
+        <div class="container">
+          <div class="section-products-swiper__swiper products-swiper swiper" productsSlider_js>
+            <div class="section-products-swiper__swiper-wrapper products-swiper__wrapper swiper-wrapper">
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="section-products-swiper__scrollbar swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-catalog-links">
+      <div class="container container-full">
+        <div class="section-catalog-links__title section-title">
+          Каталог
+        </div>
+        <ul class="section-catalog-links__list">
+          <li class="section-catalog-links__item">
+            <article class="section-catalog-links__wrap catalog-link-card">
+              <div class="catalog-link-card__img-wrap">
+                <img src="img/category1.webp" alt="" class="catalog-link-card__img">
+              </div>
+              <div class="catalog-link-card__content">
+                <span class="catalog-link-card__text">
+                  Двери для объектов
+                </span>
+                <img src="img/icons/arrow-top.svg" alt="" class="catalog-link-card__icon">
+              </div>
+              <a href="" class="catalog-link-card__link" aria-label="Двери из массива производства ПОКОШ"></a>
+            </article>
+          </li>
+          <li class="section-catalog-links__item">
+            <article class="section-catalog-links__wrap catalog-link-card">
+              <div class="catalog-link-card__img-wrap">
+                <img src="img/category2.webp" alt="" class="catalog-link-card__img">
+              </div>
+              <div class="catalog-link-card__content">
+                <span class="catalog-link-card__text">
+                  Двери для помещений
+                </span>
+                <img src="img/icons/arrow-top.svg" alt="" class="catalog-link-card__icon">
+              </div>
+              <a href="" class="catalog-link-card__link" aria-label="Двери из массива производства ПОКОШ"></a>
+            </article>
+          </li>
+          <li class="section-catalog-links__item">
+            <article class="section-catalog-links__wrap catalog-link-card">
+              <div class="catalog-link-card__img-wrap">
+                <img src="img/category3.webp" alt="" class="catalog-link-card__img">
+              </div>
+              <div class="catalog-link-card__content">
+                <span class="catalog-link-card__text">
+                  Двери из массива производства ПОКОШ
+                </span>
+                <img src="img/icons/arrow-top.svg" alt="" class="catalog-link-card__icon">
+              </div>
+              <a href="" class="catalog-link-card__link" aria-label="Двери из массива производства ПОКОШ"></a>
+            </article>
+          </li>
+          <li class="section-catalog-links__item">
+            <article class="section-catalog-links__wrap catalog-link-card">
+              <div class="catalog-link-card__img-wrap">
+                <img src="img/category4.webp" alt="" class="catalog-link-card__img">
+              </div>
+              <div class="catalog-link-card__content">
+                <span class="catalog-link-card__text">
+                  Двери межкомнатные&nbsp;ПМЦ
+                </span>
+                <img src="img/icons/arrow-top.svg" alt="" class="catalog-link-card__icon">
+              </div>
+              <a href="" class="catalog-link-card__link" aria-label="Двери из массива производства ПОКОШ"></a>
+            </article>
+          </li>
+          <li class="section-catalog-links__item">
+            <article class="section-catalog-links__wrap catalog-link-card">
+              <div class="catalog-link-card__img-wrap">
+                <img src="img/category5.webp" alt="" class="catalog-link-card__img">
+              </div>
+              <div class="catalog-link-card__content">
+                <span class="catalog-link-card__text">
+                  Двери по функционалу
+                </span>
+                <img src="img/icons/arrow-top.svg" alt="" class="catalog-link-card__icon">
+              </div>
+              <a href="" class="catalog-link-card__link" aria-label="Двери из массива производства ПОКОШ"></a>
+            </article>
+          </li>
+          <li class="section-catalog-links__item">
+            <article class="section-catalog-links__wrap catalog-link-card">
+              <div class="catalog-link-card__img-wrap">
+                <img src="img/category6.webp" alt="" class="catalog-link-card__img">
+              </div>
+              <div class="catalog-link-card__content">
+                <span class="catalog-link-card__text">
+                  Межкомнатные двери&nbsp;из экошпона
+                </span>
+                <img src="img/icons/arrow-top.svg" alt="" class="catalog-link-card__icon">
+              </div>
+              <a href="" class="catalog-link-card__link" aria-label="Двери из массива производства ПОКОШ"></a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-doors section">
+      <div class="container container-full">
+        <div class="section-doors__wrap">
+          <div class="section-doors__content">
+            <div class="section-doors__title-wrap">
+              <div class="section-doors__title">
+                Подберите дверь для своего интерьера
+              </div>
+              <a href="catalog" class="section-doors__link btn animated">
+                Выбрать
+              </a>
+            </div>
+            <div class="section-doors__swipers">
+              <div class="section-doors__swiper swiper section-doors__swiper_1">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-1-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-1-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                   <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-1-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="section-doors__swiper swiper section-doors__swiper_2">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-2-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-2-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-2-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="section-doors__swiper swiper section-doors__swiper_3">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-3-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-3-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-3-3.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="section-doors__swiper swiper section-doors__swiper_4">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-4-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-4-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-4-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-doors__form-wrap">
+            <div class="section-doors__form-title">
+              ОФОРМИТЕ ЗАЯВКУ НА БЕСПЛАТНЫЙ ВЫЕЗД ИНЖЕНЕРА ЗАМЕРЩИКА
+            </div>
+            <form action="#" method="post" class="section-doors__form form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Бесплатный выезд замерщика">
+              <div class="section-doors__form-container form-container">
+                <div class="input-wrap required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
+                  </label>
+                </div>
+                <button class="section-doors__form-btn form-btn animated btn" agreementControlBtn_JS>
+                  <span>Вызвать замерщика</span>
+                </button>
+              </div>
+              <div class="section-doors__form-checkbox form-checkbox">
+                <div agreementControl_JS class="checked">
+                    <label for="agreement"></label>
+                    <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                </div>
+                <p>
+                  Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-products-swiper section-popular">
+      <div class="section-products-swiper__title-wrap">
+        <div class="section-products-swiper__title">
+          <img src="img/title-bg.webp" alt="" class="section-products-swiper__title-bg">
+          <h2 class="section-products-swiper__title-text">
+            ПОПУЛЯРНОЕ
+          </h2>
+        </div>
+        <div class="section-products-swiper__navigation-wrap">
+          <div class="container section-products-swiper__navigation-container">
+            <a href="" class="section-products-swiper__catalog-link">
+              Смотреть все
+            </a>
+            <div class="swiper__navigation section-products-swiper__swiper-navigation">
+              <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+                <svg class="swiper__navigation-btn-icon"  viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.585846 16.4142C-0.195202 15.6332 -0.195202 14.3668 0.585846 13.5858L13.3138 0.857864C14.0948 0.0768156 15.3611 0.0768156 16.1422 0.857864C16.9232 1.63891 16.9232 2.90524 16.1422 3.68629L4.82849 15L16.1422 26.3137C16.9232 27.0948 16.9232 28.3611 16.1422 29.1421C15.3611 29.9232 14.0948 29.9232 13.3138 29.1421L0.585846 16.4142ZM33.01 17H2.00006V13H33.01V17Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="swiper__navigation-btn-next swiper__navigation-btn">
+                <svg class="swiper__navigation-btn-icon" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32.4242 16.4142C33.2052 15.6332 33.2052 14.3668 32.4242 13.5858L19.6962 0.857864C18.9152 0.0768156 17.6489 0.0768156 16.8678 0.857864C16.0868 1.63891 16.0868 2.90524 16.8678 3.68629L28.1815 15L16.8678 26.3137C16.0868 27.0948 16.0868 28.3611 16.8678 29.1421C17.6489 29.9232 18.9152 29.9232 19.6962 29.1421L32.4242 16.4142ZM0 17H31.01V13H0L0 17Z" fill="white"/>
+              </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-products-swiper__swiper-wrap">
+        <div class="container">
+          <div class="section-products-swiper__swiper products-swiper swiper" productsSlider_js>
+            <div class="section-products-swiper__swiper-wrapper products-swiper__wrapper swiper-wrapper">
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="section-products-swiper__scrollbar swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-partners">
+      <div class="container">
+        <div class="section-title title center section-partners__title">
+          С кем мы работаем
+        </div>
+      </div>
+      <div class="container marquee-container container-full">
+        <div class="section-partners__swiper swiper">
+          <div class="section-partners__swiper-wrapper swiper-wrapper">
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-zamer">
+      <div class="container">
+        <div class="section-zamer__wrap">
+          <div class="section-zamer__content">
+            <div class="section-zamer__title">
+              ОФОРМИТЕ ЗАЯВКУ НА БЕСПЛАТНЫЙ ВЫЕЗД ИНЖЕНЕРА ЗАМЕРЩИКА
+            </div>
+            <p class="section-zamer__text">
+              Услуга замера поможет сэкономить деньги и избежать ошибок в процессе подготовки дверных проемов и правильной укладки напольных покрытий, позволит узнать точную стоимость заказа, а также максимально приблизит вас к решению «дверного вопроса».
+            </p>
+          </div>
+          <div class="section-zamer__form-wrap">
+              <form action="#" method="post" class="section-zamer__form form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Бесплатный выезд замерщика">
+              <div class="section-zamer__form-container form-container">
+                <div class="input-wrap required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Телефон">
+                  </label>
+                </div>
+                <div class="section-zamer__form-btn-wrap">
+                  <button class="section-zamer__form-btn form-btn animated btn">
+                    <span>Вызвать замерщика</span>
+                  </button>
+                  <p class="section-zamer__form-hint form-hint">
+                    Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-map">
+      <div class="section-map__wrap">
+        <div class="section-map__contacts">
+          <h2 class="section-map__title">
+            Контакты
+          </h2>
+          <div class="section-map__contacts-list">
+            <div class="section-map__contacts-item section-map__contacts-address">
+              <h3 class="section-map__contacts-title">
+                Адрес:
+              </h3>
+              <p class="section-map__contacts-text">
+                220114, РБ, 220114 Г. Минск, ул. Макаёнка, д.12Е, помещение 282
+              </p>
+            </div>
+            <div class="section-map__contacts-item section-map__contacts-phone">
+              <h3 class="section-map__contacts-title">
+                Телефон:
+              </h3>
+              <a href="tel:+375447709353" class="section-map__contacts-link section-map__contacts-link_phone">
+                +375 (44) 770-93-53
+              </a>
+            </div>
+            <div class="section-map__contacts-item section-map__contacts-phone">
+              <h3 class="section-map__contacts-title">
+                Почта:
+              </h3>
+              <a href="mailto:opt@dverprom.by" class="section-map__contacts-link section-map__contacts-link_email">
+                Opt@Dverprom.by
+              </a>
+            </div>
+          </div>
+          <div class="section-map__address-list-wrap">
+            <h3 class="section-map__address-list-title">
+              Адреса розничных салонов:
+            </h3>
+            <ul class="section-map__address-list">
+              <li class="section-map__address-list-item">
+                <a href="" class="section-map__address-list-link">
+                  г. Минск ул. Каменногорская, 3 Горка Дом (2-этаж)
+                </a>
+              </li>
+              <li class="section-map__address-list-item">
+                <a href="" class="section-map__address-list-link">
+                  г. Минск ул. Маяковского 24, Магазин "Дверной рай"
+                </a>
+              </li>
+              <li class="section-map__address-list-item">
+                <a href="" class="section-map__address-list-link">
+                  г. Минск ул. Уручская 19-П2 (строй.рынок Уручье 2 этаж, Юркас)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-map__map contacts-map-js">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A849adc45dd910596740e3a70cfcaf68645830da11be0a1d16e36a91db8c46fad&amp;source=constructor" width="100%" height="583" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content-wrap">
+        <div class="footer__main-info">
+          <a href="/" class="footer__logo logo" aria-label="Логотип Radema">
+            <img class="logo__img" src="img/logo-white.svg" alt="Logo">
+          </a>
+          <div class="footer__about">
+           <p class="footer__about-text">
+            ООО «Двери–Проф» УНП 193779842
+           </p>
+          </div>
+          <ul class=" footer__messengers messangers__list">
+            <li class="messangers__item">
+              <a href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank">
+                <img class="messangers__link-icon" src="img/viber.svg" alt="">
+              </a>
+            </li>
+            <li class="messangers__item">
+              <a href="" class="messangers__link" aria-label="Instagram ссылка" target="_blank">
+                <img class="messangers__link-icon" src="img/telegram.svg" alt="">
+              </a>
+            </li>
+            <li class="messangers__item">
+              <a href="" class="messangers__link" aria-label="Почта ссылка" target="_blank">
+                <img class="messangers__link-icon" src="img/whats.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__catalog-nav-wrap">
+          <a href="" class="footer__catalog-nav-title menu__link footer__nav-link">
+            Каталог
+          </a>
+          <nav class="footer-catalog-nav">
+            <ul class="footer-nav__list footer-catalog-nav__list menu">
+              <li class="footer-nav__item footer-catalog-nav__item">
+                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
+                  Двери для объектов
+                </a>
+              </li>
+              <li class="footer-nav__item footer-catalog-nav__item">
+                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
+                  Двери для помещений
+                </a>
+              </li>
+              <li class="footer-nav__item footer-catalog-nav__item">
+                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
+                  Двери из массива производства ПОКОШ
+                </a>
+              </li>
+              <li class="footer-nav__item footer-catalog-nav__item">
+                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
+                  Двери межкомнатные ПМЦ
+                </a>
+              </li>
+              <li class="footer-nav__item footer-catalog-nav__item">
+                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
+                  Двери по функционалу
+                </a>
+              </li>
+              <li class="footer-nav__item footer-catalog-nav__item">
+                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
+                  Межкомнатные двери из экошпона
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__nav-wrap">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list menu">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  О компании
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Контакты
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Доставка и монтаж
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Партнеры
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__dop-content">
+          <a href="tel:+375447709353" class="footer__phone phone-link">
+            <img class="phone-link__icon" src="img/phone-icon.svg" alt="">
+            <span class="phone-link__text">+375 (44) 770-93-53</span>
+          </a>
+          <button class="footer__btn btn animated" popupOpen="zamer">
+            Бесплатный замер
+          </button>
+          <div class="footer__created">
+            <a class="footer__created-link" href="https://target-group.by/" target="_blank">
+              <img src="img/target.svg" alt="Target group icon" class="footer__bottom-created-img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-copyrights">
+            © 2024 Все права защищены
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="preloader">
+    <div class="preloader-icon"></div>
+  </div>
+
+  <button class="to-top btn" toTop_JS>
+    <svg class="to-top__icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"></path>
+    </svg>
+  </button>
+
+
+<div class="popup zamer-popup fade" popupID="zamer">
+    <div class="popup__container">
+      <div class="popup__block zamer-popup__block">
+        <div class="zamer-popup__content popup__content">
+          <div class="zamer-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="zamer-popup__img popup__img">
+          </div>
+          <div class="zamer-popup__main popup__main">
+            <div class="zamer-popup__form-title popup__form-title">
+              Заявка на замер
+            </div>
+            <p class="zamer-popup__form-text popup__form-text">
+              Укажите ваше имя и контактный телефон. В&nbsp;самое&nbsp;ближайшее время наш оператор Вам&nbsp;перезвонит.
+            </p>
+            <form action="#" method="POST" class="zamer-popup__form popup-form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Заявка на замер">
+              <div class="zamer-popup__form-container form-container">
+                <div class="input-wrap  required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
+                  </label>
+                </div>
+                <button class="form-btn animated btn" agreementControlBtn_JS>
+                  <span>Вызвать замерщика</span>
+                </button>
+                <div class="zamer-popup__form-checkbox popup-form__checkbox form-checkbox">
+                  <div agreementControl_JS class="checked">
+                      <label for="agreement"></label>
+                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                  </div>
+                  <p>
+                    Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+  <div class="popup zamer-popup fade" popupID="cooperation">
+    <div class="popup__container">
+      <div class="popup__block zamer-popup__block">
+        <div class="zamer-popup__content popup__content">
+          <div class="zamer-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="zamer-popup__img popup__img">
+          </div>
+          <div class="zamer-popup__main popup__main">
+            <div class="zamer-popup__form-title popup__form-title">
+              Заявка на сотрудничество
+            </div>
+            <p class="zamer-popup__form-text popup__form-text">
+              Укажите ваше имя и контактный телефон. В&nbsp;самое&nbsp;ближайшее время наш оператор Вам&nbsp;перезвонит.
+            </p>
+            <form action="#" method="POST" class="zamer-popup__form popup-form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Заявка на сотрудничество">
+              <div class="zamer-popup__form-container form-container">
+                <div class="input-wrap  required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
+                  </label>
+                </div>
+                <button class="form-btn animated btn" agreementControlBtn_JS>
+                  <span>Отправить</span>
+                </button>
+                <div class="zamer-popup__form-checkbox popup-form__checkbox form-checkbox">
+                  <div agreementControl_JS class="checked">
+                      <label for="agreement"></label>
+                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                  </div>
+                  <p>
+                    Нажимая на кнопку «Отправить» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+  <div class="popup thanks-popup fade" popupID="thanks-popup">
+    <div class="popup__container">
+      <div class="popup__block thanks-popup__block">
+        <div class="thanks-popup__content popup__content">
+          <div class="thanks-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="thanks-popup__img popup__img">
+          </div>
+          <div class="thanks-popup__main popup__main">
+            <div class="thanks-popup__title popup__form-title">
+              СПАСИБО ЗА ЗАКАЗ!
+            </div>
+            <div class="thanks-popup__text popup__form-text">
+              Наши специалисты свяжутся с Вами в ближайшее время
+            </div>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+
+  <script src="js/polyfill.min.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/intl-tel-input/js/intlTelInputWithUtils.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function() {
+      var hasAnimated = false;
+      // Функция для проверки частичной видимости элемента в области просмотра
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.bottom > 0 &&
+          rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+          rect.right > 0
+        );
+      }
+      function checkAndAnimateNumbers() {
+        var $numbersList = $('.number-js');
+        var targetValue = $numbersList.data('number');
+        var initialVal = targetValue.toString().split('').map(e => 0).join('');
+        if (!hasAnimated && isElementInViewport($('.section-hero__adv')[0])) {
+          od = new Odometer({
+            el: $numbersList[0],
+            value: initialVal,
+            duration: 2300,
+            format: '',
+          });
+          od.update(targetValue);
+          hasAnimated = true;
+          // Отменяем дальнейшие проверки после выполнения анимации
+          $(window).off('scroll', checkAndAnimateNumbers);
+        }
+      };
+      // Проверка при загрузке страницы
+      checkAndAnimateNumbers();
+        // Проверка при прокрутке страницы
+      $(window).on('scroll', checkAndAnimateNumbers);
+
+    });
+  </script>
+  <script>
+    $('[phoneMask_JS]').each(function() {
+      var input = $(this)[0];
+      var iti = window.intlTelInput(input, {
+        utilsScript: "assets/intl-tel-input/js/utils.js", // Подключаем файл с утилитами
+        separateDialCode: true,
+        initialCountry: "BY", // Устанавливаем начальную страну (Белоруссия)
+        nationalMode: true,
+        autoPlaceholder: "aggressive",
+        strictMode: true, // Разрешаем выбор только этих стран
+        geoIpLookup: function(callback) {
+          $.get("https://ipapi.co/country_code/").done(function(countryCode) {
+            callback(countryCode);
+          });
+        }
+      });
+    });
+
+    $('form').on('submit', function(e) {
+      e.preventDefault();
+      if ($(this).valid()) {
+        let formData = new FormData(this);
+        formData.append('url', document.location.href);
+        let btn = $(this).find('.form-btn');
+        $('.preloader').addClass('active');
+        $.ajax({
+          url: 'https://jsonplaceholder.typicode.com/posts',
+          data: formData,
+          processData: false,
+          contentType: false,
+          type: 'POST',
+          success: function (response) {
+            setTimeout (function(){
+              $('.preloader').removeClass('active');
+              popupOpen('thanks-popup');
+              setTimeout(function() {
+                if($('.thanks-popup').hasClass('open')) {
+                  popupClose();
+                }
+            }, 4000);
+            }, 1300);
+
+          },
+          error: function(xhr, status, error) {
+            $('.preloader').remove('active');
+            console.error('Ошибка при отправке формы:', status, error);
+            btn.find('span').text('Ошибка');
+            btn.text('Попробовать еще раз');
+          },
+        })
+      } else {
+        console.log('Форма не прошла валидацию.');
+      }
+  });
+  </script>
+</body>
+</html>

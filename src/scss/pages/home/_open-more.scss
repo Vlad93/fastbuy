@@ -1,0 +1,74 @@
+.open-more-section {
+  padding-top: resp-size(150);
+  @include _767 {
+    padding-top: resp-size(58, 363);
+  }
+  &__wrap {
+    display: grid;
+    grid-template-columns: 27% 46% 27%;
+    @include _767 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__content {
+    padding: resp-size(70) 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: resp-size(60);
+    @include _767 {
+      padding: resp-size(20, 360) resp-size(24, 360) resp-size(39, 360);
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: resp-size(85);
+    line-height: 1.2em;
+    font-weight: 100;
+    @include _767 {
+      font-size: resp-size(36, 360);
+    }
+  }
+  &__btn {
+    max-width: resp-size(369);
+    width: 100%;
+    border-color: #fff;
+    @include interactive {
+      &:hover {
+        background-color: #fff;
+        border-color: #fff;
+      }
+    }
+    &.active {
+      background-color: #fff;
+      border-color: #fff;
+    }
+    @include _767 {
+      max-width: 100%;
+    }
+  }
+  &__img-wrap {
+    width: 100%;
+    height: 100%;
+    @include _767 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    @include _767 {
+      object-position: center top;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.btn {
+  padding: resp(14) resp(40);
+  display: inline-block;
+  text-align: center;
+  font-size: resp(24);
+  font-weight: 600;
+  border-radius: resp(50);
+  border: none;
+  outline: none;
+  color: #fff;
+  background: $primary;
+  transition: background-color .3s ease, box-shadow .3s ease, transform .3s ease;
+  @include _767 {
+    padding: resp(10, 360) resp(15, 360);
+    padding: resp(10, 360) resp(16, 360);
+    border-radius: resp(50, 360);
+    font-size: resp(20, 360);
+  }
+  &.animated {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.245833333vw;
+      height: 300%;
+      transition: .3s;
+      background-color: rgba(255, 255, 255, .5);
+      animation: blick 3s linear infinite;
+      transform: rotate(40deg) translateY(-50%);
+      @include _767 {
+        width: 3.545833333vw;
+      }
+    }
+  }
+  &.to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 5;
+    padding: 0;
+    width: resp(50);
+    height: resp(50);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    background: $primary;
+    transition: opacity .3s ease, visibility .3s ease, box-shadow .3s ease;
+    @include interactive {
+      &:hover .to-top__icon {
+        transform: rotate(180deg);
+      }
+    }
+    & .to-top__icon {
+      transform: rotate(180deg);
+      fill: #fff;
+    }
+    @include _767 {
+      right: resp(10, 360);
+      bottom: resp(10, 360);
+      width: resp(30, 360);
+      height: resp(30, 360);
+    }
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  @include interactive {
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 3px 7px 8px 0px #537BD5;
+    }
+  }
+
+}
+
+

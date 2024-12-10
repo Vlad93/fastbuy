@@ -1,0 +1,156 @@
+.section-zamer {
+  padding-bottom: resp(70);
+  @include _767 {
+    padding-bottom: resp(40, 360);
+  }
+  &__wrap {
+    padding: resp(71) resp(70) resp(87) resp(70);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: resp(50);
+    background-color: #323232;
+    @include _767 {
+      padding: resp(22, 360) resp(15, 360);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(17, 360);
+    }
+  }
+  &__content {
+    display: flex;
+    flex: 1;
+    max-width: calc(50% - resp(25));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(53);
+    @include _767 {
+      max-width: 100%;
+      gap: resp(8, 360);
+    }
+  }
+  &__form-wrap {
+    flex: 1;
+    max-width: calc(50% - resp(25));
+    @include _767 {
+      width: 100%;
+      max-width: 100%;
+      flex: none;
+    }
+  }
+  &__form {
+    width: 100%;
+    height: 100%;
+    & .input-wrap {
+      &::before {
+        display: none;
+      }
+    }
+    & .iti__selected-dial-code {
+      font-size: resp(24);
+      font-weight: 500;
+      line-height: 1.3em;
+      color: #fff;
+      @include _767 {
+        font-size: resp(16, 360);
+      }
+    }
+    & .form-input {
+      padding: resp(12) resp(32);
+      font-size: resp(24);
+      border: none;
+      background-color: #626262;
+      font-weight: 500;
+      line-height: 1.3em;
+      color: #fff;
+      @include _767 {
+        padding: resp(13, 360) resp(15, 360);
+        font-size: resp(16, 360);
+      }
+      &:focus::placeholder {
+        color: transparent;
+      }
+      &::placeholder {
+        font-size: resp(24);
+        font-weight: 500;
+        line-height: 1.3em;
+        color: #fff;
+        opacity: .5;
+        @include _767 {
+          font-size: resp(16, 360);
+        }
+      }
+    }
+  }
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(20);
+    @include _767 {
+      gap: resp(16, 360);
+    }
+  }
+  &__form-btn-wrap {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: resp(28);
+    @include _767 {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: resp(30, 360);
+    }
+  }
+  &__form-btn {
+    padding-left: resp(19);
+    padding-right: resp(19);
+    max-width: 308px;
+    border: 2px solid #fff;
+    @include _767 {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__form-hint {
+    font-size: resp(19);
+    line-height: 1.4em;
+    font-weight: 400;
+    color: #fff;
+    & .agreement-link {
+      text-decoration: underline;
+      text-underline-offset: resp(4);
+      transition: opacity .2s ease;
+      @include interactive {
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+    @include _767 {
+      font-size: resp(12, 360);
+    }
+  }
+  &__title {
+    font-size: resp(32);
+    line-height: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    @include _767 {
+      font-size: resp(20, 360);
+    }
+  }
+  &__text {
+    max-width: 96%;
+    font-size: resp(20);
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #fff;
+    @include _767 {
+      font-size: resp(14, 360);
+    }
+  }
+}

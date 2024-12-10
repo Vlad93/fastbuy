@@ -1,0 +1,54 @@
+.cooperation-feedback-section {
+  &.section {
+    padding-bottom: resp-size(147);
+    @include _767 {
+      padding-bottom: resp-size(20, 360);
+      background-color: #F6F6F6;
+    }
+  }
+  @include _767 {
+    margin-top: resp-size(37, 360);
+  }
+  &__wrap {
+    padding: resp-size(45) resp-size(89) resp-size(41) resp-size(45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: resp-size(180);
+    background-color: #F6F6F6;
+    @include _767 {
+      padding: resp-size(19, 360) 0 resp-size(43, 360);
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &__form-wrap {
+    width: 100%;
+    max-width: resp-size(779);
+    @include _767 {
+      max-width: 100%;
+    }
+  }
+  &__logo-wrap {
+    @include _767 {
+      padding: 0 resp-size(36, 360);
+    }
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: resp-size(20);
+  }
+  &__form-title {
+    margin-bottom: resp-size(33);
+    font-size: resp-size(32);
+    line-height: 1.3em;
+    @include _767 {
+      margin-bottom: resp-size(20, 360);
+      text-align: center;
+      font-size: resp-size(16, 360);
+    }
+  }
+}

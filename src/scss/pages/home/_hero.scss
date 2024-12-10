@@ -1,0 +1,171 @@
+.section-hero {
+  padding-top: resp(18);
+  padding-bottom: resp(100);
+  position: relative;
+  @include _767 {
+    padding-top: resp(10, 360);
+    padding-bottom: resp(50, 360);
+  }
+  &__content {
+    padding: 0 resp(30) resp(30);
+    border-right: solid $primary;
+    border-left: solid $primary;
+    border-right-width: resp(53);
+    border-left-width: resp(53);
+    @include _767 {
+      padding: 0 resp(16, 360);
+      position: relative;
+      border: none;
+      &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: resp(15, 360);
+        height: resp(150, 360);
+        max-height: 80%;
+        background-color: $primary;
+      }
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  &__title-wrap {
+    margin-bottom: resp(58);
+    display: flex;
+    align-items: center;
+    gap: resp(40);
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    @include _767 {
+      margin-bottom: resp(10, 360);
+      flex-direction: column;
+      align-items: center;
+      gap: resp(4, 360);
+    }
+  }
+  &__title-text {
+    font-size: resp(40);
+    line-height: 1em;
+    font-weight: 600;
+    @include _767 {
+      display: block;
+      font-size: resp(20, 360);
+    }
+  }
+  &__img-wrap {
+    margin-bottom: resp(47);
+    width: 100%;
+    min-height: resp(600);
+    max-height: resp(700);
+    @include _767 {
+      min-height: auto;
+      max-height: auto;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    @include _767 {
+      height: auto;
+    }
+  }
+  &__title-number {
+    height: resp(141);
+    color: $primary;
+    font-size: resp(78);
+    line-height: 1.3em;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    @include _767 {
+      height: resp(44, 360);
+      font-size: resp(24, 360);
+    }
+    & .odometer-inside {
+      display: flex;
+      transform: translate(3%, 20%);
+    }
+    & .odometer-digit::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -10%;
+      top: -20%;
+      height: 130%;
+      width: resp(66);
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+      @include _767 {
+        width: resp(21, 360);
+      }
+    }
+    & .odometer-digit:nth-child(2) {
+      margin-right: resp(30);
+      @include _767 {
+        margin-right: resp(13, 360);
+      }
+    }
+  }
+  &__adv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: resp(15);
+    justify-content: space-between;
+    @include _767 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: resp(16, 360);
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include _767 {
+        align-items: center;
+      }
+    }
+    &-icon {
+      width: resp(66);
+      height: resp(66);
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+      @include _767 {
+        width: resp(51, 360);
+        height: resp(51, 360);
+      }
+    }
+    &-title {
+      margin-bottom: resp(8);
+      font-size: resp(24);
+      line-height: 1.3em;
+      font-weight: 600;
+      color: $primary;
+      @include _767 {
+        margin-bottom: resp(4, 360);
+        font-size: resp(14, 360);
+      }
+    }
+    &-text {
+      font-weight: 400;
+      line-height: 1.3em;
+      @include _767 {
+        font-size: resp(12, 360);
+        text-align: center;
+      }
+    }
+  }
+
+}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  line-height: 1.3em;
+}

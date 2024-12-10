@@ -1,0 +1,33 @@
+.soc-media {
+  &__title {
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  &__link {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    transition: opacity .3s ease;
+    @include interactive {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,67 @@
+.popup-form {
+  max-width: 58%;
+  @include _767 {
+    width: 100%;
+    max-width: 100%;
+  }
+  & .iti__selected-dial-code {
+    @include _767 {
+      font-size: resp(14, 360);
+    }
+  }
+  & .form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(26);
+    @include _767 {
+      width: 100%;
+      gap: resp(15, 360);
+    }
+  }
+  & .input-wrap {
+    position: relative;
+    width: 100%;
+    &::before {
+      display: none;
+    }
+  }
+  & input {
+    width: 100%;
+    padding: resp(13) resp(40);
+    border: none;
+    line-height: 1.3em;
+    background-color: #DADADA;
+    letter-spacing: 0.04em;
+    color: #000;
+    font-size: resp(24);
+    &:focus::placeholder {
+      color: transparent;
+    }
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.43);
+    }
+    @include _767 {
+      padding: resp(12, 360) resp(15, 360);
+      font-size: resp(14, 360);
+    }
+  }
+  & .form-btn {
+    max-width: 100%;
+    padding: resp(13) resp(20);
+    width: 100%;
+    line-height: 1.3em;
+    margin-top: resp(15);
+    @include _767 {
+      padding: resp(13, 360) resp(20, 360);
+      margin-top: resp(9, 360);
+    }
+  }
+  &__checkbox {
+    margin-top: resp(22);
+    @include _767 {
+      margin-top: resp(9, 360);
+    }
+  }
+}

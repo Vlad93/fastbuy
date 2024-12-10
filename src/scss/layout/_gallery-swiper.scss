@@ -1,0 +1,126 @@
+.section-main-gallery {
+  &__slide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    height: max-content;
+    opacity: 1!important;
+    gap: resp(30);
+    &:not(.swiper-slide-active) {
+      position: absolute;
+      opacity: 0!important;
+    }
+    @include _767 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: resp(10, 360);
+    }
+  }
+  &__link {
+    border: none;
+    outline: none;
+    transition: transform .3s ease;
+    @include interactive {
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+  & .swiper-navigation {
+    margin-top: resp(70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: resp(14);
+  }
+  & .swiper-pagination {
+    position: relative;
+    width: max-content;
+    bottom: auto;
+    top: auto;
+    max-width: 80%;
+    overflow-x: auto;
+  }
+  & .swiper-button-disabled {
+    display: none;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+      bottom: -5px;
+      width: 8px; /* width of the scrollbar */
+      height: 8px; /* height of the scrollbar */
+      background-color: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary; /* color of the scrollbar thumb */
+      border-radius: 8px; /* rounded corners of the scrollbar thumb */
+    }
+  }
+  & .swiper-pagination-bullet {
+    padding: resp(6);
+    width: auto;
+    height: auto;
+    // display: block;
+    cursor: pointer;
+    font-size: resp(18);
+    line-height: 1.2em;
+    color: #000;
+    font-weight: 400;
+    border: none;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+    transition: background-color .3s ease, color .3s ease, padding .3s ease, transform .3s ease;
+    @include interactive {
+      &:hover {
+        color: $primary;
+        transform: scale(1.03);
+      }
+    }
+    @include _767 {
+      padding: resp(5, 360);
+      font-size: resp(13, 360);
+    }
+    &.swiper-pagination-bullet-active {
+      pointer-events: none;
+      padding: resp(6) resp(12);
+      font-weight: 600;
+      background-color: $primary;
+      color: #fff;
+      @include _767 {
+        padding: resp(5, 360) resp(11, 360);
+      }
+    }
+  }
+  & .swiper-navigation__btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    line-height: 1.2em;
+    padding: resp(5) 0;
+    gap: resp(7);
+    font-size: resp(20);
+    &.swiper-button-disabled {
+      display: none;
+    }
+    &-prev .swiper-navigation__btn-icon {
+      transform: rotate(-180deg);
+    }
+    @include _767 {
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+    }
+    &-text {
+      @include _767 {
+        display: none;
+      }
+    }
+  }
+}

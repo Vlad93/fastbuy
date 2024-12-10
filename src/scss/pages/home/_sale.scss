@@ -1,0 +1,53 @@
+.section-sale {
+  padding-top: resp-size(100);
+  @include _767 {
+    padding-top: resp-size(68, 360);
+  }
+  &__wrap {
+    display: flex;
+    @include _767 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__img-wrap {
+    width: resp-size(330);
+    height: auto;
+    @include _767 {
+      width: 100%;
+      height: resp-size(163, 360);
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+  &__title {
+    font-size: resp-size(64);
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.2em;
+    @include _767 {
+      max-width: 95%;
+      text-align: center;
+      line-height: 1.3em;
+      font-size: resp-size(24, 360);
+    }
+  }
+  &__content {
+    padding: resp-size(32) resp-size(90);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: resp-size(46);
+    width: 48%;
+    background-color: #000;
+    @include _992 {
+      width: 100%;
+      gap: resp-size(15, 360);
+      padding: resp-size(22, 360) resp-size(24, 360);
+    }
+  }
+}

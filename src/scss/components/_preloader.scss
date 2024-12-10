@@ -1,0 +1,50 @@
+.preloader {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .15);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  &.active {
+    display: flex;
+  }
+  &-icon  {
+    display: block;
+    position: relative;
+    height: resp-size(90);
+    width: resp-size(90);
+    border-radius: 50%;
+    @include _767 {
+      height: resp-size(50, 360);
+      width: resp-size(50, 360);
+    }
+    &::before, &::after {
+      content: '';
+      border: 2px solid $primary;
+      border-radius: 50%;
+      height: resp-size(90);
+      width: resp-size(90);
+      @include _767 {
+        height: resp-size(50, 360);
+        width: resp-size(50, 360);
+      }
+      position: absolute;
+      left: 0px;
+      }
+      &::before {
+        transform: scale(1, 1);
+        opacity: 1;
+        animation: spWaveBe 0.6s infinite linear;
+      }
+      &::after {
+        transform: scale(0, 0);
+        opacity: 0;
+        animation: spWaveAf 0.6s infinite linear;
+      }
+  }
+
+}

@@ -1,0 +1,40 @@
+.messangers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__list {
+    display: flex;
+    gap: resp(20);
+    align-items: center;
+    @include _767 {
+      flex-direction: row;
+      gap: resp(12, 360);
+    }
+  }
+  &__link {
+    position: relative;
+    width: resp(40);
+    height: resp(40);
+    display: block;
+    border-radius: 50%;;
+    transition: transform .3s ease;
+    @include _767 {
+      width: resp(25, 360);
+      height: resp(25, 360);
+    }
+    &-icon {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+    }
+    @include interactive {
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+}

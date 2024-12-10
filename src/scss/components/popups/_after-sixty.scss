@@ -1,0 +1,10 @@
+.after-sixty {
+  max-width: 760px;
+  @include _767 {
+    max-width: 90%;
+  }
+  &__text {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+}

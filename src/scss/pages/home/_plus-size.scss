@@ -1,0 +1,6 @@
+.section-plus-size {
+  padding-top: resp-size(65);
+  @include _767 {
+    padding-top: resp-size(83, 360);
+  }
+}

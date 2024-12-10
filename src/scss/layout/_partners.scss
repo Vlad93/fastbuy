@@ -1,0 +1,33 @@
+.section-partners {
+  @include _767 {
+    padding-bottom: 50px;
+  }
+  &__title {
+    margin-bottom: resp(50);
+    color: #000;
+    font-weight: 600;
+    line-height: 1.3em;
+    @include _767 {
+      margin-bottom: resp(20, 360);
+    }
+  }
+}
+
+.section-partners__swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.section-partners__swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section-partners__swiper-slide img {
+  width: 100%;
+  height: resp(227);
+  object-fit: contain;
+  object-position: center;
+  @include _767 {
+    height: resp(84, 360);
+  }
+}

@@ -1,0 +1,100 @@
+.video-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  &__preview {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__dark {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #000;
+    opacity: .3;
+    transition: opacity .3s ease
+}
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(50% - resp-size(45));
+      left: calc(50% - resp-size(45));
+      width: resp-size(90);
+      height: resp-size(90);
+      border-radius: 50%;
+      z-index: 1;
+      background: url('../img/icons/adv-play.svg') no-repeat center / 20px 20px, rgba(255, 255, 255, 0.5);
+      transition: transform .3s ease;
+      @include _767 {
+        top: calc(50% - resp-size(20, 360));
+        left: calc(50% - resp-size(20, 360));
+        width: resp-size(40, 360);
+        height: resp-size(40, 360);
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: calc(50% - resp-size(45));
+      left: calc(50% - resp-size(45));
+      width: resp-size(90);
+      height: resp-size(90);
+      border-radius: 50%;
+      transition: transform .3s;
+      background-color: #fff;
+      animation: 1.7s linear infinite pulse_2_small;
+      @include _767 {
+        top: calc(50% - resp-size(20, 360));
+        left: calc(50% - resp-size(20, 360));
+        width: resp-size(40, 360);
+        height: resp-size(40, 360);
+      }
+    }
+    &.small::after {
+      top: calc(50% - resp-size(30));
+      left: calc(50% - resp-size(30));
+      width: resp-size(60);
+      height: resp-size(60);
+      @include _767 {
+        top: calc(50% - resp-size(15, 360));
+        left: calc(50% - resp-size(15, 360));
+        width: resp-size(30, 360);
+        height: resp-size(30, 360);
+      }
+    }
+    &.small::before {
+      display: none;
+    }
+    @include interactive {
+      &:hover::after {
+        transform: scale(1.07);
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &:hover ~ .video-item__dark {
+        opacity: 0;
+      }
+      &.small:hover ~ .video-item__dark {
+        opacity: 0.3;
+      }
+    }
+  }
+}

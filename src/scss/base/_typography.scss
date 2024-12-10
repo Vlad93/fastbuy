@@ -1,0 +1,64 @@
+@include font-face("Proxima Nova", "proximanova_regular", 400);
+@include font-face("Proxima Nova", "proximanova_bold", 700);
+@include font-face("Inter", "Inter-Regular", 400);
+@include font-face("Inter", "Inter-Medium", 500);
+
+.title {
+  // margin-bottom: 30px;
+  @include font(Proxima Nova, 400, sans-serif);
+  line-height: 1.2em;
+  font-size: resp(40);
+  color: $primary;
+  @include _767 {
+    font-size: resp(24, 360);
+  }
+}
+
+.page-title {
+  font-weight: 400;
+  font-size: resp(40);
+  line-height: 1.2em;
+  color: #000;
+  @include _767 {
+    padding-bottom: resp(24, 360);
+    font-size: resp(32, 360);
+  }
+}
+.weight-regular {
+  font-weight: 400;
+}
+.weight-medium {
+  font-weight: 500;
+}
+.weight-semibold {
+  font-weight: 600;
+}
+.weight-bold {
+  font-weight: 700;
+}
+
+// .section-title {
+//   color: $primary;
+//   @include _767 {
+//     font-size: 24px;
+//     & .title-accent {
+//       font-size: 24px;
+//     }
+//   }
+// }
+
+// .section-subtitle {
+//   @extend .section-title;
+//   margin-bottom: 0;
+//   font-size: 20px;
+//   @include _767 {
+//     font-size: 16px;
+//   }
+// }
+
+// .section-title-wrap {
+//   margin-bottom: 50px;
+//   @include _992 {
+//     margin-bottom: 30px;
+//   }
+// }

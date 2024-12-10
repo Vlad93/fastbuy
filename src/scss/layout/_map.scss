@@ -1,0 +1,162 @@
+.section-map {
+  padding-bottom: 0;
+  &__wrap {
+    display: flex;
+    @include _767 {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__map {
+    height: resp(694);
+    max-width: 70%;
+    width: 100%;
+    @include _767 {
+      max-width: 100%;
+      height: resp(254, 360);
+    }
+    & iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__contacts {
+    height: 100%;
+    padding-top: resp(16);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    @include _767 {
+      width: 100%;
+      padding-top: resp(9, 360);
+    }
+  }
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: resp(7);
+    line-height: 1.3em;
+    font-size: resp(48);
+    font-weight: 600;
+    @include _767 {
+      margin-bottom: resp(6, 360);
+      font-size: resp(24, 360);
+    }
+  }
+  &__contacts-list {
+    margin-bottom: resp(20);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(20);
+    padding-left: resp(128);
+    padding-right: resp(70);
+    @include _767 {
+      padding-left: resp(16, 360);
+      padding-right: resp(85, 360);
+      margin-bottom: resp(20, 360);
+      width: 100%;
+      gap: resp(20, 360);
+    }
+  }
+  &__contacts-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(10);
+    line-height: 1.3em;
+    font-weight: 500;
+    font-size: resp(20);
+    @include _767 {
+      gap: resp(6, 360);
+      font-size: resp(14, 360);
+    }
+  }
+  &__address-list-wrap {
+    width: 100%;
+  }
+  &__contacts-title {
+    font-size: resp(24);
+    font-weight: 600;
+    line-height: 1.3em;
+    @include _767 {
+      font-size: resp(16, 360);
+    }
+  }
+  &__contacts-link {
+    transition: opacity .2s ease;
+    @include interactive {
+      &:hover {
+        opacity: .7;
+      }
+    }
+    &_email {
+      text-decoration: underline;
+      text-underline-offset: resp(5);
+      @include interactive {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__address-list-title {
+    max-width: max-content;
+    padding: resp(7) resp(22) resp(7) resp(74);
+    font-size: resp(24);
+    line-height: 1.3em;
+    font-weight: 500;
+    background-color: $primary;
+    color: #fff;
+    @include _767 {
+      padding: resp(6, 360) resp(11, 360) resp(6, 360) resp(16, 360);
+      font-size: resp(16, 360);
+    }
+  }
+  &__address-list {
+    height: 100%;
+    padding-right: resp(70);
+    padding-top: resp(12);
+    padding-left: resp(74);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(28);
+    background-color: rgba(217, 217, 217, 0.34);
+    @include _767 {
+      width: 100%;
+      padding: resp(18, 360) resp(36, 360) resp(16, 360) resp(16, 360);
+      gap: resp(20, 360);
+    }
+  }
+  &__address-list-link {
+    display: flex;
+    align-items: center;
+    gap: resp(30);
+    font-size: resp(20);
+    line-height: 1.3em;
+    transition: opacity .2s ease;
+    @include _767 {
+      font-size: resp(14, 360);
+      gap: resp(26, 360);
+    }
+    @include interactive {
+      &:hover {
+        opacity: .8;
+      }
+    }
+    &::before {
+      content: '';
+      display: block;
+      min-width: resp(18);
+      height: resp(20);
+      background: url('../img/icons/location-blue.svg') no-repeat center / contain;
+      @include _767 {
+        min-width: resp(18, 360);
+        height: resp(20, 360);
+      }
+    }
+  }
+}

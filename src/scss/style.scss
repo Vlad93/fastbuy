@@ -1,0 +1,93 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+@import "base/normalize";
+@import "base/typography";
+@import "base/base";
+
+// @import "components/logo/logo";
+@import "components/messangers";
+@import "components/swiper/swiper-container";
+@import "components/swiper/swiper-slide";
+@import "components/swiper/swiper-scrollbar";
+@import "components/swiper/swiper-navigation";
+// @import "components/swiper/swiper-pagination";
+// @import "components/phone";
+@import "components/buttons/btn";
+// @import "components/buttons/btn-ghost";
+@import "components/menu/header-menu";
+@import "components/menu/submenu";
+// @import "components/project-card";
+// @import "components/slider";
+@import "components/product-card";
+// @import "components/service-card";
+@import "components/forms/select";
+// @import "components/forms/form-bg";
+@import "components/forms/form";
+// @import "components/agreement";
+// @import "components/team-card";
+@import "components/video-item";
+// @import "components/new-card";
+// @import "components/load-more";
+// @import "components/article-card";
+// @import "components/soc-media";
+// @import "components/toggle-item-js";
+@import "components/breadcrumps";
+@import "components/popups/popup";
+@import "components/popups/product-popup";
+// @import "components/popups/after-sixty";
+// @import "components/popups/exit";
+// @import "components/popups/cp";
+// @import "components/popups/discuss";
+@import "components/popups/popup-form";
+@import "components/popups/order";
+@import "components/popups/thanks";
+@import "components/preloader";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/section";
+@import "layout/swiper-section";
+@import "layout/partners";
+@import "layout/zamer";
+@import "layout/map";
+@import "layout/main-editor";
+@import "layout/gallery-swiper";
+
+@import "pages/home/hero";
+@import "pages/home/catalog-links";
+@import "pages/home/doors";
+@import "pages/home/new-collection";
+@import "pages/home/open-more";
+@import "pages/home/hit";
+@import "pages/home/last-size";
+@import "pages/home/sale";
+@import "pages/home/plus-size";
+@import "pages/home/seo";
+@import "pages/home/sertificates";
+// @import "pages/home/calc";
+// @import "pages/home/for-whom";
+// @import "pages/home/problem-solution";
+// @import "pages/home/product";
+// @import "pages/home/services";
+// @import "pages/home/get-price";
+// @import "pages/home/advantages";
+// @import "pages/home/calm";
+// @import "pages/home/steps";
+// @import "pages/home/check-list";
+// @import "pages/home/team";
+// @import "pages/home/videoreviews";
+// @import "pages/home/commercial-offer";
+// @import "pages/home/about";
+
+
+@import "pages/about/about";
+
+@import "pages/catalog/catalog";
+
+@import "pages/cooperation/cooperation-top";
+@import "pages/cooperation/cooperation-feedback";
+
+@import "pages/contacts/contacts";
+@import "pages/contacts/feedback-contacts";

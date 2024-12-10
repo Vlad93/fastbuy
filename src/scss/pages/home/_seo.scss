@@ -1,0 +1,20 @@
+.section-seo {
+  padding-top: resp-size(58);
+  @include _767 {
+    padding-top: resp-size(72, 360);
+  }
+  & p {
+    font-size: resp-size(24);
+    font-weight: 300;
+    line-height: 1.4em;
+    @include _767 {
+      font-size: resp-size(16, 360);
+    }
+    &:not(:last-child) {
+      margin-bottom: resp-size(20);
+      @include _767 {
+        margin-bottom: resp-size(20, 360);
+      }
+    }
+  }
+}

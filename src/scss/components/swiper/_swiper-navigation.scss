@@ -1,0 +1,66 @@
+.slider-btn.swiper-button-disabled {
+  pointer-events: none;
+  opacity: .6;
+}
+.swiper__navigation-btn-icon {
+  stroke: #fff;
+  fill: transparent;
+  transition: stroke .3s ease;
+}
+.swiper__navigation {
+  display: flex;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: resp(24);
+  z-index: 2;
+  @include _767 {
+    gap: resp(9, 360);
+    // display: none;
+  }
+}
+.swiper__navigation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: resp(47);
+  height: resp(47);
+  transform: scale(1.2);
+  border: none;
+  border-radius: resp(5);
+  background-color: #537BD5;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+  transition: background-color .3s ease;
+  @include _767 {
+    width: resp(30, 360);
+    height: resp(30, 360);
+    border-radius: resp(5, 360);
+    transform: none;
+  }
+  &.swiper-button-disabled {
+    opacity: .4;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  &.swiper-button-lock {
+    display: none;
+  }
+  @include interactive {
+    &:hover {
+      background-color: $primary;
+    }
+    &:hover &-icon {
+      stroke: #fff;
+    }
+
+  }
+  &-icon {
+    width: resp(30);
+    height: resp(20);
+    @include _767 {
+      width: resp(24, 360);
+      height: resp(14, 360);
+    }
+  }
+}

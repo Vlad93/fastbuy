@@ -1,0 +1,198 @@
+.footer {
+  padding: resp(35) 0 resp(20);
+  background-color: #000;
+  color: #fff;
+  @include _767 {
+    padding: resp(18, 360) 0 resp(15, 360);
+  }
+  &__content-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include _992 {
+      flex-wrap: wrap;
+    }
+    @include _767 {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: resp(30, 360);
+    }
+  }
+  &__main-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: resp(38);
+    @include _767 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: resp(30, 363);
+    }
+  }
+  &__about {
+    max-width: resp(235);
+    @include _767 {
+      max-width: resp(108, 360);
+    }
+    &-text {
+      font-weight: 400;
+      line-height: 1.45em;
+      font-size: resp(24);
+      @include _767 {
+        font-size: resp(11, 360);
+      }
+    }
+  }
+  &__messengers {
+    gap: resp(32);
+    @include _767 {
+      gap: resp(15, 360);
+    }
+  }
+  &__messengers .messangers__link {
+    width: resp(48);
+    height: resp(48);
+    @include _767 {
+      width: resp(25, 360);
+      height: resp(25, 360);
+    }
+  }
+  &__logo {
+    width: resp(417);
+    @include _767 {
+      width: resp(167, 360);
+    }
+  }
+  &__phone-wrap {
+    margin-bottom: 18px;
+    & .phone__working-time {
+      letter-spacing: 0.3px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__catalog-nav-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(20);
+    @include _767 {
+
+    }
+  }
+  &__catalog-nav-link {
+    font-weight: 400;
+    font-size: resp(16);
+  }
+  &__created {
+    margin-top: resp(30);
+    margin-left: auto;
+    @include _767 {
+      margin-top: 0;
+      margin: 0 auto;
+    }
+    &-link {
+      display: block;
+      width: resp(167);
+      height: auto;
+      & img {
+        width: 100%;
+      }
+      @include _1200 {
+        width: 147px;
+      }
+      @include _767 {
+        width: resp(147, 360);
+      }
+    }
+  }
+  &__bottom {
+    padding-top: resp(64);
+    @include _767 {
+      padding-top: resp(20, 360);
+    }
+    &-copyrights {
+      text-align: center;
+      font-weight: 600;
+      font-size: resp(20);
+      line-height: 1.3em;
+      @include _992 {
+        font-size: 14px;
+      }
+      @include _767 {
+        display: block;
+        font-size: resp(14, 360);
+      }
+    }
+  }
+  &__dop-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(20);
+    @include _767 {
+      width: 100%;
+      gap: resp(10, 360);
+    }
+  }
+  &__phone {
+    @include interactive {
+      &:hover {
+        color: #537BD5;
+      }
+    }
+    @include _767 {
+      gap: resp(5, 360);
+      font-size: resp(20, 360);
+      & .phone-link__icon {
+        width: resp(39, 360);
+        height: resp(39, 360);
+      }
+    }
+  }
+  &__btn {
+    border: 1px solid #fff;
+    @include interactive {
+      &:hover {
+        box-shadow: 3px 7px 8px 0px #537BD5;
+      }
+    }
+    @include _767 {
+      max-width: resp(273, 360);
+      width: 100%;
+      margin-bottom: resp(20, 360);
+    }
+  }
+}
+
+.footer-nav  {
+  position: relative;
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: resp(18);
+    @include _767 {
+      width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: resp(1, 363);
+    }
+  }
+  &__link {
+    @include _992 {
+      font-size: 14px;
+    }
+    @include _767 {
+      padding: resp(5, 360) 0;
+      font-size: resp(14, 360);
+    }
+  }
+}

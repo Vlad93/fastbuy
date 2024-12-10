@@ -1,0 +1,236 @@
+
+.form-container {
+  margin-bottom: resp(27);
+  display: flex;
+  align-items: flex-end;
+  gap: resp(20);
+  column-gap: resp(37);
+  flex-wrap: wrap;
+  @include _767 {
+    gap: resp(11, 360);
+  }
+}
+.form-textarea {
+  resize: none;
+  min-height: resp(138);
+  @include _767 {
+    min-height: resp(96, 360);
+  }
+}
+.standart-form__before-submit-hint {
+  margin-bottom: resp(12);
+  font-weight: 500;
+  font-size: resp(14);
+  & a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  @include _767 {
+    margin-bottom: resp(19, 360);
+    font-size: resp(12, 360);
+  }
+}
+.form-input {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: resp(13) resp(26);
+  font-weight: 500;
+  font-size: resp(20);
+  font-weight: 300;
+  border: 1px solid #000;
+  color: $primary;
+  &::placeholder {
+    color: $primary;
+  }
+  @include _767 {
+    padding: resp(10, 360) resp(14, 360);
+    font-size: resp(16, 360);
+  }
+}
+
+// .form-label[for="phone"] {
+//   display: block;
+//   position: relative;
+//   &::before {
+//     content: '';
+//     z-index: 1;
+//     left: 30px;
+//     bottom: 20px;
+//     position: absolute;
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+//     background: url('../img/russia.png') no-repeat center / cover;
+//   }
+//   @include _992 {
+//     width: 100%;
+//   }
+// }
+
+.form-btn {
+  max-width: resp(369);
+  width: 100%;
+  transition: opacity .3s ease, transform .3s ease, box-shadow .3s ease;
+  @include _767 {
+    max-width: 100%;
+  }
+  &.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    &::before {
+      display: none;
+    }
+    @include interactive {
+      &:hover {
+        box-shadow: none;
+        transform: none;
+      }
+    }
+  }
+}
+
+.input-wrap {
+  position: relative;
+  flex-basis: 100%;
+  width: 100%;
+  &.required::before {
+    content: "*";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-75%);
+    font-size: calc((20 / 1920)* 100vw);
+    line-height: 1em;
+    color: #ff0a0a;
+  }
+  & .form-input {
+    width: 100%;
+  }
+  @include _767 {
+    flex: none;
+    width: 100%;
+  }
+  &_half {
+    flex-basis: calc(50% - resp(19));
+    @include _767 {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.form-checkbox {
+  padding-left: resp(35);
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  font-size: resp(16);
+  line-height: 1.3em;
+  @include _767 {
+    padding-left: resp(29, 360);
+    font-size: resp(12, 360);
+  }
+}
+.form-checkbox div[agreementControl_JS] {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+.form-checkbox div[agreementControl_JS] label {
+  cursor: pointer;
+  position: relative;
+  width: resp(24);
+  height: resp(24);
+  border-radius: resp(2);
+  border: 1px solid $primary;
+  background-color: transparent;
+  @include _767 {
+    width: resp(19, 360);
+    height: resp(19, 360);
+    border-radius: resp(2, 360);
+    border: 1px solid $primary;
+  }
+}
+
+.form-checkbox div[agreementControl_JS] label:after {
+  cursor: pointer;
+  content: '';
+  background: url('../img/check-icon.svg') no-repeat center / contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30%,-50%) scale(0);
+  width: 110%;
+  height: 100%;
+  opacity: 0;
+  transform-origin: 50%;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.form-checkbox div[agreementControl_JS].checked label:after {
+  transform: translate(-30%,-50%) scale(1);
+  opacity: 1;
+}
+
+.form-checkbox div[agreementControl_JS] input {
+  opacity: 0;
+  visibility: hidden
+}
+
+.form-checkbox .agreement-link {
+  position: relative;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 1.3em;
+  text-underline-offset: resp(4);
+  z-index: 1;
+  color: #000;
+  transition: opacity .2s ease;
+  @include interactive {
+    &:hover {
+      opacity: .8;
+    }
+  }
+  @include _767 {
+    text-underline-offset: resp(4, 360);
+  }
+}
+
+.iti {
+  --iti-path-flags-1x: url('./../img/intl-tel-input/flags.webp');
+  --iti-path-flags-2x: url('./../img/intl-tel-input/flags@2x.webp');
+  --iti-path-globe-1x: url('./../img/intl-tel-input/globe.webp');
+  --iti-path-globe-2x: url('./../img/intl-tel-input/globe@2x.webp');
+}
+
+.iti__selected-dial-code {
+  letter-spacing: .08em;
+  line-height: 1.3em;
+  font-family: Gilroy, sans-serif;
+  font-size: resp(24);
+}
+@media screen and (max-width: 767px) {
+  .iti__selected-dial-code {
+    font-size: calc((14 / 360)* 100vw);
+  }
+}
+.iti {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+input[name="phone"]::placeholder {
+  color: transparent;
+}
+input[name="phone"]:focus::placeholder {
+  color: #dadada;
+}
+.iti .iti__selected-dial-code {
+  margin-left: 0;
+}
