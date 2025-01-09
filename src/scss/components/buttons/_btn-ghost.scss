@@ -1,21 +1,23 @@
 .btn-ghost {
-  padding: 19px;
-  display: inline-block;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.35em;
-  border: 2px solid $white;
-  border-radius: 200px;
-  outline: none;
-  color: $white;
-  background: transparent;
-  transition: background-color .2s ease, border-color .2s ease;
+  font-weight: 500;
+  font-size: resp(16);
+  line-height: 1.2em;
+  padding: resp(12) resp(20);
+  border-radius: resp(100);
+  color: #221F8D;
+  background-color: transparent;
+  border: 1.5px solid #221F8D;
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
   @include interactive {
-    &:hover, &:focus {
+    &:hover {
       color: $white;
-      border-color: $red;
-      background: $red;
+      background-color: #221F8D;
     }
+  }
+  @include _767 {
+    padding: resp(12, 360) resp(20, 360);
+    font-size: resp(16, 360);
+    border-radius: resp(100, 360);
+    border: resp(1.5, 360) solid #221F8D;
   }
 }

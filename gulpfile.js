@@ -204,6 +204,7 @@ const webpConv = () => {
 const scripts = () => {
   return src([
     'src/js/components/**/*.js',
+    'src/js/**/*.js',
     'src/js/index.js'
   ])
     .pipe(sourcemaps.init())

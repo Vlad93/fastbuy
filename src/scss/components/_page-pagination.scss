@@ -1,0 +1,106 @@
+ul.page-numbers {
+  margin-top: resp(48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: resp(16);
+  @include _767 {
+    margin-top: resp(36, 360);
+    gap: resp(11, 360);
+  }
+  .page-numbers {
+    width: resp(48);
+    height: resp(48);
+    border-radius: 50%;
+    background-color: rgba(230, 225, 248, 0.5);
+    color: $primary;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2em;
+    transition: background-color .3s ease, color .3s ease;
+    @include _767 {
+      width: resp(44, 360);
+      height: resp(44, 360);
+      font-size: resp(16, 360);
+    }
+    &.current {
+      background-color: $primary;
+      color: #fff;
+    }
+    @include interactive {
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+    &.prev {
+      margin-right: resp(16);
+      @include interactive {
+        &:hover {
+          background-color: transparent;
+          color: $primary;
+          .icon {
+            transform: translateX(-4px);
+          }
+        }
+      }
+      @include _767 {
+        margin-right: 0;
+      }
+    }
+    &.next {
+      margin-left: resp(16);
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+        .icon {
+          transform: translateX(4px);
+        }
+      }
+      @include _767 {
+        margin-left: 0;
+      }
+    }
+    &.next, &.prev {
+      display: flex;
+      align-items: center;
+      gap: resp(2);
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      border-radius: 0;
+      @include _767 {
+        gap: 0;
+        span:not(.icon) {
+          display: none;
+        }
+      }
+      .icon {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: resp(24);
+        width: resp(24);
+        transition: transform .3s ease;
+        @include _767 {
+          height: resp(44, 360);
+          width: resp(44, 360);
+        }
+        svg {
+          width: 70%;
+          height: 70%;
+          fill: transparent;
+          stroke: $primary;
+          @include _767 {
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+}

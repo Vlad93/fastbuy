@@ -1,0 +1,17 @@
+.section-archive-news {
+  .page-title {
+    margin-bottom: resp(32);
+    @include _767 {
+     margin-bottom: 0;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: resp(20);
+    @include _767 {
+      grid-template-columns: 1fr;
+      gap: resp(16, 360);
+    }
+  }
+}

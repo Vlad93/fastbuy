@@ -36,16 +36,15 @@
   }
 }
 .editor {
-  font-size: resp(24);
+  font-size: resp(16);
   line-height: 1.21em;
-  letter-spacing: 0.05em;
   @include _767 {
-    font-size: resp(14, 360);
+    font-size: resp(16, 360);
   }
   & p, & ul, & ol {
-    margin-bottom: resp(30);
+    margin-bottom: resp(20);
     @include _767 {
-      margin-bottom: resp(15, 360);
+      margin-bottom: resp(16, 360);
     }
   }
   & ul, & ol {
@@ -53,10 +52,10 @@
     list-style: disc;
   }
   & h2, & h3, & h4, & h5, & h6 {
-    margin-bottom: resp(30);
+    margin-bottom: resp(20);
     line-height: 1.3em;
     @include _767 {
-      margin-bottom: resp(15, 360);
+      margin-bottom: resp(16, 360);
     }
   }
 }

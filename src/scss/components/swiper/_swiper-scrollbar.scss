@@ -1,21 +1,21 @@
 .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar-horizontal {
   position: relative;
-  margin-top: resp(30, 360);
-  height: resp(10, 360);
-  border-radius: resp(20, 360);
+  margin-top: resp(20, 360);
+  height: resp(8, 360);
+  border-radius: resp(30, 360);
   bottom: 1px;
 }
 .swiper-scrollbar {
   cursor: pointer;
   background-color: #fff;
-  border-radius: resp(20, 360);
+  border-radius: resp(30, 360);
 }
 .swiper-scrollbar-drag {
-  background-color: $primary;
+  background-color: $secondary;
 }
 .swiper-vertical>.swiper-scrollbar {
   right: 1px;
 }
 .swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar {
-  width: resp(10, 360);
+  width: resp(8, 360);
 }

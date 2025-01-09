@@ -1,0 +1,70 @@
+.contacts-block {
+  max-width: resp(285);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: resp(24);
+  &__btn {
+    width: 100%;
+  }
+  @include _767 {
+    max-width: 100%;
+    gap: resp(24, 360);
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(16);
+    @include _767 {
+      gap: resp(14, 360);
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: resp(8);
+    line-height: 1.3em;
+    font-size: resp(16);
+    transition: color .3s ease;
+    @include _767 {
+      gap: resp(8, 360);
+      font-size: resp(16, 360);
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: resp(24);
+      height: resp(24);
+      object-position: center;
+      object-fit: contain;
+      transition: transform .3s ease;
+      @include _767 {
+        width: resp(24, 360);
+        height: resp(24, 360);
+      }
+    }
+    @include interactive {
+      &:hover {
+        color: #221f8d;
+      }
+      &:hover &-icon {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__soc-media {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: resp(10);
+    row-gap: resp(16);
+    @include _767 {
+      column-gap: resp(10, 360);
+      row-gap: resp(16, 360);
+    }
+  }
+}

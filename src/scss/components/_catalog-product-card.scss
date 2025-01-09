@@ -1,0 +1,202 @@
+.catalog-product-card {
+  position: relative;
+  display: flex;
+  // align-items: center;
+  gap: resp(20);
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: resp(8);
+  overflow: hidden;
+  transition: transform .3s ease;
+  @include _767 {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: resp(8, 360);
+  }
+  &__img-wrap {
+    position: relative;
+    z-index: 1;
+    min-width: resp(213);
+    width: resp(213);
+    background-color: #F3F3F3;
+    height: auto;
+    min-height: resp(261);
+    overflow: hidden;
+    @include interactive {
+      &:hover .catalog-product-card__img {
+        transform: scale(1.04);
+      }
+    }
+    @include _767 {
+      width: 100%;
+      min-height: resp(224, 360);
+      height: resp(224, 360);
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    transition: transform .2s ease;
+  }
+  &__img-full-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    @include interactive {
+      &:hover {
+        cursor: zoom-in;
+      }
+    }
+  }
+  &__labels {
+    margin-bottom: resp(16);
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - resp(30));
+    height: auto;
+    align-items: center;
+    gap: resp(8);
+    z-index: 2;
+    @include _767 {
+      position: absolute;
+      top: resp(16, 360);
+      left: resp(16, 360);
+      width: calc(100% - resp(16, 360));
+      gap: resp(8, 360);
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: resp(6) resp(20);
+    font-size: resp(14);
+    line-height: 1.2em;
+    border-radius: resp(30);
+    @include _767 {
+      font-size: resp(12, 360);
+      padding: resp(6, 360) resp(20, 360);
+      border-radius: resp(30, 360);
+    }
+  }
+  &__categories {
+    margin-bottom: resp(6);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: resp(5);
+    &-item:not(:last-of-type)::after {
+      content: ',';
+      color: #6C6C6C;
+      font-size: resp(14);
+      line-height: 1.2em;
+    }
+    @include _767 {
+      margin-bottom: resp(8, 360);
+      gap: resp(5, 360);
+    }
+  }
+  &__title {
+    margin-bottom: resp(12);
+    font-size: resp(20);
+    font-weight: 500;
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #000;
+    transition: color .3s ease;
+    @include interactive {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    @include _767 {
+      margin-bottom: resp(8, 360);
+      -webkit-line-clamp: 3;
+      font-size: resp(16, 360);
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(8);
+    &-item {
+      line-height: 1.3em;
+      font-size: resp(14);
+      display: flex;
+      align-items: center;
+      gap: resp(8);
+      &::before {
+        content: '';
+        display: block;
+        width: resp(6);
+        height: resp(6);
+        border-radius: 50%;
+        background-color: #CDBBFA;
+      }
+    }
+    @include _767 {
+      display: none;
+    }
+  }
+  &__content-wrap {
+    position: relative;
+    display: flex;
+    gap: resp(20);
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: resp(20) resp(40) resp(20) 0;
+    background-color: #fff;
+    @include _767 {
+      position: static;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(8, 360);
+      padding: resp(12, 360) resp(8, 360) resp(8, 360);
+    }
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__category {
+    color: #6C6C6C;
+    line-height: 1.2em;
+    font-size: resp(14);
+    transition: color .3s ease;
+    @include interactive {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    @include _767 {
+      font-size: resp(14, 360);
+    }
+  }
+  &__btn {
+    width: max-content;
+    align-self: center;
+    line-height: 1.2em;
+    @include _767 {
+      width: 100%;
+      padding: resp(15, 360) resp(10, 360);
+      font-size: resp(16, 360);
+      max-width: 100%;
+    }
+  }
+}

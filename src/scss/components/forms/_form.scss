@@ -1,6 +1,5 @@
 
 .form-container {
-  margin-bottom: resp(27);
   display: flex;
   align-items: flex-end;
   gap: resp(20);
@@ -34,44 +33,29 @@
   display: block;
   width: 100%;
   position: relative;
-  padding: resp(13) resp(26);
-  font-weight: 500;
-  font-size: resp(20);
+  padding: resp(13) resp(24);
+  font-weight: 400;
+  font-size: resp(16);
   font-weight: 300;
-  border: 1px solid #000;
-  color: $primary;
+  border: none;
+  border-radius: resp(8);
+  color: #000;
+  background-color: #F8F8F8;
   &::placeholder {
-    color: $primary;
+    color: #6C6C6C;
   }
   @include _767 {
-    padding: resp(10, 360) resp(14, 360);
+    padding: resp(13, 360) resp(24, 360);
     font-size: resp(16, 360);
+    border-radius: resp(8, 360);
   }
 }
-
-// .form-label[for="phone"] {
-//   display: block;
-//   position: relative;
-//   &::before {
-//     content: '';
-//     z-index: 1;
-//     left: 30px;
-//     bottom: 20px;
-//     position: absolute;
-//     display: block;
-//     width: 24px;
-//     height: 24px;
-//     background: url('../img/russia.png') no-repeat center / cover;
-//   }
-//   @include _992 {
-//     width: 100%;
-//   }
-// }
 
 .form-btn {
   max-width: resp(369);
   width: 100%;
-  transition: opacity .3s ease, transform .3s ease, box-shadow .3s ease;
+  font-weight: 500;
+  transition: opacity .3s ease, transform .3s ease, background-color .3s ease;
   @include _767 {
     max-width: 100%;
   }
@@ -84,6 +68,7 @@
     @include interactive {
       &:hover {
         box-shadow: none;
+        background-color: $secondary;
         transform: none;
       }
     }
@@ -121,15 +106,18 @@
 }
 
 .form-checkbox {
-  padding-left: resp(35);
+  margin-left: resp(8);
+  padding-left: resp(28);
   display: inline-block;
   position: relative;
   font-weight: 400;
+  color: #CDBBFA;
   font-size: resp(16);
   line-height: 1.3em;
   @include _767 {
-    padding-left: resp(29, 360);
-    font-size: resp(12, 360);
+    margin-left: 0;
+    padding-left: resp(28, 360);
+    font-size: resp(13, 360);
   }
 }
 .form-checkbox div[agreementControl_JS] {
@@ -145,36 +133,36 @@
 .form-checkbox div[agreementControl_JS] label {
   cursor: pointer;
   position: relative;
-  width: resp(24);
-  height: resp(24);
-  border-radius: resp(2);
-  border: 1px solid $primary;
+  width: resp(18);
+  height: resp(18);
+  border-radius: resp(4);
+  border: 1.5px solid #CDBBFA;
   background-color: transparent;
   @include _767 {
-    width: resp(19, 360);
-    height: resp(19, 360);
-    border-radius: resp(2, 360);
-    border: 1px solid $primary;
+    width: resp(18, 360);
+    height: resp(18, 360);
+    border-radius: resp(4, 360);
+    border: 1.5px solid #CDBBFA;
   }
 }
 
 .form-checkbox div[agreementControl_JS] label:after {
   cursor: pointer;
   content: '';
-  background: url('../img/check-icon.svg') no-repeat center / contain;
+  background: url('../img/checkbox-true.webp') no-repeat center / cover;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-30%,-50%) scale(0);
-  width: 110%;
-  height: 100%;
+  left: -20%;
+  top: -20%;
+  transform: scale(0);
+  width: 140%;
+  height: 140%;
   opacity: 0;
   transform-origin: 50%;
   transition: transform .3s ease, opacity .3s ease;
 }
 
 .form-checkbox div[agreementControl_JS].checked label:after {
-  transform: translate(-30%,-50%) scale(1);
+  transform: scale(1);
   opacity: 1;
 }
 
@@ -190,7 +178,7 @@
   line-height: 1.3em;
   text-underline-offset: resp(4);
   z-index: 1;
-  color: #000;
+  color: #CDBBFA;
   transition: opacity .2s ease;
   @include interactive {
     &:hover {
@@ -233,4 +221,33 @@ input[name="phone"]:focus::placeholder {
 }
 .iti .iti__selected-dial-code {
   margin-left: 0;
+}
+
+
+.subscribe-form {
+  .form-container {
+    column-gap: resp(20);
+    row-gap: resp(8);
+    @include _767 {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      row-gap: resp(16, 360);
+    }
+  }
+  .form-label {
+    width: resp(386);
+    flex: 1;
+    @include _767 {
+      width: 100%;
+    }
+  }
+  .form-btn {
+    width: auto;
+    @include _767 {
+      margin-top: resp(8, 360);
+      width: 100%;
+      order: 3;
+    }
+  }
 }

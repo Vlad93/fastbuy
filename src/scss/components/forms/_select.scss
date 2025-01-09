@@ -1,89 +1,57 @@
-.form-select {
-  max-width: 100%;
-  min-width: resp(185);
+.nice-select {
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+  gap: resp(11);
   cursor: pointer;
+  z-index: 2;
+  @include font(Inter, 400, sans-serif);
+  font-size: resp(16);
   position: relative;
-  padding: resp(5) resp(11);
-  text-align: left;
-  border: 1px solid #8F8F8F;
-  background-color: #fff;
-  @include _767 {
-    // width: 100%;
-    min-width: resp(185, 360);
-    width: max-content;
-    padding: resp(5, 360) resp(11, 360);
-    flex: none;
-  }
-}
-.form-select::after {
+  &::after {
     content: '';
-    position: absolute;
-    right: resp(11);
-    top: 45%;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    z-index: 3;
-    border-style: solid;
-    border-width: 7px 7px 0 7px;
-    border-radius: 1px;
-    border-color: #000 transparent transparent transparent;
+    display: block;
+    width: resp(12);
+    height: resp(12);
+    background: url('../img/icons/dropdown-icon.svg') no-repeat center / 100% auto;
     transition: transform .3s ease;
     @include _767 {
-      right: resp(11, 360);
-    }
-}
-.form-select span.current {
-  margin: 0 auto;
-  z-index: 3;
-  position: relative;
-  font-weight: 500;
-  font-size: resp(16);
-  line-height: 1.35em;
-  text-align: center;
-  @include _767 {
-    font-size: resp(14, 360);
-  }
-}
-.form-select .list {
-  padding: resp(10) 0 resp(7);
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: 103%;
-  border: none;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  background-color: #fff;
-  transition: opacity .3s ease, visibility .3s ease;
-  @include _767 {
-    padding: resp(10, 360) 0 resp(7, 360);
-  }
-}
-.form-select.open .list {
-  opacity: 1;
-  visibility: visible;
-}
-.form-select .list .option {
-  padding: resp(5) resp(14);
-  font-size: resp(16);
-  cursor: pointer;
-  line-height: 1.2em;
-  &.disabled {
-    display: none;
-  }
-  @include interactive {
-    &:hover {
-      background-color: #fbfbfb;;
+      width: resp(12, 360);
+      height: resp(12, 360);
     }
   }
-  @include _767 {
-    padding: resp(5, 360) resp(14, 360);
-    font-size: resp(16, 360);
+  &.open::after {
+    transform: rotate(180deg);
   }
-}
-.form-select.open::after {
-  transform: rotate(-180deg);
+  & .list {
+    display: flex;
+    flex-direction: column;
+    gap: resp(10);
+    padding: resp(16);
+    position: absolute;
+    left: 50%;
+    top: 98%;
+    transform: translateX(-50%);
+    width: max-content;
+    z-index: 1;
+    font-size: reps(16);
+    border-radius: resp(8);
+    background-color: #F8F8F8;
+    transform-origin: 0 0;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .12);
+    transition: opacity .3s ease, visibility .3s ease;
+  }
+  & .option {
+    cursor: pointer;
+    transition: color .3s ease;
+    @include interactive {
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  &:where(:not(.open)) .list {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

@@ -1,33 +1,58 @@
 .soc-media {
-  &__title {
-    margin-bottom: 10px;
-    font-size: 12px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
-    color: $white;
-  }
-  &__list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+  &__item {
+    flex: 0 1 calc(50% - resp(5));
+    @include _767 {
+      flex: 0 1 calc(50% - resp(5, 360));
+    }
   }
   &__link {
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .8;
-    transition: opacity .3s ease;
+    display: flex;
+    align-items: center;
+    gap: resp(8);
+    font-size: resp(16);
+    transition: color .3s ease;
+    @include _767 {
+      gap: resp(8, 360);
+      font-size: resp(16, 360);
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: resp(24);
+      height: resp(24);
+      object-position: center;
+      object-fit: contain;
+      transition: transform .3s ease;
+      @include _767 {
+        width: resp(24, 360);
+        height: resp(24, 360);
+      }
+    }
     @include interactive {
       &:hover {
-        opacity: 1;
+        color: #221f8d;
+      }
+      &:hover &-icon {
+        transform: scale(1.05);
       }
     }
   }
-
 }
 
+.footer__contacts-wrap {
+  .contacts-block__link:hover {
+    color: #cdbbfa;
+  }
+  .contacts-block__btn {
+    border-color: #fff;
+    color: #fff;
+    &:hover {
+      background-color: #cdbbfa;
+      border-color: #cdbbfa;
+    }
+  }
+  .soc-media__link:hover {
+    color: #cdbbfa;
+  }
+}

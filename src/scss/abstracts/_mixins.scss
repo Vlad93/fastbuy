@@ -15,7 +15,7 @@
   font-weight: $weight;
 }
 
-@function resp($size-in-px, $vw-context: 1920) {
+@function resp($size-in-px, $vw-context: 1440) {
   @return calc((#{$size-in-px} / #{$vw-context}) * 100vw);
 }
 

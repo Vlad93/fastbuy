@@ -1,43 +1,48 @@
 .section-products-swiper {
-  padding-bottom: resp(100);
-  @include _767 {
-    padding-bottom: resp(50, 360);
-  }
   &__title-wrap {
-    margin-bottom: resp(68);
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: resp(16);
     position: relative;
     @include _767 {
-      margin-bottom: resp(35, 360);
+      margin-bottom: resp(16, 360);
     }
   }
   &__title {
     position: relative;
-    left: 0;
-    bottom: 100%;
     display: block;
-    max-width: resp(532);
-    // padding: resp(30) resp(10) resp(10) 7%;
+    max-width: 75%;
+    font-size: resp(40);
+    @include font(Proxima Nova, 400, sans-serif);
+    line-height: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
     @include _767 {
-      max-width: resp(180, 360);
+      // font-weight: 600;
+      text-align: left;
+      font-size: resp(24, 360);
     }
   }
   &__catalog-link {
-    font-size: resp(20);
+    font-size: resp(16);
     font-weight: 500;
     line-height: 1.3em;
-    color: $primary;
+    color: #000;
     text-decoration: underline;
     text-underline-offset: resp(4);
     transition: color .2s ease;
     @include interactive {
       &:hover {
         text-decoration: underline;
-        color: #537bd5;
+        color: $secondary;
       }
     }
     @include _767 {
-      font-size: resp(12, 360);
-      text-underline-offset: resp(2, 360);
+      font-size: resp(16, 360);
+      text-underline-offset: resp(4, 360);
     }
   }
   &__title-bg {
@@ -49,43 +54,18 @@
       min-width: 100%;
     }
   }
-  &__title-text {
+  &__swiper-wrap {
+    .container {
+      position: relative;
+    }
+  }
+  &__swiper-navigation {
+    width: 100%;
     position: absolute;
-    max-width: resp(532);
-    top: 18%;
-    left: 25%;
-    z-index: 1;
-    font-size: resp(45);
-    text-transform: uppercase;
-    line-height: 1.2em;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-    letter-spacing: .04em;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-    @include _767 {
-      max-width: resp(90, 360);
-      font-size: resp(12, 360);
-    }
-  }
-  &__navigation-wrap {
-    position: relative;
-    z-index: 1;
-    margin-top: -4.4%;
-    background-color: #fff;
-    @include _767 {
-      margin-top: -10%;
-    }
-  }
-  &__navigation-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: resp(47);
-    @include _767 {
-      min-height: auto;
-      height: resp(18, 360);
-    }
+    top: 50%;
+    z-index: 0;
+    transform: translateY(-50%);
+
   }
   &__swiper {
     padding: 0 resp(5) resp(10);

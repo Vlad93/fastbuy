@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- plagins css  -->
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/intl-tel-input/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/favicon.webp">
+  <title>Вопросы и ответы - fastbuy365.by</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-desk">
+          <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+            <img class="logo__img" src="img/logo.webp" alt="Logo">
+          </a>
+          <nav class="header__nav">
+            <ul class="header-menu__list menu">
+              <li class="menu__item menu__item-catalog">
+                <a class="menu__link menu__catalog-btn catalog-btn btn" href="">
+                  <span class="catalog-btn__icon">
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                  </span>
+                  <span class="catalog-btn__text">Каталог</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  База знаний
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="menu__item dropdown">
+                <a class="menu__link" href="">
+                  О нас
+                </a>
+                <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                  <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Где купить?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right-wrap">
+            <a href="" class="header__instagram-link" target="_blank" aria-label="Instagram">
+              <img src="img/icons/inst.svg" alt="">
+            </a>
+            <div class="header__search search-form-wrap">
+              <button type="button" class="header__search-open header__top-btn" aria-label="Открыть поиск">
+                <img src="img/icons/search.svg" alt="" class="header__search-open-icon">
+              </button>
+              <div class="header__search-wrap">
+                <input type="text" class="form-input" placeholder="Поиск..">
+                <button type="button" class="header__search-close-btn">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <select class="header__lang" name="lang">
+              <option value="BYN">BYN</option>
+              <option value="RU">RU</option>
+            </select>
+            <button class="header__mob-btn" headerBtn_JS>
+              <span class="header__mob-btn-line"></span>
+            </button>
+            <div class="popup region-popup fade" popupID="region">
+              <div class="popup__container">
+                <div class="popup__block region-popup__block">
+                  <div class="region-popup__content popup__content">
+                    <div class="region-popup__main popup__main">
+                      <div class="region-popup__title popup__form-title">
+                        Ваша страна <span>Беларусь?</span>
+                      </div>
+                      <div class="region-popup__btns">
+                        <button class="region-popup__btn btn" popupClose_JS>
+                          Да, верно
+                        </button>
+                        <button class="region-popup__btn-choose" popupOpen="lang-choose">
+                          Выбрать другую
+                        </button>
+                      </div>
+                    </div>
+                    <div class="region__close popup__close" popupClose_JS>
+                      <img src="img/icons/close-grey.svg" alt="" class="popup__close-icon">
+                    </div>
+                  </div>
+                </div>
+              <div class="popup__blur" popupClose_JS></div>
+            </div>
+            </div>
+          </div>
+          <div class="header__mob-wrap">
+            <div class="header__top-desk header__top-desk-mobile">
+              <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+                <img class="logo__img" src="img/logo.webp" alt="Logo">
+              </a>
+              <button class="header__lang-mob" data-lang="BYN" popupOpen="lang-choose">
+                BYN
+              </button>
+            </div>
+            <div class="header__mob-content">
+              <nav class="header__nav header__mob-nav">
+                <ul class="header-menu__list menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      База знаний
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li class="menu__item dropdown">
+                    <a class="menu__link" href="">
+                      О нас
+                    </a>
+                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                      <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <ul class="menu__submenu submenu">
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Новости
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Новости
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Где купить?
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__mob-contacts-wrap contacts-wrap contacts-block">
+                <div class="contacts-block__wrap">
+                  <a href="tel:111111" class="contacts-block__link contacts-block__link_phone">
+                    <img src="img/icons/phone.svg" alt="" class="contacts-block__link-icon">
+                    <span class="contacts-block__link-text">+375 29 888 88 88</span>
+                  </a>
+                  <a href="mailto:maskotaby@mail.com" class="contacts-block__link contacts-block__link_email">
+                    <img src="img/icons/post.svg" alt="" class="contacts-block__link-icon">
+                    <span class="contacts-block__link-text">maskotaby@mail.com</span>
+                  </a>
+                </div>
+                <button class="contacts-block__btn btn btn-ghost">
+                  Связаться с нами
+                </button>
+                <ul class="contacts-block__soc-media soc-media">
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/vk.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/tiktok.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/youtube.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/instagram.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__catalog-mob-wrap catalog-mob-menu">
+            <div class="header__top-desk header__top-desk-mobile">
+              <a href="" class="catalog-mob-menu__title-link title">
+                Каталог
+              </a>
+              <button class="catalog-mob-menu__close" headerCatalogCloseBtn_JS>
+                <img src="img/icons/close-grey.svg" alt="" class="catalog-mob-menu__close-icon">
+              </button>
+            </div>
+            <div class="catalog-mob-menu__content">
+              <ul class="catalog-mob-menu__list">
+                <li class="catalog-mob-menu__item">
+                  <button class="catalog-mob-menu__btn" style="background-color: #C6EAFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для стирки
+                    </span>
+                    <img src="img/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </button>
+                  <div class="catalog-mob-menu__submenu catalog-mob-submenu">
+                    <div class="header__top-desk header__top-desk-mobile">
+                      <button class="catalog-mob-menu__back">
+                        <img src="img/icons/back.svg" alt="" class="catalog-mob-menu__back-icon">
+                      </button>
+                      <a href="" class="catalog-mob-menu__title-link title">
+                        Для стирки
+                      </a>
+                      <button class="catalog-mob-menu__close" headerCatalogCloseBtn_JS>
+                        <img src="img/icons/close-grey.svg" alt="" class="catalog-mob-menu__close-icon">
+                      </button>
+                    </div>
+                    <div class="catalog-mob-submenu__content">
+                      <ul class="header-menu__list menu catalog-mob-submenu__menu">
+                        <li class="menu__item dropdown">
+                          <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                            <span class="menu__dropdown-text">
+                              По типу средства
+                            </span>
+                            <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <ul class="menu__submenu submenu">
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Гели
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Капсулы
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Пятновыводители
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Кондиционеры
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item dropdown">
+                          <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                            <span class="menu__dropdown-text">
+                              По категории
+                            </span>
+                            <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <ul class="menu__submenu submenu">
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Гели
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Капсулы
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Пятновыводители
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Кондиционеры
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #C7EAEA;">
+                    <span class="catalog-mob-menu__text">
+                      Для посуды
+                    </span>
+                    <img src="img/categories/posuda.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #FDF1C8;">
+                    <span class="catalog-mob-menu__text">
+                      Для обуви
+                    </span>
+                    <img src="img/categories/shoes.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #F2DEFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для детей
+                    </span>
+                    <img src="img/categories/kids.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #C0DAFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для тела
+                    </span>
+                    <img src="img/categories/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #E0EED4;">
+                    <span class="catalog-mob-menu__text">
+                      Для уборки
+                    </span>
+                    <img src="img/categories/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__mob-btns-wrap">
+      <div class="container">
+        <div class="header__mob-btns">
+          <button class="menu__link menu__catalog-btn catalog-btn catalog-mob-btn btn" headerCatalogBtn_JS>
+            <span class="catalog-btn__icon">
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+            </span>
+            <span class="catalog-btn__text">Каталог</span>
+          </button>
+          <div class="header__marketplace-links-wrap header__marketplace-links-wrap_mob">
+            <button class="header__marketplace-links-btn header__marketplace-links-btn_mob btn-dropdown btn">
+              Заказать
+            </button>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_by selected" data-lang="byn">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Onliner.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Onliner</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_ru" data-lang="ru">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Ozon.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Ozon</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-wrap">
+          <div class="header__catalog-categories">
+            <div class="header__catalog-nav-wrap">
+              <ul class="header__catalog-nav catalog-nav">
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/stirka-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для стирки</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/posuda-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для посуды</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/clean-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для уборки</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/child-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для детей</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/shoes-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для обуви</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/body-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для тела</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__marketplace-links-wrap">
+            <button class="header__marketplace-links-btn btn-dropdown btn animated">
+              Заказать
+            </button>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_by selected" data-lang="byn">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Onliner.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Onliner</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_ru" data-lang="ru">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Ozon.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Ozon</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-breadcrumbs section">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+          <li class="breadcrumbs__item active"><span class="breadcrumbs__active-item">Частые вопросы</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-main section-archive-faq section">
+      <div class="container">
+        <h1 class="section-main__title page-title title">
+          Вопросы и ответы
+        </h1>
+        <div class="section-archive-faq__wrap">
+          <div class="section-archive-faq__side">
+            <ul class="section-archive-faq__categories">
+              <li class="section-archive-faq__categories-item">
+                <a href="" class="section-archive-faq__categories-link faq-card__category knowledge-card__category" style="background-color: #C6EAFF;color: #005BFF;">
+                  Стирка
+                </a>
+              </li>
+              <li class="section-archive-faq__categories-item">
+                <a href="" class="section-archive-faq__categories-link faq-card__category knowledge-card__category" style="background-color: #C7EAEA;color: #00817F;">
+                  Посуда
+                </a>
+              </li>
+              <li class="section-archive-faq__categories-item">
+                <a href="" class="section-archive-faq__categories-link faq-card__category knowledge-card__category" style="background-color: #E0EED4;color: #387A22;">
+                  Уборка
+                </a>
+              </li>
+              <li class="section-archive-faq__categories-item">
+                <a href="" class="section-archive-faq__categories-link faq-card__category knowledge-card__category" style="background-color: #FDF1C8;color: #937200;">
+                  Обувь
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="section-archive-faq__main">
+            <div class="section-archive-faq__grid">
+              <div class="section-archive-faq__grid-item">
+                <div class="section-archive-faq__faq faq-block">
+                  <div class="faq-block__title-wrap section-title-wrap">
+                    <div class="title section-title">
+                      Стирка
+                    </div>
+                    <a href="" class="section-products-swiper__catalog-link section-archive-faq__faq-link">
+                      Смотреть все
+                    </a>
+                  </div>
+                  <ul class="faq-block__list">
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn active">
+                        Можно ли мыть деревянную посуду в посудомоечной машине?
+                      </button>
+                      <div class="faq-block__list-content editor">
+                        <p>
+                          Вам наверняка хочется забросить деревянные разделочные доски в машину вместе с остальной посудой, но это не лучшая идея. Когда дерево подвергается воздействию таких высоких температур и влажности в течение длительного цикла мытья с последующей сушкой, оно может ссохнуться, расщепиться и в конце концов испортиться.
+                        </p>
+                        <p>
+                          Не стоит портить свои дорогие деревянные разделочные доски, лучше вымыть их вручную. А для лучшего результата продезинфицируйте разделочную доску, протерев ее специальным раствором (например, развести 1-2 чайные ложки хлорсодержащего моющего средства в литре воды), а затем промойте вручную в горячей мыльной воде.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как вывести пятно от вина?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Чем можно отмыть маркеры и фломастеры со стен и мебели?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как почистить замшевую обувь?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как правильно стирать льняные изделия?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        У ребенка аллергия на стиральные порошки, что делать?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="page-numbers">
+                  <li>
+                    <a class="prev page-numbers" href="">
+                      <span class="icon">
+                        <svg viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 1L0.999999 9.0013L8 17" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span>Предыдущая</span>
+                    </a>
+                  </li>
+                  <li><a href="" class="page-numbers">1</a></li>
+                  <li><span class="page-numbers current" >2</span></li>
+                  <li><a class="page-numbers" href="">3</a></li>
+                  <li><a class="page-numbers" href="">4</a></li>
+                  <li>
+                    <a class="next page-numbers" href="">
+                      <span>Следующая</span>
+                      <span class="icon">
+                        <svg viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.5 17L8.5 8.9987L1.5 0.999999" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="section-archive-faq__grid-item">
+                <div class="section-archive-faq__faq faq-block">
+                  <div class="faq-block__title-wrap section-title-wrap">
+                    <div class="title section-title">
+                      Посуда
+                    </div>
+                    <a href="" class="section-products-swiper__catalog-link section-archive-faq__faq-link">
+                      Смотреть все
+                    </a>
+                  </div>
+                  <ul class="faq-block__list">
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn active">
+                        Можно ли мыть деревянную посуду в посудомоечной машине?
+                      </button>
+                      <div class="faq-block__list-content editor">
+                        <p>
+                          Вам наверняка хочется забросить деревянные разделочные доски в машину вместе с остальной посудой, но это не лучшая идея. Когда дерево подвергается воздействию таких высоких температур и влажности в течение длительного цикла мытья с последующей сушкой, оно может ссохнуться, расщепиться и в конце концов испортиться.
+                        </p>
+                        <p>
+                          Не стоит портить свои дорогие деревянные разделочные доски, лучше вымыть их вручную. А для лучшего результата продезинфицируйте разделочную доску, протерев ее специальным раствором (например, развести 1-2 чайные ложки хлорсодержащего моющего средства в литре воды), а затем промойте вручную в горячей мыльной воде.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как вывести пятно от вина?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Чем можно отмыть маркеры и фломастеры со стен и мебели?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как почистить замшевую обувь?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как правильно стирать льняные изделия?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        У ребенка аллергия на стиральные порошки, что делать?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="page-numbers">
+                  <li>
+                    <a class="prev page-numbers" href="">
+                      <span class="icon">
+                        <svg viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 1L0.999999 9.0013L8 17" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span>Предыдущая</span>
+                    </a>
+                  </li>
+                  <li><a href="" class="page-numbers">1</a></li>
+                  <li><span class="page-numbers current" >2</span></li>
+                  <li><a class="page-numbers" href="">3</a></li>
+                  <li><a class="page-numbers" href="">4</a></li>
+                  <li>
+                    <a class="next page-numbers" href="">
+                      <span>Следующая</span>
+                      <span class="icon">
+                        <svg viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.5 17L8.5 8.9987L1.5 0.999999" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="section-archive-faq__grid-item">
+                <div class="section-archive-faq__faq faq-block">
+                  <div class="faq-block__title-wrap section-title-wrap">
+                    <div class="title section-title">
+                      Уборка
+                    </div>
+                    <a href="" class="section-products-swiper__catalog-link section-archive-faq__faq-link">
+                      Смотреть все
+                    </a>
+                  </div>
+                  <ul class="faq-block__list">
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn active">
+                        Можно ли мыть деревянную посуду в посудомоечной машине?
+                      </button>
+                      <div class="faq-block__list-content editor">
+                        <p>
+                          Вам наверняка хочется забросить деревянные разделочные доски в машину вместе с остальной посудой, но это не лучшая идея. Когда дерево подвергается воздействию таких высоких температур и влажности в течение длительного цикла мытья с последующей сушкой, оно может ссохнуться, расщепиться и в конце концов испортиться.
+                        </p>
+                        <p>
+                          Не стоит портить свои дорогие деревянные разделочные доски, лучше вымыть их вручную. А для лучшего результата продезинфицируйте разделочную доску, протерев ее специальным раствором (например, развести 1-2 чайные ложки хлорсодержащего моющего средства в литре воды), а затем промойте вручную в горячей мыльной воде.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как вывести пятно от вина?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Чем можно отмыть маркеры и фломастеры со стен и мебели?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как почистить замшевую обувь?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как правильно стирать льняные изделия?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        У ребенка аллергия на стиральные порошки, что делать?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="page-numbers">
+                  <li>
+                    <a class="prev page-numbers" href="">
+                      <span class="icon">
+                        <svg viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 1L0.999999 9.0013L8 17" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span>Предыдущая</span>
+                    </a>
+                  </li>
+                  <li><a href="" class="page-numbers">1</a></li>
+                  <li><span class="page-numbers current" >2</span></li>
+                  <li><a class="page-numbers" href="">3</a></li>
+                  <li><a class="page-numbers" href="">4</a></li>
+                  <li>
+                    <a class="next page-numbers" href="">
+                      <span>Следующая</span>
+                      <span class="icon">
+                        <svg viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.5 17L8.5 8.9987L1.5 0.999999" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="section-archive-faq__grid-item">
+                <div class="section-archive-faq__faq faq-block">
+                  <div class="faq-block__title-wrap section-title-wrap">
+                    <div class="title section-title">
+                      Обувь
+                    </div>
+                    <a href="" class="section-products-swiper__catalog-link section-archive-faq__faq-link">
+                      Смотреть все
+                    </a>
+                  </div>
+                  <ul class="faq-block__list">
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn active">
+                        Можно ли мыть деревянную посуду в посудомоечной машине?
+                      </button>
+                      <div class="faq-block__list-content editor">
+                        <p>
+                          Вам наверняка хочется забросить деревянные разделочные доски в машину вместе с остальной посудой, но это не лучшая идея. Когда дерево подвергается воздействию таких высоких температур и влажности в течение длительного цикла мытья с последующей сушкой, оно может ссохнуться, расщепиться и в конце концов испортиться.
+                        </p>
+                        <p>
+                          Не стоит портить свои дорогие деревянные разделочные доски, лучше вымыть их вручную. А для лучшего результата продезинфицируйте разделочную доску, протерев ее специальным раствором (например, развести 1-2 чайные ложки хлорсодержащего моющего средства в литре воды), а затем промойте вручную в горячей мыльной воде.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как вывести пятно от вина?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Чем можно отмыть маркеры и фломастеры со стен и мебели?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как почистить замшевую обувь?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        Как правильно стирать льняные изделия?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                    <li class="faq-block__list-item">
+                      <button class="faq-block__list-btn">
+                        У ребенка аллергия на стиральные порошки, что делать?
+                      </button>
+                      <div class="faq-block__list-content editor" style="display: none;">
+                        <p>
+                          Какой-то текст
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="page-numbers">
+                  <li>
+                    <a class="prev page-numbers" href="">
+                      <span class="icon">
+                        <svg viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 1L0.999999 9.0013L8 17" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span>Предыдущая</span>
+                    </a>
+                  </li>
+                  <li><a href="" class="page-numbers">1</a></li>
+                  <li><span class="page-numbers current" >2</span></li>
+                  <li><a class="page-numbers" href="">3</a></li>
+                  <li><a class="page-numbers" href="">4</a></li>
+                  <li>
+                    <a class="next page-numbers" href="">
+                      <span>Следующая</span>
+                      <span class="icon">
+                        <svg viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.5 17L8.5 8.9987L1.5 0.999999" stroke="#221F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="/" class="footer__logo logo" aria-label="Логотип Radema">
+          <img class="logo__img" src="img/logo.webp" alt="Logo">
+        </a>
+        <div class="footer__about">
+          <p class="footer__about-text">
+            Применяй правильно<br>и узнавай о новинках первым
+          </p>
+        </div>
+        <div class="footer__subscribe-wrap">
+          <form class="footer__subscribe-form subscribe-form mail-form" novalidate="novalidate">
+            <input type="hidden" name="action" value="request">
+            <input type="hidden" name="form" value="Подписаться на рассылку">
+            <div class="form-container">
+              <label for="email" class="form-label">
+                <input type="email" name="email" class="form-input" placeholder="Ваш E-mail" required="">
+              </label>
+              <button class="form-btn btn" agreementcontrolbtn_js="">
+                  <span>Подписаться</span>
+              </button>
+              <div class="form-checkbox">
+                <div agreementcontrol_js="">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementcontrolcheckbox_js="" >
+                </div>
+                <p>
+                  Согласие с <a class="agreement-link" href="" target="_blank">политикой конфиденциальности</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__nav-wrap">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list menu">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Каталог
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для стирки
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для посуды
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для уборки
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для обуви
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для обуви
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  База знаний
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Стирка
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Посуда
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Уборка
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Обувь
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  О нас
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Информация
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Частые вопросы
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Где купить?
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contacts-wrap contacts-wrap contacts-block">
+          <div class="contacts-block__wrap">
+            <a href="tel:111111" class="contacts-block__link contacts-block__link_phone">
+              <img src="img/icons/phone-white.svg" alt="" class="contacts-block__link-icon">
+              <span class="contacts-block__link-text">+375 29 888 88 88</span>
+            </a>
+            <a href="mailto:maskotaby@mail.com" class="contacts-block__link contacts-block__link_email">
+              <img src="img/icons/email-white.svg" alt="" class="contacts-block__link-icon">
+              <span class="contacts-block__link-text">maskotaby@mail.com</span>
+            </a>
+          </div>
+          <button class="contacts-block__btn btn btn-ghost">
+            Связаться с нами
+          </button>
+          <ul class="contacts-block__soc-media soc-media">
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/youtube-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/insta-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/vk-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/tiktok-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="preloader">
+    <div class="preloader-icon"></div>
+  </div>
+
+  <button class="to-top btn" toTop_JS>
+    <svg class="to-top__icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"></path>
+    </svg>
+  </button>
+
+  <div class="popup zamer-popup fade" popupID="cooperation">
+    <div class="popup__container">
+      <div class="popup__block zamer-popup__block">
+        <div class="zamer-popup__content popup__content">
+          <div class="zamer-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="zamer-popup__img popup__img">
+          </div>
+          <div class="zamer-popup__main popup__main">
+            <div class="zamer-popup__form-title popup__form-title">
+              Заявка на сотрудничество
+            </div>
+            <p class="zamer-popup__form-text popup__form-text">
+              Укажите ваше имя и контактный телефон. В&nbsp;самое&nbsp;ближайшее время наш оператор Вам&nbsp;перезвонит.
+            </p>
+            <form action="#" method="POST" class="zamer-popup__form popup-form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Заявка на сотрудничество">
+              <div class="zamer-popup__form-container form-container">
+                <div class="input-wrap  required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
+                  </label>
+                </div>
+                <button class="form-btn animated btn" agreementControlBtn_JS>
+                  <span>Отправить</span>
+                </button>
+                <div class="zamer-popup__form-checkbox popup-form__checkbox form-checkbox">
+                  <div agreementControl_JS class="checked">
+                      <label for="agreement"></label>
+                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                  </div>
+                  <p>
+                    Нажимая на кнопку «Отправить» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+  <div class="popup lang-choose-popup fade" popupID="lang-choose">
+    <div class="popup__container">
+      <div class="popup__block lang-choose-popup__block">
+        <div class="lang-choose-popup__content popup__content">
+          <div class="lang-choose-popup__main popup__main">
+            <div class="lang-choose-popup__title popup__form-title">
+              Выберите страну
+            </div>
+            <div class="lang-choose-popup__text popup__form-text">
+              Позже Вы сможете изменить свой выбор в меню
+            </div>
+            <div class="lang-choose__radio-buttons">
+              <label class="lang-choose__radio-btn-label">
+                <input type="radio" name="lang-choose" value="BYN" checked>
+                <div class="lang-choose__radio-btn">
+                  <img src="img/by.svg" alt="" class="lang-choose__radio-icon">
+                  <span class="lang-choose__radio-text">Беларусь</span>
+                </div>
+              </label>
+              <label class="lang-choose__radio-btn-label">
+                <input type="radio" name="lang-choose" value="RU">
+                <div class="lang-choose__radio-btn">
+                  <img src="img/rus.svg" alt="" class="lang-choose__radio-icon">
+                  <span class="lang-choose__radio-text">Россия</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="lang-choose__close popup__close" popupClose_JS>
+            <img src="img/icons/close-grey.svg" alt="" class="popup__close-icon">
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+  <div class="popup thanks-popup fade" popupID="thanks-popup">
+    <div class="popup__container">
+      <div class="popup__block thanks-popup__block">
+        <div class="thanks-popup__content popup__content">
+          <div class="thanks-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="thanks-popup__img popup__img">
+          </div>
+          <div class="thanks-popup__main popup__main">
+            <div class="thanks-popup__title popup__form-title">
+              СПАСИБО ЗА ЗАКАЗ!
+            </div>
+            <div class="thanks-popup__text popup__form-text">
+              Наши специалисты свяжутся с Вами в ближайшее время
+            </div>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+
+  <script src="js/polyfill.min.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/intl-tel-input/js/intlTelInputWithUtils.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('[phoneMask_JS]').each(function() {
+      var input = $(this)[0];
+      var iti = window.intlTelInput(input, {
+        utilsScript: "assets/intl-tel-input/js/utils.js", // Подключаем файл с утилитами
+        separateDialCode: true,
+        initialCountry: "BY", // Устанавливаем начальную страну (Белоруссия)
+        nationalMode: true,
+        autoPlaceholder: "aggressive",
+        strictMode: true, // Разрешаем выбор только этих стран
+        geoIpLookup: function(callback) {
+          $.get("https://ipapi.co/country_code/").done(function(countryCode) {
+            callback(countryCode);
+          });
+        }
+      });
+    });
+
+    $('form').on('submit', function(e) {
+      e.preventDefault();
+      if ($(this).valid()) {
+        let formData = new FormData(this);
+        formData.append('url', document.location.href);
+        let btn = $(this).find('.form-btn');
+        $('.preloader').addClass('active');
+        $.ajax({
+          url: 'https://jsonplaceholder.typicode.com/posts',
+          data: formData,
+          processData: false,
+          contentType: false,
+          type: 'POST',
+          success: function (response) {
+            setTimeout (function(){
+              $('.preloader').removeClass('active');
+              popupOpen('thanks-popup');
+              setTimeout(function() {
+                if($('.thanks-popup').hasClass('open')) {
+                  popupClose();
+                }
+            }, 4000);
+            }, 1300);
+
+          },
+          error: function(xhr, status, error) {
+            $('.preloader').remove('active');
+            console.error('Ошибка при отправке формы:', status, error);
+            btn.find('span').text('Ошибка');
+            btn.text('Попробовать еще раз');
+          },
+        })
+      } else {
+        console.log('Форма не прошла валидацию.');
+      }
+  });
+  </script>
+</body>
+</html>

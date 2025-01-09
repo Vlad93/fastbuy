@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- plagins css  -->
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/intl-tel-input/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/favicon.webp">
+  <title>Fastbuy на выставке 2024! - fastbuy365.by</title>
+</head>
+<body class="single-news-body">
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-desk">
+          <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+            <img class="logo__img" src="img/logo.webp" alt="Logo">
+          </a>
+          <nav class="header__nav">
+            <ul class="header-menu__list menu">
+              <li class="menu__item menu__item-catalog">
+                <a class="menu__link menu__catalog-btn catalog-btn btn" href="">
+                  <span class="catalog-btn__icon">
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                  </span>
+                  <span class="catalog-btn__text">Каталог</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  База знаний
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="menu__item dropdown">
+                <a class="menu__link" href="">
+                  О нас
+                </a>
+                <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                  <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Где купить?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right-wrap">
+            <a href="" class="header__instagram-link" target="_blank" aria-label="Instagram">
+              <img src="img/icons/inst.svg" alt="">
+            </a>
+            <div class="header__search search-form-wrap">
+              <button type="button" class="header__search-open header__top-btn" aria-label="Открыть поиск">
+                <img src="img/icons/search.svg" alt="" class="header__search-open-icon">
+              </button>
+              <div class="header__search-wrap">
+                <input type="text" class="form-input" placeholder="Поиск..">
+                <button type="button" class="header__search-close-btn">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <select class="header__lang" name="lang">
+              <option value="BYN">BYN</option>
+              <option value="RU">RU</option>
+            </select>
+            <button class="header__mob-btn" headerBtn_JS>
+              <span class="header__mob-btn-line"></span>
+            </button>
+            <div class="popup region-popup fade" popupID="region">
+              <div class="popup__container">
+                <div class="popup__block region-popup__block">
+                  <div class="region-popup__content popup__content">
+                    <div class="region-popup__main popup__main">
+                      <div class="region-popup__title popup__form-title">
+                        Ваша страна <span>Беларусь?</span>
+                      </div>
+                      <div class="region-popup__btns">
+                        <button class="region-popup__btn btn" popupClose_JS>
+                          Да, верно
+                        </button>
+                        <button class="region-popup__btn-choose" popupOpen="lang-choose">
+                          Выбрать другую
+                        </button>
+                      </div>
+                    </div>
+                    <div class="region__close popup__close" popupClose_JS>
+                      <img src="img/icons/close-grey.svg" alt="" class="popup__close-icon">
+                    </div>
+                  </div>
+                </div>
+              <div class="popup__blur" popupClose_JS></div>
+            </div>
+            </div>
+          </div>
+          <div class="header__mob-wrap">
+            <div class="header__top-desk header__top-desk-mobile">
+              <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+                <img class="logo__img" src="img/logo.webp" alt="Logo">
+              </a>
+              <button class="header__lang-mob" data-lang="BYN" popupOpen="lang-choose">
+                BYN
+              </button>
+            </div>
+            <div class="header__mob-content">
+              <nav class="header__nav header__mob-nav">
+                <ul class="header-menu__list menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      База знаний
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li class="menu__item dropdown">
+                    <a class="menu__link" href="">
+                      О нас
+                    </a>
+                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                      <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <ul class="menu__submenu submenu">
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Новости
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Новости
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Где купить?
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__mob-contacts-wrap contacts-wrap contacts-block">
+                <div class="contacts-block__wrap">
+                  <a href="tel:111111" class="contacts-block__link contacts-block__link_phone">
+                    <img src="img/icons/phone.svg" alt="" class="contacts-block__link-icon">
+                    <span class="contacts-block__link-text">+375 29 888 88 88</span>
+                  </a>
+                  <a href="mailto:maskotaby@mail.com" class="contacts-block__link contacts-block__link_email">
+                    <img src="img/icons/post.svg" alt="" class="contacts-block__link-icon">
+                    <span class="contacts-block__link-text">maskotaby@mail.com</span>
+                  </a>
+                </div>
+                <button class="contacts-block__btn btn btn-ghost">
+                  Связаться с нами
+                </button>
+                <ul class="contacts-block__soc-media soc-media">
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/vk.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/tiktok.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/youtube.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/instagram.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__catalog-mob-wrap catalog-mob-menu">
+            <div class="header__top-desk header__top-desk-mobile">
+              <a href="" class="catalog-mob-menu__title-link title">
+                Каталог
+              </a>
+              <button class="catalog-mob-menu__close" headerCatalogCloseBtn_JS>
+                <img src="img/icons/close-grey.svg" alt="" class="catalog-mob-menu__close-icon">
+              </button>
+            </div>
+            <div class="catalog-mob-menu__content">
+              <ul class="catalog-mob-menu__list">
+                <li class="catalog-mob-menu__item">
+                  <button class="catalog-mob-menu__btn" style="background-color: #C6EAFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для стирки
+                    </span>
+                    <img src="img/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </button>
+                  <div class="catalog-mob-menu__submenu catalog-mob-submenu">
+                    <div class="header__top-desk header__top-desk-mobile">
+                      <button class="catalog-mob-menu__back">
+                        <img src="img/icons/back.svg" alt="" class="catalog-mob-menu__back-icon">
+                      </button>
+                      <a href="" class="catalog-mob-menu__title-link title">
+                        Для стирки
+                      </a>
+                      <button class="catalog-mob-menu__close" headerCatalogCloseBtn_JS>
+                        <img src="img/icons/close-grey.svg" alt="" class="catalog-mob-menu__close-icon">
+                      </button>
+                    </div>
+                    <div class="catalog-mob-submenu__content">
+                      <ul class="header-menu__list menu catalog-mob-submenu__menu">
+                        <li class="menu__item dropdown">
+                          <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                            <span class="menu__dropdown-text">
+                              По типу средства
+                            </span>
+                            <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <ul class="menu__submenu submenu">
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Гели
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Капсулы
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Пятновыводители
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Кондиционеры
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item dropdown">
+                          <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                            <span class="menu__dropdown-text">
+                              По категории
+                            </span>
+                            <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <ul class="menu__submenu submenu">
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Гели
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Капсулы
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Пятновыводители
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Кондиционеры
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #C7EAEA;">
+                    <span class="catalog-mob-menu__text">
+                      Для посуды
+                    </span>
+                    <img src="img/categories/posuda.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #FDF1C8;">
+                    <span class="catalog-mob-menu__text">
+                      Для обуви
+                    </span>
+                    <img src="img/categories/shoes.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #F2DEFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для детей
+                    </span>
+                    <img src="img/categories/kids.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #C0DAFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для тела
+                    </span>
+                    <img src="img/categories/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #E0EED4;">
+                    <span class="catalog-mob-menu__text">
+                      Для уборки
+                    </span>
+                    <img src="img/categories/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__mob-btns-wrap">
+      <div class="container">
+        <div class="header__mob-btns">
+          <button class="menu__link menu__catalog-btn catalog-btn catalog-mob-btn btn" headerCatalogBtn_JS>
+            <span class="catalog-btn__icon">
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+            </span>
+            <span class="catalog-btn__text">Каталог</span>
+          </button>
+          <div class="header__marketplace-links-wrap header__marketplace-links-wrap_mob">
+            <button class="header__marketplace-links-btn header__marketplace-links-btn_mob btn-dropdown btn">
+              Заказать
+            </button>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_by selected" data-lang="byn">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Onliner.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Onliner</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_ru" data-lang="ru">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Ozon.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Ozon</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-wrap">
+          <div class="header__catalog-categories">
+            <div class="header__catalog-nav-wrap">
+              <ul class="header__catalog-nav catalog-nav">
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/stirka-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для стирки</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/posuda-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для посуды</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/clean-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для уборки</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/child-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для детей</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/shoes-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для обуви</span>
+                  </a>
+                </li>
+                <li class="catalog-nav__item">
+                  <a href="" class="catalog-nav__link">
+                    <img src="img/icons/body-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для тела</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__marketplace-links-wrap">
+            <button class="header__marketplace-links-btn btn-dropdown btn animated">
+              Заказать
+            </button>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_by selected" data-lang="byn">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Onliner.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Onliner</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_ru" data-lang="ru">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Ozon.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Ozon</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-breadcrumbs section">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">База знаний</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Стирка</a></li>
+          <li class="breadcrumbs__item active"><span class="breadcrumbs__active-item">Как продлить срок эксплуатации стиральной машины</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-main section-single-news section">
+      <div class="container">
+        <div class="section-single-news__wrap">
+          <div class="section-single-news__main">
+            <h1 class="section-main__title section-single-news__title title page-title">
+              Fastbuy на выставке 2024! - fastbuy365.by
+            </h1>
+            <div class="section-single-news__date-wrap">
+              <span class="news-card__date section-single-news__date">
+                17.05.2024
+              </span>
+              <div class="section-archive-news__read-time read-time">
+                5 минут чтения
+              </div>
+            </div>
+            <div class="section-single-news__content editor">
+              <p>
+                <img src="img/news.webp" alt="">
+              </p>
+              <p>
+                Современные стиральные машины являются незаменимым помощником в быту, однако как и любая другая техника, они требуют правильного ухода и обслуживания для продления срока их эксплуатации. В данной статье мы рассмотрим основные способы и рекомендации по увеличению срока службы стиральной машины.
+              </p>
+              <p></p>
+              <p></p>
+              <p>
+                <strong>Регулярная чистка и обслуживание</strong>
+              </p>
+              <p>
+                Одним из ключевых аспектов продления срока эксплуатации стиральной машины является ее регулярная чистка и обслуживание. Следует следить за состоянием фильтра, который необходимо очищать от загрязнений, а также проводить профилактическую чистку бака и промывку системы подачи воды.
+              </p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p>
+                <strong>Использование правильных моющих средств</strong>
+              </p>
+              <p>
+                Для сохранения работоспособности стиральной машины необходимо использовать качественные моющие средства, соответствующие типу ткани и загрязнению. Неправильный выбор моющего средства может привести к образованию накипи или нарушению работы узлов и деталей стиральной машины.
+              </p>
+            </div>
+            <div class="section-single-news__btns">
+              <a href="" class="btn section-single-news__other">
+                К другим новостям
+              </a>
+              <div class="section-single-news__share-wrap share">
+                <div class="section-single-news__share-hint share__hint">
+                  Поделиться
+                </div>
+                <ul class="section-single-news__share-list share__list">
+                  <li class="section-single-news__share-list-item share__list-item">
+                    <a href="" class="section-single-news__share-list-link share__list-link share__list-link_vk" target="_blank" aria-label="Поделиться vk">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.01562 13.2656H11.8051C11.9624 21.2714 15.4933 24.6625 18.2901 25.3617V13.2656H22.7999V20.1702C25.5617 19.873 28.4634 16.7266 29.4422 13.2656H33.952C33.2004 17.5307 30.054 20.6771 27.8166 21.9706C30.054 23.0194 33.6374 25.7637 35.0008 30.728H30.0365C28.9703 27.4068 26.3133 24.8373 22.7999 24.4877V30.728H22.258C12.6966 30.728 7.24286 24.173 7.01562 13.2656Z" fill="#6C6C6C"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="section-single-news__share-list-item share__list-item">
+                    <a href="" class="section-single-news__share-list-link share__list-link share__list-link_facebook" target="_blank" aria-label="Поделиться facebook">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 22.7293H18.525V33.3043H22.8334V22.7293H27.7293V17.8334H22.8334V16.0709C22.8334 15.0917 23.2251 14.8959 24.0084 14.8959H27.7293V10H23.6167C19.7 10.5875 18.6633 13.8245 18.525 15.4834V17.8334H15V22.7293Z" fill="#6C6C6C"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="section-single-news__share-list-item share__list-item">
+                    <a href="" class="section-single-news__share-list-link share__list-link share__list-link_tg" target="_blank" aria-label="Поделиться telegram">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2402_33011)">
+                        <path d="M30.4615 12.2452C30.2095 12.0404 29.8228 11.9967 29.6478 12.0002C28.8585 12.0142 27.6458 12.4359 21.8148 14.8614C19.7708 15.7102 15.6898 17.4689 9.56827 20.1359C8.57427 20.5314 8.05278 20.9182 8.00553 21.2962C7.92549 21.935 8.72407 22.1865 9.81305 22.5296L9.81335 22.5297C9.96239 22.5767 10.1169 22.6253 10.2753 22.6769C11.348 23.0252 12.79 23.4329 13.539 23.4469C14.2198 23.4644 14.9775 23.1844 15.8175 22.6069C21.5365 18.7482 24.4888 16.7952 24.6743 16.7532C24.8055 16.7234 24.9875 16.6867 25.11 16.7952C25.2325 16.9037 25.2203 17.1102 25.208 17.1662C25.1281 17.5032 21.996 20.4158 20.3681 21.9297L20.368 21.9297C19.8574 22.4046 19.4947 22.7418 19.4208 22.8187C19.2568 22.9887 19.0897 23.1497 18.9291 23.3044C17.9323 24.2644 17.1834 24.9857 18.9693 26.1612C19.8282 26.7276 20.5153 27.1958 21.2012 27.663C21.9477 28.1716 22.6926 28.6791 23.6558 29.3112C23.9024 29.4727 24.1378 29.6404 24.3671 29.8039C25.2363 30.4233 26.017 30.9797 26.9808 30.8897C27.5425 30.8389 28.1218 30.3122 28.4158 28.7372C29.1123 25.0184 30.4808 16.9614 30.7958 13.6399C30.8238 13.3494 30.7888 12.9767 30.7608 12.8139C30.7358 12.5936 30.629 12.3906 30.4615 12.2452Z" fill="#6C6C6C"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2402_33011">
+                        <rect width="42" height="42" rx="21" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="section-single-news__share-list-item share__list-item">
+                    <a href="" class="section-single-news__share-list-link share__list-link share__list-link_viber" target="_blank" aria-label="Поделиться viber">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2402_33014)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7001 29.9668V35.4687L19.3123 30.7921C22.1158 30.8838 28.4825 30.6821 30.4359 29.1416C32.8777 27.2159 33.6916 25.8404 33.9629 20.8887C34.2192 16.2112 33.149 12.3608 30.7072 10.7102C28.7653 9.3975 26.6376 8.23432 20.9402 8.50942C15.2427 8.78451 12.2556 9.33474 10.3564 12.6359C8.45728 15.937 8.72794 22.5393 10.0879 25.5654C10.6935 26.9129 11.9856 28.8665 14.7001 29.9668ZM26.2291 15.6915C25.321 14.4916 23.8456 13.7135 21.967 14.0497C21.7448 14.0894 21.5328 13.939 21.4936 13.7136C21.4544 13.4883 21.6027 13.2734 21.825 13.2336C24.0328 12.8385 25.8025 13.7667 26.8775 15.1869C27.9404 16.5913 28.3415 18.5 27.8123 20.1097C27.7409 20.3268 27.5095 20.4441 27.2954 20.3718C27.0813 20.2994 26.9656 20.0648 27.037 19.8477C27.4693 18.5326 27.1493 16.9072 26.2291 15.6915ZM18.2886 22.1723C19.0972 23.1562 21.0041 24.8598 23.0961 26.072C24.7788 27.0469 25.9806 27.2907 26.7018 26.8032C27.4229 26.3158 27.9036 25.5845 28.144 25.0971C28.3844 24.6096 28.144 23.8785 27.1825 23.1473C26.221 22.4161 25.2595 21.6849 24.5384 21.9286C24.1103 22.0733 23.7669 22.4757 23.5082 22.7788C23.3311 22.9863 23.1938 23.1473 23.0961 23.1473C22.8557 23.1473 21.6539 22.9035 20.452 21.9285C19.3902 21.0672 18.2886 19.2474 18.7693 18.5163C18.961 18.2249 19.1649 18.0489 19.3543 17.8855C19.607 17.6674 19.8338 17.4717 19.9712 17.0538C20.043 16.8354 19.8828 16.4006 19.6433 15.9751C19.5008 15.7218 19.3207 15.4808 19.1579 15.263C19.1075 15.1957 19.0589 15.1306 19.0135 15.068L18.5624 14.4594C18.5057 14.373 18.4456 14.2851 18.381 14.1991C17.9759 13.6591 17.396 13.1943 16.3656 13.6417C15.1319 14.1772 14.4425 15.1041 14.9233 16.8102C15.3411 18.2923 17.0867 20.7099 18.2886 22.1723ZM22.1734 15.5167C24.5702 15.2958 26.2175 17.2547 25.591 19.3722C25.5261 19.5913 25.6488 19.8223 25.865 19.8881C26.0811 19.9538 26.3089 19.8295 26.3738 19.6103C27.1896 16.8531 24.9908 14.4249 22.0994 14.6914C21.8746 14.7121 21.709 14.9136 21.7294 15.1415C21.7498 15.3694 21.9486 15.5374 22.1734 15.5167ZM22.2085 16.8099C22.2085 16.5811 22.3914 16.3956 22.6171 16.3956C23.3 16.3956 23.8943 16.6049 24.3183 17.0348C24.7423 17.4648 24.9488 18.0673 24.9488 18.7598C24.9488 18.9886 24.7658 19.1741 24.5401 19.1741C24.3144 19.1741 24.1315 18.9886 24.1315 18.7598C24.1315 18.2335 23.9774 17.8611 23.7404 17.6208C23.5034 17.3805 23.1361 17.2243 22.6171 17.2243C22.3914 17.2243 22.2085 17.0388 22.2085 16.8099Z" fill="#6C6C6C"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2402_33014">
+                        <rect width="42" height="42" rx="21" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section-single-news__side">
+            <div class="section-single-news__side-title title">
+              Другие новости
+            </div>
+            <ul class="section-single-news__list">
+              <li class="section-single-news__list-item">
+                <article class="section-single-news__card news-card-small">
+                  <div class="section-single-news__date-wrap news-card-small__date-wrap">
+                    <span class="news-card__date section-single-news__date">
+                      17.05.2024
+                    </span>
+                    <div class="section-archive-news__read-time read-time">
+                      5 минут чтения
+                    </div>
+                  </div>
+                  <a href="" class="news-card__title news-card__title--link">
+                    Как часто надо стирать одежду
+                  </a>
+                </article>
+              </li>
+              <li class="section-single-news__list-item">
+                <article class="section-single-news__card news-card-small">
+                  <div class="section-single-news__date-wrap news-card-small__date-wrap">
+                    <span class="news-card__date section-single-news__date">
+                      17.05.2024
+                    </span>
+                    <div class="section-archive-news__read-time read-time">
+                      5 минут чтения
+                    </div>
+                  </div>
+                  <a href="" class="news-card__title news-card__title--link">
+                    Как стирать цветные вещи в стиральной машине
+                  </a>
+                </article>
+              </li>
+              <li class="section-single-news__list-item">
+                <article class="section-single-news__card news-card-small">
+                  <div class="section-single-news__date-wrap news-card-small__date-wrap">
+                    <span class="news-card__date section-single-news__date">
+                      17.05.2024
+                    </span>
+                    <div class="section-archive-news__read-time read-time">
+                      5 минут чтения
+                    </div>
+                  </div>
+                  <a href="" class="news-card__title news-card__title--link">
+                    Уход за кашемиром
+                  </a>
+                </article>
+              </li>
+              <li class="section-single-news__list-item">
+                <article class="section-single-news__card news-card-small">
+                  <div class="section-single-news__date-wrap news-card-small__date-wrap">
+                    <span class="news-card__date section-single-news__date">
+                      17.05.2024
+                    </span>
+                    <div class="section-archive-news__read-time read-time">
+                      5 минут чтения
+                    </div>
+                  </div>
+                  <a href="" class="news-card__title news-card__title--link">
+                    Как вывести свежие и застарелые пятна от красного вина
+                  </a>
+                </article>
+              </li>
+              <li class="section-single-news__list-item">
+                <article class="section-single-news__card news-card-small">
+                  <div class="section-single-news__date-wrap news-card-small__date-wrap">
+                    <span class="news-card__date section-single-news__date">
+                      17.05.2024
+                    </span>
+                    <div class="section-archive-news__read-time read-time">
+                      5 минут чтения
+                    </div>
+                  </div>
+                  <a href="" class="news-card__title news-card__title--link">
+                    Как вывести жирные пятна с одежды: 8 работающих способов
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-news-swiper section">
+      <div class="container">
+        <div class="section-news-swiper__title-wrap section-title-wrap">
+          <h2 class="section-news-swiper__title section-title">
+            Другие новости
+          </h2>
+          <h2 class="section-news-swiper__title section-news-swiper__title_mob section-title">
+            Другие новости
+          </h2>
+          <a href="" class="section-news-swiper__link section-products-swiper__catalog-link">
+            Смотреть все
+          </a>
+        </div>
+        <div class="section-news__swiper-wrap section-news-swiper__swiper-wrap">
+          <div class="section-news__swiper swiper" newsSlider_js>
+            <div class="swiper-wrapper section-news__swiper-wrap">
+              <div class="section-news__swiper-slide swiper-slide">
+                <article class="section-news__card news-card">
+                  <div class="news-card__img-wrap">
+                    <img src="img/news.webp" alt="" class="news-card__img">
+                  </div>
+                  <div class="news-card__content">
+                    <span class="news-card__date">
+                      17.05.2024
+                    </span>
+                    <a href="" class="news-card__title news-card__title--link">
+                      Первый запуск посудомоечной машины: настройки, режим, средства
+                    </a>
+                    <p class="news-card__desc">
+                      Генеральная уборка — это отличный способ обновить энергию дома и создать атмосферу комфорта! Но с чего начать и что важно не упустить?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="section-news__swiper-slide swiper-slide">
+                <article class="section-news__card news-card">
+                  <div class="news-card__img-wrap">
+                    <img src="img/news.webp" alt="" class="news-card__img">
+                  </div>
+                  <div class="news-card__content">
+                    <span class="news-card__date">
+                      17.05.2024
+                    </span>
+                    <a href="" class="news-card__title news-card__title--link">
+                      Первый запуск посудомоечной машины: настройки, режим, средства
+                    </a>
+                    <p class="news-card__desc">
+                      Генеральная уборка — это отличный способ обновить энергию дома и создать атмосферу комфорта! Но с чего начать и что важно не упустить?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="section-news__swiper-slide swiper-slide">
+                <article class="section-news__card news-card">
+                  <div class="news-card__img-wrap">
+                    <img src="img/news.webp" alt="" class="news-card__img">
+                  </div>
+                  <div class="news-card__content">
+                    <span class="news-card__date">
+                      17.05.2024
+                    </span>
+                    <a href="" class="news-card__title news-card__title--link">
+                      Первый запуск посудомоечной машины: настройки, режим, средства
+                    </a>
+                    <p class="news-card__desc">
+                      Генеральная уборка — это отличный способ обновить энергию дома и создать атмосферу комфорта! Но с чего начать и что важно не упустить?
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="section-news__swiper-slide swiper-slide">
+                <article class="section-news__card news-card">
+                  <div class="news-card__img-wrap">
+                    <img src="img/news.webp" alt="" class="news-card__img">
+                  </div>
+                  <div class="news-card__content">
+                    <span class="news-card__date">
+                      17.05.2024
+                    </span>
+                    <a href="" class="news-card__title news-card__title--link">
+                      Первый запуск посудомоечной машины: настройки, режим, средства
+                    </a>
+                    <p class="news-card__desc">
+                      Генеральная уборка — это отличный способ обновить энергию дома и создать атмосферу комфорта! Но с чего начать и что важно не упустить?
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-scrollbar section-news__swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="/" class="footer__logo logo" aria-label="Логотип Radema">
+          <img class="logo__img" src="img/logo.webp" alt="Logo">
+        </a>
+        <div class="footer__about">
+          <p class="footer__about-text">
+            Применяй правильно<br>и узнавай о новинках первым
+          </p>
+        </div>
+        <div class="footer__subscribe-wrap">
+          <form class="footer__subscribe-form subscribe-form mail-form" novalidate="novalidate">
+            <input type="hidden" name="action" value="request">
+            <input type="hidden" name="form" value="Подписаться на рассылку">
+            <div class="form-container">
+              <label for="email" class="form-label">
+                <input type="email" name="email" class="form-input" placeholder="Ваш E-mail" required="">
+              </label>
+              <button class="form-btn btn" agreementcontrolbtn_js="">
+                  <span>Подписаться</span>
+              </button>
+              <div class="form-checkbox">
+                <div agreementcontrol_js="">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementcontrolcheckbox_js="" >
+                </div>
+                <p>
+                  Согласие с <a class="agreement-link" href="" target="_blank">политикой конфиденциальности</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__nav-wrap">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list menu">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Каталог
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для стирки
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для посуды
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для уборки
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для обуви
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для обуви
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  База знаний
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Стирка
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Посуда
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Уборка
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Обувь
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  О нас
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link menu__link" href="">
+                  Информация
+                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Частые вопросы
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Где купить?
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contacts-wrap contacts-wrap contacts-block">
+          <div class="contacts-block__wrap">
+            <a href="tel:111111" class="contacts-block__link contacts-block__link_phone">
+              <img src="img/icons/phone-white.svg" alt="" class="contacts-block__link-icon">
+              <span class="contacts-block__link-text">+375 29 888 88 88</span>
+            </a>
+            <a href="mailto:maskotaby@mail.com" class="contacts-block__link contacts-block__link_email">
+              <img src="img/icons/email-white.svg" alt="" class="contacts-block__link-icon">
+              <span class="contacts-block__link-text">maskotaby@mail.com</span>
+            </a>
+          </div>
+          <button class="contacts-block__btn btn btn-ghost">
+            Связаться с нами
+          </button>
+          <ul class="contacts-block__soc-media soc-media">
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/youtube-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/insta-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/vk-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/tiktok-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="preloader">
+    <div class="preloader-icon"></div>
+  </div>
+
+  <button class="to-top btn" toTop_JS>
+    <svg class="to-top__icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"></path>
+    </svg>
+  </button>
+
+  <div class="popup zamer-popup fade" popupID="cooperation">
+    <div class="popup__container">
+      <div class="popup__block zamer-popup__block">
+        <div class="zamer-popup__content popup__content">
+          <div class="zamer-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="zamer-popup__img popup__img">
+          </div>
+          <div class="zamer-popup__main popup__main">
+            <div class="zamer-popup__form-title popup__form-title">
+              Заявка на сотрудничество
+            </div>
+            <p class="zamer-popup__form-text popup__form-text">
+              Укажите ваше имя и контактный телефон. В&nbsp;самое&nbsp;ближайшее время наш оператор Вам&nbsp;перезвонит.
+            </p>
+            <form action="#" method="POST" class="zamer-popup__form popup-form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Заявка на сотрудничество">
+              <div class="zamer-popup__form-container form-container">
+                <div class="input-wrap  required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
+                  </label>
+                </div>
+                <button class="form-btn animated btn" agreementControlBtn_JS>
+                  <span>Отправить</span>
+                </button>
+                <div class="zamer-popup__form-checkbox popup-form__checkbox form-checkbox">
+                  <div agreementControl_JS class="checked">
+                      <label for="agreement"></label>
+                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                  </div>
+                  <p>
+                    Нажимая на кнопку «Отправить» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+  <div class="popup lang-choose-popup fade" popupID="lang-choose">
+    <div class="popup__container">
+      <div class="popup__block lang-choose-popup__block">
+        <div class="lang-choose-popup__content popup__content">
+          <div class="lang-choose-popup__main popup__main">
+            <div class="lang-choose-popup__title popup__form-title">
+              Выберите страну
+            </div>
+            <div class="lang-choose-popup__text popup__form-text">
+              Позже Вы сможете изменить свой выбор в меню
+            </div>
+            <div class="lang-choose__radio-buttons">
+              <label class="lang-choose__radio-btn-label">
+                <input type="radio" name="lang-choose" value="BYN" checked>
+                <div class="lang-choose__radio-btn">
+                  <img src="img/by.svg" alt="" class="lang-choose__radio-icon">
+                  <span class="lang-choose__radio-text">Беларусь</span>
+                </div>
+              </label>
+              <label class="lang-choose__radio-btn-label">
+                <input type="radio" name="lang-choose" value="RU">
+                <div class="lang-choose__radio-btn">
+                  <img src="img/rus.svg" alt="" class="lang-choose__radio-icon">
+                  <span class="lang-choose__radio-text">Россия</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="lang-choose__close popup__close" popupClose_JS>
+            <img src="img/icons/close-grey.svg" alt="" class="popup__close-icon">
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+  <div class="popup thanks-popup fade" popupID="thanks-popup">
+    <div class="popup__container">
+      <div class="popup__block thanks-popup__block">
+        <div class="thanks-popup__content popup__content">
+          <div class="thanks-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="thanks-popup__img popup__img">
+          </div>
+          <div class="thanks-popup__main popup__main">
+            <div class="thanks-popup__title popup__form-title">
+              СПАСИБО ЗА ЗАКАЗ!
+            </div>
+            <div class="thanks-popup__text popup__form-text">
+              Наши специалисты свяжутся с Вами в ближайшее время
+            </div>
+          </div>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
+
+  <script src="js/polyfill.min.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/intl-tel-input/js/intlTelInputWithUtils.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('[phoneMask_JS]').each(function() {
+      var input = $(this)[0];
+      var iti = window.intlTelInput(input, {
+        utilsScript: "assets/intl-tel-input/js/utils.js", // Подключаем файл с утилитами
+        separateDialCode: true,
+        initialCountry: "BY", // Устанавливаем начальную страну (Белоруссия)
+        nationalMode: true,
+        autoPlaceholder: "aggressive",
+        strictMode: true, // Разрешаем выбор только этих стран
+        geoIpLookup: function(callback) {
+          $.get("https://ipapi.co/country_code/").done(function(countryCode) {
+            callback(countryCode);
+          });
+        }
+      });
+    });
+
+    $('form').on('submit', function(e) {
+      e.preventDefault();
+      if ($(this).valid()) {
+        let formData = new FormData(this);
+        formData.append('url', document.location.href);
+        let btn = $(this).find('.form-btn');
+        $('.preloader').addClass('active');
+        $.ajax({
+          url: 'https://jsonplaceholder.typicode.com/posts',
+          data: formData,
+          processData: false,
+          contentType: false,
+          type: 'POST',
+          success: function (response) {
+            setTimeout (function(){
+              $('.preloader').removeClass('active');
+              popupOpen('thanks-popup');
+              setTimeout(function() {
+                if($('.thanks-popup').hasClass('open')) {
+                  popupClose();
+                }
+            }, 4000);
+            }, 1300);
+
+          },
+          error: function(xhr, status, error) {
+            $('.preloader').remove('active');
+            console.error('Ошибка при отправке формы:', status, error);
+            btn.find('span').text('Ошибка');
+            btn.text('Попробовать еще раз');
+          },
+        })
+      } else {
+        console.log('Форма не прошла валидацию.');
+      }
+  });
+  </script>
+</body>
+</html>

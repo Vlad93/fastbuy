@@ -1,0 +1,226 @@
+.section-news {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(16);
+    @include _767 {
+      gap: resp(16, 360);
+    }
+  }
+  &__swiper-slide {
+    height: auto;
+  }
+  &__title {
+    line-height: 1.2em;
+    @include font(Proxima Nova, 400, sans-serif);
+    font-size: resp(40);
+    @include _767 {
+      font-size: resp(24, 360);
+      font-weight: 600;
+    }
+  }
+  &__text {
+    max-width: 93%;
+    line-height: 1.4em;
+    font-size: resp(16);
+    color: #6C6C6C;
+    @include _767 {
+      font-size: resp(16, 360);
+    }
+  }
+  &__btn {
+    margin-bottom: resp(10);
+    padding: resp(16) resp(53);
+    line-height: 1.2em;
+    margin-top: auto;
+    @include _767 {
+      margin-bottom: resp(32, 360);
+      padding: resp(14, 360) resp(20, 360);
+      margin-top: resp(8, 360);
+      width: 100%;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    column-gap: resp(20);
+    row-gap: resp(24);
+    @include _767 {
+      display: none;
+    }
+    &-item {
+      &:nth-child(2) {
+        grid-column: span 2;
+      }
+      .knowledge-card__img-wrap {
+        height: resp(285);
+      }
+    }
+  }
+  &__mob {
+    display: none;
+    @include _767 {
+      display: block;
+    }
+  }
+}
+
+.news-card {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: resp(5);
+  border-radius: resp(8);
+  background-color: #fff;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border-color .3s ease;
+  @include interactive {
+    &:hover {
+      border-color: #eee7ff;
+    }
+    &:hover &__img {
+      transform: scale(0.95);
+    }
+  }
+  @include _767 {
+    border-radius: resp(8, 360);
+    gap: resp(5, 360);
+  }
+  &__img-wrap {
+    position: relative;
+    width: 100%;
+    min-height: resp(184);
+    height: resp(184);
+    overflow: hidden;
+    @include _767 {
+      min-height: resp(184, 360);
+      height: resp(184, 360);
+    }
+  }
+  &__img {
+    position: absolute;
+    left: -3%;
+    top: -3%;
+    width: 106%;
+    height: 106%;
+    max-width: none;
+    object-position: center;
+    object-fit: cover;
+    transition: transform .3s ease;
+  }
+  &__date {
+    font-size: resp(14);
+    color: #6C6C6C;
+    line-height: 1.2em;
+    @include _767 {
+      font-size: resp(14, 360);
+    }
+  }
+  &__title {
+    position: static;
+    max-width: 100%;
+    line-height: 1.2em;
+    @include font(Inter, 500, sans-serif);
+    font-size: resp(20);
+    display: -webkit-box; /* Для поддержки в WebKit */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    transition: color .3s ease;
+    @include interactive {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    @include _767 {
+      max-width: 100%;
+      font-size: resp(20, 360);
+      -webkit-line-clamp: 2; /* Ограничение на 3 строки */
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+  &__desc {
+    margin-top: resp(-4);
+    line-height: 1.2em;
+    color: #6C6C6C;
+    font-size: resp(16);
+    display: -webkit-box; /* Для поддержки в WebKit */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    @include _767 {
+      margin-top: resp(-4, 360);
+      font-size: resp(16, 360);
+      -webkit-line-clamp: 3;
+    }
+  }
+  &__content {
+    padding: resp(20);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(12);
+    @include _767 {
+      padding: resp(16, 360);
+      gap: resp(12, 360);
+    }
+  }
+}
+
+.section-knowledge-swiper {
+  .knowledge-card__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  &__title {
+    @include _767 {
+      display: none;
+    }
+  }
+  &__title_mob {
+    display: none;
+    @include _767 {
+      @include font(Proxima Nova, 400, sans-serif);
+      display: block;
+    }
+  }
+
+}
+.section-news-swiper {
+  .news-card__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  &__title {
+    @include _767 {
+      display: none;
+    }
+  }
+  &__title_mob {
+    display: none;
+    @include _767 {
+      @include font(Proxima Nova, 400, sans-serif);
+      display: block;
+    }
+  }
+
+}

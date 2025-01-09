@@ -1,0 +1,76 @@
+.section-archive-faq {
+  .page-title {
+    margin-bottom: resp(32);
+    @include _767 {
+      padding-bottom: 0;
+      margin-bottom: resp(16, 360);
+    }
+  }
+  &__faq-link {
+    display: none;
+    @include _767 {
+      display: block;
+    }
+  }
+  &__wrap {
+    display: flex;
+    gap: resp(100);
+    @include _767 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(20, 360);
+    }
+  }
+  &__side {
+    position: relative;
+    @include _767 {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+  }
+  .faq-block__title-wrap {
+    margin-bottom: resp(24);
+    @include _767 {
+      margin-bottom: resp(16, 360);
+    }
+  }
+  .faq-block .title {
+    font-size: resp(32);
+    @include _767 {
+      font-size: resp(24, 360);
+    }
+  }
+  &__categories {
+    top: resp(170);
+    left: 0;
+    position: sticky;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(16);
+    &-item {
+      text-align: center;
+      width: 100%;
+    }
+    @include _767 {
+      position: relative;
+      top: 0;
+      flex-direction: row;
+      width: max-content;
+      gap: resp(8, 360);
+    }
+    &-link {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: resp(100);
+    @include _767 {
+      gap: resp(70, 360);
+    }
+  }
+}

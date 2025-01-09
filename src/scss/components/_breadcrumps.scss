@@ -1,7 +1,8 @@
 .section.section-breadcrumbs {
-  padding: resp(23) 0;
+  margin-bottom: 0;
+  padding: resp(33) 0;
   @include _767 {
-    padding: resp(15, 360) 0;
+    padding: resp(24, 360) 0 resp(16, 360);
   }
 }
 
@@ -9,30 +10,33 @@
   &__item {
     display: inline;
     font-weight: 400;
-    line-height: 1.3em;
-    font-size: 14px;
+    line-height: 1.2em;
+    color: #000;
+    @include font(Inter, 400, sans-serif);
+    font-size: resp(16);
+    @include _767 {
+      font-size: resp(14, 360);
+    }
     &:not(:first-of-type) {
-      margin-left: resp(20);
+      margin-left: resp(1);
       @include _767 {
-        margin-left: resp(10, 360);
+        margin-left: resp(4, 360);
       }
     }
     &:not(:last-of-type)::after {
-      margin-left: resp(20);
-      content: url('../img/arrow-right.svg');
+      margin-left: resp(4);
+      content: '/';
+      color: #808083;
       display: inline-block;
       @include _767 {
-        margin-left: resp(10, 360);
+        margin-left: resp(4, 360);
       }
     }
 
   }
-  &__active-item {
-    font-weight: 600;
-  }
   &__link {
     position: relative;
-    color: #626262;
+    color: #6C6C6C;
     transition: color .2s ease;
     &:after {
       content: '';
@@ -42,16 +46,16 @@
       top: 100%;
       width: 100%;
       height: 1px;
-      background-color: #626262;
+      background-color: #6C6C6C;
       transform-origin: 50%;
       transform: scale(0);
-      transition: transform .2s ease, border-color .2s ease;
+      transition: transform .2s ease, background-color .2s ease;
     }
     @include interactive {
       &:hover {
-        color: #000;
+        color: $secondary;
         &::after {
-          border-color: #000;
+          background-color: $secondary;
           transform: scale(1);
         }
       }

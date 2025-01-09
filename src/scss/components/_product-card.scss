@@ -5,33 +5,26 @@
   align-items: flex-start;
   width: 100%;
   height: 100%;
+  border-radius: resp(8);
+  overflow: hidden;
+  box-shadow: 0 1.5px 4px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s ease;
   @include interactive {
     &:hover {
-      transform: scale(1.01);
+      transform: scale(1.02);
     }
   }
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 93%;
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  @include _767 {
+    border-radius: resp(8, 360);
   }
   &__img-wrap {
     position: relative;
     z-index: 1;
-    width: resp(235);
-    height: resp(478);
+    width: 100%;
+    height: resp(380);
     margin: 0 auto;
     @include _767 {
-      width: resp(118, 360);
-      height: resp(240, 360);
+      height: resp(267, 360);
     }
   }
   &__img {
@@ -41,180 +34,103 @@
     object-position: center top;
     object-fit: contain;
   }
-  & .wishlist__btn {
-    position: absolute;
-    z-index: 1;
-    width: resp(20);
-    height: resp(19);
-    top: 9%;
-    right: 4.5%;
-    border: none;
-    outline: none;
-    & svg {
-      width: 100%;
-      height: 100%;
-    }
-    @include _767 {
-      width: resp(10, 360);
-      height: resp(9, 360);
-    }
-  }
   &__img-full-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: resp(40);
-    height: resp(40);
+    width: 100%;
+    height: 100%;
     border: none;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: background-color .3s ease;
-    @include _767 {
-      width: resp(20, 360);
-      height: resp(20, 360);
-    }
-    &-icon {
-      width: resp(19);
-      height: resp(20);
-      fill: transparent;
-      stroke: $primary;
-      transition: stroke .3s ease;
-      @include _767 {
-        width: resp(9, 360);
-        height: resp(10, 360);
-      }
-    }
+    background-color: transparent;
     @include interactive {
       &:hover {
-        background-color: $primary;
-      }
-      &:hover &-icon {
-        stroke: #fff;
+        cursor: zoom-in;
       }
     }
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: -1;
-      top: calc(50% - resp(35));
-      left: calc(50% - resp(35));
-      width: resp(73);
-      height: resp(73);
-      border-radius: 50%;
-      transition: transform .3s;
-      background-color: #fff;
-      animation: 1.7s linear infinite pulse_2_small;
-      @include _767 {
-        top: calc(50% - resp(18, 360));
-        left: calc(50% - resp(18, 360));
-        width: resp(36, 360);
-        height: resp(36, 360);
-      }
+  }
+  &__labels {
+    top: resp(20);
+    left: resp(20);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - resp(30));
+    height: auto;
+    align-items: center;
+    gap: resp(8);
+    z-index: 2;
+    @include _767 {
+      top: resp(16, 360);
+      left: resp(16, 360);
+      width: calc(100% - resp(16, 360));
+      gap: resp(8, 360);
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: resp(6) resp(20);
+    font-size: resp(14);
+    line-height: 1.2em;
+    border-radius: resp(30);
+    @include _767 {
+      font-size: resp(12, 360);
+      padding: resp(6, 360) resp(20, 360);
+      border-radius: resp(30, 360);
     }
   }
   &__content-wrap {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: resp(10);
+    gap: resp(8);
     align-items: flex-start;
     z-index: 1;
     width: 100%;
     height: 100%;
-    padding: resp(10);
+    padding: resp(20);
     background-color: #fff;
     @include _767 {
       gap: resp(8, 360);
-      padding: resp(9, 360) resp(8, 360) resp(8, 360);
+      padding: resp(16, 360);
+    }
+  }
+  &__category {
+    color: #6C6C6C;
+    line-height: 1.2em;
+    font-size: resp(14);
+    transition: color .3s ease;
+    @include interactive {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    @include _767 {
+      font-size: resp(14, 360);
     }
   }
   &__title {
-    font-weight: 500;
-    font-size: resp(20);
-    text-transform: uppercase;
-    @include _767 {
-      font-size: resp(12, 360);
-      line-height: 1.2em;
-    }
-  }
-  &__color-list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: resp(8);
-    @include _767 {
-      gap: resp(8, 360);
-    }
-  }
-  &__color {
-    width: resp(20);
-    height: resp(20);
-    display: block;
-    border-radius: 50%;
-    border: 1px solid #dedede;
-    outline: none;
-    transition: border-color .2s ease, transform .2s ease;
-    &-img {
-      width: 100%;
-      height: 100%;
-      object-position: center;
-      object-fit: cover;
-    }
-    @include interactive {
-      &:hover {
-        border-color: $primary;
-        transform: scale(1.05);
-      }
-    }
-    @include _767 {
-      width: resp(14, 360);
-      height: resp(14, 360);
-    }
-    &.selected {
-      transform: scale(1.1);
-      border: 1px solid $primary;
-    }
-  }
-  &__price-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: resp(3);
-    @include _767 {
-      gap: resp(3, 360);
-    }
-  }
-  &__price {
-    font-weight: 600;
-    font-size: resp(24);
-    line-height: 1.3em;
+    font-weight: 400;
+    font-size: resp(16);
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
     @include _767 {
       font-size: resp(16, 360);
-    }
-    &-old {
-      font-size: resp(22);
-      line-height: 1.3em;
-      color: #848484;
-      text-decoration: line-through;
-      @include _767 {
-        font-size: resp(12, 360);
-      }
     }
   }
   &__btn {
     margin-top: auto;
-    max-width: 90%;
     width: 100%;
     align-self: center;
+    line-height: 1.2em;
     @include _767 {
-      padding: resp(12, 360) resp(10, 360);
+      padding: resp(15, 360) resp(10, 360);
       font-size: resp(16, 360);
       max-width: 100%;
     }

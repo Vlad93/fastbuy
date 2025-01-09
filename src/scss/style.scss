@@ -15,29 +15,33 @@
 // @import "components/swiper/swiper-pagination";
 // @import "components/phone";
 @import "components/buttons/btn";
-// @import "components/buttons/btn-ghost";
+@import "components/buttons/btn-ghost";
 @import "components/menu/header-menu";
 @import "components/menu/submenu";
+@import "components/contacts-block";
 // @import "components/project-card";
 // @import "components/slider";
 @import "components/product-card";
+@import "components/catalog-product-card";
+@import "components/page-pagination";
 // @import "components/service-card";
 @import "components/forms/select";
 // @import "components/forms/form-bg";
 @import "components/forms/form";
 // @import "components/agreement";
 // @import "components/team-card";
-@import "components/video-item";
+@import "components/video-btn";
 // @import "components/new-card";
 // @import "components/load-more";
 // @import "components/article-card";
-// @import "components/soc-media";
+@import "components/soc-media";
 // @import "components/toggle-item-js";
 @import "components/breadcrumps";
 @import "components/popups/popup";
-@import "components/popups/product-popup";
+// @import "components/popups/product-popup";
+@import "components/popups/lang-choose";
 // @import "components/popups/after-sixty";
-// @import "components/popups/exit";
+@import "components/popups/region";
 // @import "components/popups/cp";
 // @import "components/popups/discuss";
 @import "components/popups/popup-form";
@@ -54,19 +58,14 @@
 @import "layout/map";
 @import "layout/main-editor";
 @import "layout/gallery-swiper";
+@import "layout/faq";
+@import "layout/news";
 
 @import "pages/home/hero";
-@import "pages/home/catalog-links";
-@import "pages/home/doors";
-@import "pages/home/new-collection";
-@import "pages/home/open-more";
-@import "pages/home/hit";
-@import "pages/home/last-size";
-@import "pages/home/sale";
-@import "pages/home/plus-size";
-@import "pages/home/seo";
-@import "pages/home/sertificates";
-// @import "pages/home/calc";
+@import "pages/home/about";
+@import "pages/home/calculator";
+@import "pages/home/knowledge";
+@import "pages/home/categories";
 // @import "pages/home/for-whom";
 // @import "pages/home/problem-solution";
 // @import "pages/home/product";
@@ -81,6 +80,17 @@
 // @import "pages/home/commercial-offer";
 // @import "pages/home/about";
 
+@import "pages/single-product/single-product.scss";
+
+@import "pages/archive-knowledge";
+
+@import "pages/single-knowledge";
+
+@import "pages/archive-news";
+
+@import "pages/archive-faq";
+
+@import "pages/single-news";
 
 @import "pages/about/about";
 

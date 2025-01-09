@@ -1,14 +1,17 @@
 .submenu {
-  padding: resp(20);
+  padding: resp(16);
   position: absolute;
-  top: 98%;
+  top: 99%;
+  min-width: resp(130);
   width: max-content;
-  z-index: 1;
-  background-color: #000;
+  z-index: 2;
+  border-radius: resp(8);
+  background-color: #F8F8F8;
   transform-origin: 0 0;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .12);
   transition: opacity .4s ease, visibility .3s ease, transform .3s ease;
   @include _992 {
-    padding-left: resp(15, 360);
+    padding-left: 0;
     position: static;
     flex-basis: 100%;
     border-radius: 0;
@@ -19,8 +22,9 @@
   }
   @include _767 {
     width: 100%;
-    padding-left: resp(28, 363);
+    padding-left: 0;
     background: transparent;
+    box-shadow: none;
   }
   &:where(:not(.is-active)) {
     opacity: .0;
@@ -31,50 +35,26 @@
       visibility: visible;
     }
   }
-  &__item:not(:last-of-type) &__link {
-    @include _767 {
-      border-bottom: 1px solid #fff;
-    }
-  }
   &__link {
     position: relative;
     width: 100%;
     display: inline-block;
     padding: resp(10) 0;
-    font-size: resp(18);
-    color: $white;
+    font-size: resp(16);
+    color: #000;
     line-height: 1.3em;
     outline: none;
-    transition: transform .3s ease;
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: #fff;
-      top: 85%;
-      left: 0;
-      transform-origin: 50%;
-      transform: scale(0);
-      transition: transform .3s ease;
-      @include _767 {
-        display: none;
-      }
-    }
+    transition: color .3s ease;
     @include interactive {
       &:hover {
-        color: #fff;
-        transform: scale(1.02);
-        &::after {
-          transform: scale(1);
-        }
+        color: $secondary;
       }
     }
     @include _767 {
       line-height: 1.35em;
-      padding: resp(5, 360) 0;
-      font-size: resp(14, 360);
+      color: #6C6C6C;
+      padding: resp(10, 360) 0;
+      font-size: resp(16, 360);
     }
   }
 }

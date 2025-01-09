@@ -1,0 +1,67 @@
+.faq {
+  &-block {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(20);
+      @include _767 {
+        gap: resp(16, 360);
+      }
+      &-item {
+        padding: resp(10) resp(20);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: resp(6);
+        width: 100%;
+        background-color: #fff;
+        border-radius: resp(8);
+        @include _767 {
+          padding: resp(6, 360) resp(16, 360);
+          gap: resp(6, 360);
+          border-radius: resp(8, 360);
+        }
+      }
+      &-btn {
+        width: 100%;
+        padding: resp(10) 0;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        border: none;
+        font-weight: 500;
+        font-size: resp(20);
+        line-height: 1.2em;
+        transition: color .3s ease;
+        @include interactive {
+          &:hover {
+            color: $primary;
+          }
+        }
+        &::after {
+          content: '';
+          display: block;
+          min-width: resp(24);
+          width: resp(24);
+          height: resp(24);
+          background: url('../img/icons/dropdown-icon.svg') no-repeat center / 70% auto;
+          transition: transform .3s ease;
+          @include _767 {
+            min-width: resp(24, 360);
+            width: resp(24, 360);
+            height: resp(24, 360);
+          }
+        }
+        &.active::after {
+          transform: rotate(180deg);
+        }
+        @include _767 {
+          padding: resp(10, 360) 0;
+          font-size: resp(20, 360);
+        }
+      }
+    }
+  }
+}

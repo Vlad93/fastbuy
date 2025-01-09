@@ -1,0 +1,70 @@
+.video-btn {
+  position: relative;
+  width: resp(144);
+  height: resp(144);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  @include _767 {
+    width: resp(144, 360);
+    height: resp(144, 360);
+  }
+  .video__btn-icon {
+    width: resp(62);
+    height: auto;
+    @include _767 {
+      width: resp(50,360);
+    }
+  }
+  @include interactive {
+    &:hover::before {
+      background-color: transparent;
+    }
+    &:hover &__icon-text-wrap {
+      transform: translate(-12%, -5%) rotate(45deg);
+    }
+  }
+  &__icon-text-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: resp(129);
+    height: auto;
+    z-index: 1;
+    transform-origin: 100%;
+    transform: translate(-33%, -33%);
+    transition: transform .3s ease;
+    @include _767 {
+      width: resp(129,360);
+    }
+  }
+  &__icon-text {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - resp(72));
+    left: calc(50% - resp(72));
+    width: resp(144);
+    height: resp(144);
+    border-radius: 50%;
+    transition: transform .3s;
+    z-index: -1;
+    background-color: #CDBBFA;
+    animation: 1.8s linear infinite pulse_2_small;
+    transition: background-color .3s ease;
+    @include _767 {
+      top: calc(50% - resp(72, 360));
+      left: calc(50% - resp(72, 360));
+      width: resp(144, 360);
+      height: resp(144, 360);
+    }
+  }
+}

@@ -1,0 +1,198 @@
+.single-news-body {
+  .section-news-swiper {
+    display: none;
+    @include _767 {
+      display: block;
+    }
+  }
+}
+.section-single-news {
+  .page-title {
+    margin-bottom: resp(16);
+    @include _767 {
+      margin-bottom: 0;
+    }
+  }
+  &__date-wrap {
+    margin-bottom: resp(24);
+    display: flex;
+    align-items: center;
+    gap: resp(20);
+    @include _767 {
+      margin-bottom: resp(24, 360);
+      gap: resp(20, 360);
+    }
+    .news-card__date {
+      position: relative;
+      width: auto;
+      &::after {
+        content: '|';
+        display: block;
+        position: absolute;
+        top: 0;
+        color: #6C6C6C;
+        line-height: 1.2em;
+        right: resp(-12);
+        @include _767 {
+          right: resp(-12, 360);
+        }
+      }
+    }
+  }
+  &__wrap {
+    display: flex;
+    gap: resp(120);
+    @include _767 {
+      gap: 0;
+    }
+  }
+  &__side {
+    min-width: resp(285);
+    position: relative;
+    &-title {
+      // text-align: center;
+      margin-bottom: resp(20);
+      font-size: resp(24);
+      color: #000;
+    }
+    @include _767 {
+      display: none;
+    }
+  }
+  &__list {
+    top: resp(170);
+    left: 0;
+    position: sticky;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(20);
+    &-item {
+      width: 100%;
+    }
+  }
+  &__btns {
+    margin-top: resp(32);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include _767 {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: resp(32, 360);
+      margin-top: resp(16, 360);
+    }
+  }
+  .news-card-small {
+    position: relative;
+    width: 100%;
+    padding: resp(20);
+    display: flex;
+    flex-direction: column;
+    gap: resp(8);
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: resp(8);
+    &__date-wrap {
+      margin-bottom: 0;
+    }
+    .news-card__title {
+      max-width: 100%;
+    }
+  }
+  &__content {
+    p {
+      margin-bottom: resp(8);
+      min-height: 1px;
+      @include _767 {
+        margin-bottom: resp(8, 360);
+      }
+    }
+    img {
+      margin-bottom: resp(32);
+      border-radius: resp(8);
+      @include _767 {
+        margin-bottom: resp(24, 360);
+        border-radius: resp(8, 360);
+      }
+    }
+  }
+}
+
+.read-time {
+  display: flex;
+  align-items: center;
+  gap: resp(4);
+  line-height: 1.2em;
+  font-size: resp(14);
+  color: #6C6C6C;
+  @include _767 {
+    gap: resp(4, 360);
+    font-size: resp(14, 360);
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: resp(16);
+    height: resp(16);
+    background: url('../img/icons/clock.svg') no-repeat center / auto 100%;
+    @include _767 {
+      width: resp(16, 360);
+      height: resp(16, 360);
+    }
+  }
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: resp(16);
+  @include _767 {
+    gap: resp(16, 360);
+  }
+  &__hint {
+    line-height: 1.2em;
+    color: #6C6C6C;
+    font-size: resp(14);
+    @include _767 {
+      font-size: resp(14, 360);
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: resp(42);
+      height: resp(42);
+      @include _767 {
+        width: resp(42, 360);
+        height: resp(42, 360);
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: #6C6C6C;
+        transition: fill .3s ease;
+      }
+      @include interactive {
+        &_vk:hover svg {
+          fill: #4A76A8;
+        }
+        &_facebook:hover svg {
+          fill: #3B5998;
+        }
+        &_tg:hover svg {
+          fill: #0088CC;
+        }
+        &_viber:hover svg {
+          fill: #665CAC;
+        }
+      }
+    }
+  }
+}
