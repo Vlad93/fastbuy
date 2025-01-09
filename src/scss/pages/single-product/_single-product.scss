@@ -282,6 +282,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: resp(24);
+    &:first-child .single-product__accordion-btn {
+      pointer-events: none;
+      &::after {
+        display: none;
+      }
+    }
     @include _767 {
       gap: resp(16, 360);
     }

@@ -1,6 +1,261 @@
 .thanks-popup {
   &__title {
-    text-transform: uppercase;
     font-weight: 400;
   }
+  .popup__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: resp(16);
+    padding: resp(150) resp(110);
+    border-radius: resp(8);
+    background-color: #EFEDF8;
+    @include _767 {
+      padding: resp(50, 360) resp(16, 360);
+      border-radius: resp(8, 360);
+      gap: resp(16, 360);
+    }
+  }
+  .popup__close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    top: resp(16);
+    right: resp(24);
+    width: resp(42);
+    height: resp(42);
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .3s ease;
+    svg {
+      fill: #6C6C6C;
+    }
+    @include interactive {
+      &:hover {
+        opacity: 1;
+      }
+    }
+    @include _767 {
+      width: resp(32, 360);
+      height: resp(32, 360);
+      top: resp(12, 360);
+      right: resp(12, 360);
+      opacity: 1;
+    }
+  }
+  .popup__content {
+    max-width: resp(700);
+    display: flex;
+    @include _767 {
+      max-width: 100%;
+    }
+  }
+  .popup__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: resp(16);
+    padding: resp(150) resp(110);
+    border-radius: resp(8);
+    background-color: #EFEDF8;
+    @include _767 {
+      padding: resp(50, 360) resp(16, 360);
+      border-radius: resp(8, 360);
+      gap: resp(16, 360);
+    }
+  }
+  .popup__form-title {
+    margin-bottom: 0;
+    font-size: resp(40);
+    text-align: center;
+    @include font(Proxima Nova, 400, sans-serif);
+    line-height: 1.2em;
+    @include _767 {
+      font-size: resp(24, 360);
+    }
+  }
+  .popup__form-text {
+    margin-bottom: 0;
+    font-size: resp(16);
+    font-weight: 400;
+    line-height: 1.2em;
+    @include font(Proxima Nova, 400, sans-serif);
+    color: #6C6C6C;
+    text-align: center;
+    @include _767 {
+      margin-bottom: resp(24, 360);
+      font-size: resp(16, 360);
+    }
+  }
+  .popup__close img,
+  .popup__close svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+  }
 }
+
+
+// .popup {
+//   color: #000;
+//   position: fixed;
+//   z-index: 1000;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+//   padding-top: 2.6041666667vw;
+//   padding-bottom: 2.6041666667vw;
+//   display: flex;
+//   pointer-events: none;
+//   transition:  visibility .3s ease, opacity .3s ease;
+//   opacity: 0;
+//   visibility: hidden;
+//   &.open {
+//     opacity: 1;
+//     pointer-events: all;
+//     visibility: visible;
+//     & .popup__blur {
+//       overflow-y: scroll;
+//     }
+//   }
+//   &.fade .popup__block {
+//     transform: translate(0, -25%);
+//     transition: transform 0.3s ease-out;
+//   }
+//   &__blur {
+//     background: rgba(0, 0, 0, 0.25);
+//     backdrop-filter: blur(8px);
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     z-index: 1;
+//     cursor: pointer;
+//   }
+//   &__container {
+//     margin: auto;
+//     z-index: 2;
+//   }
+//   &__block {
+//     max-width: 90%;
+//     position: relative;
+//     z-index: 2;
+//     background-repeat: no-repeat;
+//     background-position: bottom right;
+//     background-size: auto 70%;
+//     margin: auto;
+//     position: relative;
+//     background-color: #fff;
+//     transition: transform .3s ease-out;
+//     border-radius: resp(8);
+//     @include _767 {
+//       border-radius: resp(8, 360);
+//     }
+//   }
+//   &__close {
+//     position: absolute;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 5;
+//     top: resp(16);
+//     right: resp(24);
+//     width: resp(42);
+//     height: resp(42);
+//     cursor: pointer;
+//     opacity: .8;
+//     transition: opacity .3s ease;
+//     svg {
+//       fill: #6C6C6C;
+//     }
+//     @include interactive {
+//       &:hover {
+//         opacity: 1;
+//       }
+//     }
+//     @include _767 {
+//       width: resp(32, 360);
+//       height: resp(32, 360);
+//       top: resp(12, 360);
+//       right: resp(12, 360);
+//       opacity: 1;
+//     }
+//   }
+//   &__content {
+//     max-width: resp(700);
+//     display: flex;
+//     @include _767 {
+//       max-width: 100%;
+//     }
+//   }
+//   &__main {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: resp(16);
+//     padding: resp(150) resp(110);
+//     border-radius: resp(8);
+//     background-color: #EFEDF8;
+//     @include _767 {
+//       padding: resp(50, 360) resp(16, 360);
+//       border-radius: resp(8, 360);
+//       gap: resp(16, 360);
+//     }
+//   }
+//   &__form-title {
+//     font-size: resp(40);
+//     text-align: center;
+//     @include font(Proxima Nova, 400, sans-serif);
+//     line-height: 1.2em;
+//     @include _767 {
+//       font-size: resp(24, 360);
+//     }
+//   }
+//   &__form-text {
+//     font-size: resp(16);
+//     font-weight: 400;
+//     line-height: 1.2em;
+//     @include font(Proxima Nova, 400, sans-serif);
+//     color: #6C6C6C;
+//     text-align: center;
+//     @include _767 {
+//       margin-bottom: resp(24, 360);
+//       font-size: resp(16, 360);
+//     }
+//   }
+// }
+
+// .popup__close img,
+// .popup__close svg {
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 50%;
+//   height: 50%;
+// }
+
+// .fancybox-content {
+//   padding: 35px 10px 10px;
+//   & video {
+//     max-height: 70vh;
+//     max-width: 65vw;
+//     height: auto;
+//     width: 100%;
+//     object-fit: contain;
+//     object-position: center;
+//   }
+// }

@@ -7,52 +7,75 @@
   <!-- plagins css  -->
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/odometer.min.css">
   <link rel="stylesheet" href="css/intl-tel-input/css/intlTelInput.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- favicon  -->
-  <link rel="shortcut icon" href="img/favicon.svg">
-  <title>Двери - Проф | Контакты</title>
+  <link rel="shortcut icon" href="img/favicon.webp">
+  <title>Контакты - fastbuy365.by</title>
 </head>
 <body>
   <header class="header">
     <div class="header__top">
       <div class="container">
         <div class="header__top-desk">
-          <p class="header__address">
-            г. Минск ул. Маяковского, 24 | 9:00 до 21:00 без выходных
-          </p>
-          <div class="header__messangers-content messangers messangers--header">
-            <ul class="messangers__list">
-              <li class="messangers__item">
-                <a href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank">
-                  <img class="messangers__link-icon" src="img/viber.svg" alt="">
-                </a>
-              </li>
-              <li class="messangers__item">
-                <a href="" class="messangers__link" aria-label="Instagram ссылка" target="_blank">
-                  <img class="messangers__link-icon" src="img/telegram.svg" alt="">
-                </a>
-              </li>
-              <li class="messangers__item">
-                <a href="" class="messangers__link" aria-label="Почта ссылка" target="_blank">
-                  <img class="messangers__link-icon" src="img/whats.svg" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
+          <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+            <img class="logo__img" src="img/logo.webp" alt="Logo">
+          </a>
           <nav class="header__nav">
             <ul class="header-menu__list menu">
-              <li class="menu__item">
-                <a class="menu__link" href="">
-                  О компании
+              <li class="menu__item menu__item-catalog">
+                <a class="menu__link menu__catalog-btn catalog-btn btn" href="">
+                  <span class="catalog-btn__icon">
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                    <span class="catalog-btn__icon-el"></span>
+                  </span>
+                  <span class="catalog-btn__text">Каталог</span>
                 </a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">
-                  Возврат товара
+                  База знаний
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="menu__item dropdown">
+                <a class="menu__link" href="">
+                  О нас
+                </a>
+                <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                  <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      О компании
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Официальная информация
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">
+                  Где купить?
                 </a>
               </li>
               <li class="menu__item">
@@ -60,105 +83,112 @@
                   Контакты
                 </a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">
-                  Доставка и монтаж
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">
-                  Партнеры
-                </a>
-              </li>
             </ul>
           </nav>
-        </div>
-        <div class="header__top-mob">
-          <div class="header__address">
-            г. Минск ул. Маяковского, 24 | 9:00&nbsp;до&nbsp;21:00 без выходных
-          </div>
-          <div class="header__mob-wrap">
+          <div class="header__right-wrap">
+            <a href="" class="header__instagram-link" target="_blank" aria-label="Instagram">
+              <img src="img/icons/inst.svg" alt="">
+            </a>
+            <div class="header__search search-form-wrap">
+              <button type="button" class="header__search-open header__top-btn" aria-label="Открыть поиск">
+                <img src="img/icons/search.svg" alt="" class="header__search-open-icon">
+              </button>
+              <div class="header__search-wrap">
+                <input type="text" class="form-input" placeholder="Поиск..">
+                <button type="button" class="header__search-close-btn">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <select class="header__lang" name="lang">
+              <option value="BEL">
+                BEL
+              </option>
+              <option value="RU">RU</option>
+            </select>
             <button class="header__mob-btn" headerBtn_JS>
               <span class="header__mob-btn-line"></span>
             </button>
-            <div class="header__mob-content">
-              <div class="header__mob-top-wrap">
-                <div class="header__mob-title">
-                  Меню
+            <div class="popup region-popup fade" popupID="region">
+              <div class="popup__container">
+                <div class="popup__block region-popup__block">
+                  <div class="region-popup__content popup__content">
+                    <div class="region-popup__main popup__main">
+                      <div class="region-popup__title popup__form-title">
+                        Ваша страна <span>Беларусь?</span>
+                      </div>
+                      <div class="region-popup__btns">
+                        <button class="region-popup__btn btn" popupClose_JS>
+                          Да, верно
+                        </button>
+                        <button class="region-popup__btn-choose" popupOpen="lang-choose">
+                          Выбрать другую
+                        </button>
+                      </div>
+                    </div>
+                    <div class="region__close popup__close" popupClose_JS>
+                      <img src="img/icons/close-grey.svg" alt="" class="popup__close-icon">
+                    </div>
+                  </div>
                 </div>
-                <button class="header__mob-btn-close">
-                  <img src="img/close-icon.svg" alt="" class="header__mob-btn-close-icon">
-                </button>
-              </div>
-              <nav class="header__nav">
+              <div class="popup__blur" popupClose_JS></div>
+            </div>
+            </div>
+          </div>
+          <div class="header__mob-wrap">
+            <div class="header__top-desk header__top-desk-mobile">
+              <a href="/" class="header__logo logo" aria-label="Логотип Fastbuy365">
+                <img class="logo__img" src="img/logo.webp" alt="Logo">
+              </a>
+              <button class="header__lang-mob" data-lang="BEL" popupOpen="lang-choose">
+                BEL
+              </button>
+            </div>
+            <div class="header__mob-content">
+              <nav class="header__nav header__mob-nav">
                 <ul class="header-menu__list menu">
-                  <li class="menu__item dropdown">
+                  <li class="menu__item">
                     <a class="menu__link" href="">
-                      Каталог
+                      База знаний
                     </a>
-                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
-                      <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
-                      </svg>
-                    </button>
-                    <ul class="menu__submenu submenu">
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Двери для объектов
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Двери для помещений
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Двери из массива производства ПОКОШ
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Двери межкомнатные ПМЦ
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Двери по функционалу
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Межкомнатные двери из экошпона
-                        </a>
-                      </li>
-                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">
+                      Сотрудничество
+                    </a>
                   </li>
                   <li class="menu__item dropdown">
                     <a class="menu__link" href="">
-                      О компании
+                      О нас
                     </a>
                     <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
-                      <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
+                      <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </button>
                     <ul class="menu__submenu submenu">
                       <li class="submenu__item">
                         <a href="#" class="submenu__link">
-                          Сертификаты
+                          О компании
                         </a>
                       </li>
                       <li class="submenu__item">
                         <a href="#" class="submenu__link">
-                          Производство
+                          Новости
+                        </a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                          Официальная информация
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li class="menu__item">
                     <a class="menu__link" href="">
-                      Возврат товара
+                      Где купить?
                     </a>
                   </li>
                   <li class="menu__item">
@@ -166,162 +196,322 @@
                       Контакты
                     </a>
                   </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="">
-                      Доставка и монтаж
-                    </a>
-                  </li>
-                  <li class="menu__item dropdown">
-                    <a class="menu__link" href="">
-                      Партнеры
-                    </a>
-                    <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
-                      <svg class="menu__dropdown-btn-icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"/>
-                      </svg>
-                    </button>
-                    <ul class="menu__submenu submenu">
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Дизайнерам
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Архитекторам
-                        </a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="#" class="submenu__link">
-                          Застройщикам
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
                 </ul>
               </nav>
-              <div class="header__mob-messengers">
-                <ul class="messangers__list">
-                  <li class="messangers__item">
-                    <a href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank">
-                      <img class="messangers__link-icon" src="img/viber.svg" alt="">
+              <div class="header__mob-contacts-wrap contacts-wrap contacts-block">
+                <div class="contacts-block__wrap">
+                  <a href="tel:111111" class="contacts-block__link contacts-block__link_phone">
+                    <img src="img/icons/phone.svg" alt="" class="contacts-block__link-icon">
+                    <span class="contacts-block__link-text">+375 29 888 88 88</span>
+                  </a>
+                  <a href="mailto:maskotaby@mail.com" class="contacts-block__link contacts-block__link_email">
+                    <img src="img/icons/post.svg" alt="" class="contacts-block__link-icon">
+                    <span class="contacts-block__link-text">maskotaby@mail.com</span>
+                  </a>
+                </div>
+                <button class="contacts-block__btn btn btn-ghost">
+                  Связаться с нами
+                </button>
+                <ul class="contacts-block__soc-media soc-media">
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/vk.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
                     </a>
                   </li>
-                  <li class="messangers__item">
-                    <a href="" class="messangers__link" aria-label="Instagram ссылка" target="_blank">
-                      <img class="messangers__link-icon" src="img/telegram.svg" alt="">
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/tiktok.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
                     </a>
                   </li>
-                  <li class="messangers__item">
-                    <a href="" class="messangers__link" aria-label="Почта ссылка" target="_blank">
-                      <img class="messangers__link-icon" src="img/whats.svg" alt="">
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/youtube.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
+                    </a>
+                  </li>
+                  <li class="soc-media__item">
+                    <a href="" class="soc-media__link">
+                      <img src="img/icons/instagram.svg" alt="" class="soc-media__link-icon">
+                      <span class="soc-media__link-text">fastbuy_by</span>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="header__mob-worktime header__worktime">
-                <p class="header__worktime-title">
-                  Время работы:
-                </p>
-                <p class="header__worktime-content">
-                  Пн-пт с 9:00 до 21:00<br> Пт-Вс с 10:00 до 18:00<br>Приём заказов и заявок круглосуточно на почту и месенджеры
-                </p>
-              </div>
-              <button class="header__btn header__btn_mob btn animated" popupOpen="zamer">
-                Бесплатный замер
+            </div>
+          </div>
+          <div class="header__catalog-mob-wrap catalog-mob-menu">
+            <div class="header__top-desk header__top-desk-mobile">
+              <a href="" class="catalog-mob-menu__title-link title">
+                Каталог
+              </a>
+              <button class="catalog-mob-menu__close" headerCatalogCloseBtn_JS>
+                <img src="img/icons/close-grey.svg" alt="" class="catalog-mob-menu__close-icon">
               </button>
+            </div>
+            <div class="catalog-mob-menu__content">
+              <ul class="catalog-mob-menu__list">
+                <li class="catalog-mob-menu__item">
+                  <button class="catalog-mob-menu__btn" style="background-color: #C6EAFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для стирки
+                    </span>
+                    <img src="img/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </button>
+                  <div class="catalog-mob-menu__submenu catalog-mob-submenu">
+                    <div class="header__top-desk header__top-desk-mobile">
+                      <button class="catalog-mob-menu__back">
+                        <img src="img/icons/back.svg" alt="" class="catalog-mob-menu__back-icon">
+                      </button>
+                      <a href="" class="catalog-mob-menu__title-link title">
+                        Для стирки
+                      </a>
+                      <button class="catalog-mob-menu__close" headerCatalogCloseBtn_JS>
+                        <img src="img/icons/close-grey.svg" alt="" class="catalog-mob-menu__close-icon">
+                      </button>
+                    </div>
+                    <div class="catalog-mob-submenu__content">
+                      <ul class="header-menu__list menu catalog-mob-submenu__menu">
+                        <li class="menu__item dropdown">
+                          <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                            <span class="menu__dropdown-text">
+                              По типу средства
+                            </span>
+                            <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <ul class="menu__submenu submenu">
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Гели
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Капсулы
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Пятновыводители
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Кондиционеры
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item dropdown">
+                          <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
+                            <span class="menu__dropdown-text">
+                              По категории
+                            </span>
+                            <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L5.99919 5.58L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                          <ul class="menu__submenu submenu">
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Гели
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Капсулы
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Пятновыводители
+                              </a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="#" class="submenu__link">
+                                Кондиционеры
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #C7EAEA;">
+                    <span class="catalog-mob-menu__text">
+                      Для посуды
+                    </span>
+                    <img src="img/categories/posuda.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #FDF1C8;">
+                    <span class="catalog-mob-menu__text">
+                      Для обуви
+                    </span>
+                    <img src="img/categories/shoes.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #F2DEFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для детей
+                    </span>
+                    <img src="img/categories/kids.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #C0DAFF;">
+                    <span class="catalog-mob-menu__text">
+                      Для тела
+                    </span>
+                    <img src="img/categories/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+                <li class="catalog-mob-menu__item">
+                  <a href="" class="catalog-mob-menu__btn" style="background-color: #E0EED4;">
+                    <span class="catalog-mob-menu__text">
+                      Для уборки
+                    </span>
+                    <img src="img/categories/stirka.webp" alt="" class="catalog-mob-menu__btn-img">
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="header__middle">
-      <div class="header__middle-container container">
-        <div class="header__middle-wrap">
-          <a href="/" class="header__logo logo" aria-label="Логотип Двери-проф">
-            <img class="logo__img" src="img/logo.svg" alt="Logo">
-          </a>
-          <div class="header__middle-worktime header__worktime">
-            <p class="header__worktime-title">
-              Время работы:
-            </p>
-            <p class="header__worktime-content">
-              Пн-пт с 9:00 до 21:00<br> Пт-Вс с 10:00 до 18:00<br>Приём заказов и заявок круглосуточно на почту и месенджеры
-            </p>
-          </div>
-          <a href="tel:+375447709353" class="header__phone phone-link">
-            <img class="phone-link__icon" src="img/phone-icon.svg" alt="">
-            <span class="phone-link__text">+375 (44) 770-93-53</span>
-          </a>
-          <button class="header__btn btn animated" popupOpen="zamer">
-            Бесплатный замер
+    <div class="header__mob-btns-wrap">
+      <div class="container">
+        <div class="header__mob-btns">
+          <button class="menu__link menu__catalog-btn catalog-btn catalog-mob-btn btn" headerCatalogBtn_JS>
+            <span class="catalog-btn__icon">
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+              <span class="catalog-btn__icon-el"></span>
+            </span>
+            <span class="catalog-btn__text">Каталог</span>
           </button>
+          <div class="header__marketplace-links-wrap header__marketplace-links-wrap_mob">
+            <button class="header__marketplace-links-btn header__marketplace-links-btn_mob btn-dropdown btn">
+              Заказать
+            </button>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_by selected" data-lang="BEL">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Onliner.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Onliner</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_ru" data-lang="ru">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Ozon.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Ozon</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="header__bottom">
       <div class="container">
         <div class="header__bottom-wrap">
-          <div class="header__catalog">
-            <button class="header__catalog-btn">
-              <span class="header__catalog-btn-icon">
-                <img src="img/catalog-burger.svg" alt="" class="header__catalog-btn-icon-img">
-              </span>
-              <span class="header__catalog-btn-text">
-                Каталог
-              </span>
-            </button>
+          <div class="header__catalog-categories">
             <div class="header__catalog-nav-wrap">
-              <div class="header__catalog-btn-wrap">
-                <button class="header__catalog-btn-close">
-                  <img src="img/close-icon.svg" alt="" class="header__catalog-btn-close-icon">
-                </button>
-                <a href="" class="header__catalog-btn-link">
-                  Каталог
-                </a>
-              </div>
               <ul class="header__catalog-nav catalog-nav">
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
-                    Двери для объектов
+                    <img src="img/icons/stirka-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для стирки</span>
                   </a>
                 </li>
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
-                    Двери для помещений
+                    <img src="img/icons/posuda-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для посуды</span>
                   </a>
                 </li>
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
-                    Двери из массива производства ПОКОШ
+                    <img src="img/icons/clean-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для уборки</span>
                   </a>
                 </li>
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
-                    Двери межкомнатные ПМЦ
+                    <img src="img/icons/child-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для детей</span>
                   </a>
                 </li>
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
-                    Двери по функционалу
+                    <img src="img/icons/shoes-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для обуви</span>
                   </a>
                 </li>
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
-                    Межкомнатные двери из экошпона
+                    <img src="img/icons/body-icon.svg" alt="" class="catalog-nav__link-icon">
+                    <span class="catalog-nav__link-text">Для тела</span>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="header__catalog-search-wrap">
-            <div class="header__catalog-search-form-wrap">
-              <form action="#" class="header__catalog-search-form">
-                <label for="search" class="header__catalog-search-label">
-                  <input type="text" name="search" class="header__catalog-search-input" placeholder="Поиск по товарам">
-                </label>
-              </form>
-            </div>
+          <div class="header__marketplace-links-wrap">
+            <button class="header__marketplace-links-btn btn-dropdown btn animated">
+              Заказать
+            </button>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_by selected" data-lang="BEL">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Onliner.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Onliner</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__marketplace-links marketplace-links marketplace-links_ru" data-lang="ru">
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/Ozon.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Ozon</span>
+                </a>
+              </li>
+              <li class="marketplace-links__item">
+                <a href="" class="marketplace-links__link">
+                  <img src="img/WB.webp" alt="" class="marketplace-links__link-img">
+                  <span class="marketplace-links__link-text">Wildberries</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -341,281 +531,318 @@
         <h1 class="page-title title">
           Контакты
         </h1>
-        <ul class="section-contacts__shops">
-          <li class="section-contacts__shops-item">
-            <article class="section-contacts__shops-card contacts-shop-card">
-              <div class="contacts-shop-card__img-wrap">
-                <img src="" alt="" class="contacts-shop-card__img">
+        <div class="section-contacts__wrap">
+          <div class="section-contacts__main">
+            <div class="section-contacts__info-wrap">
+              <div class="section-contacts__main-contacts section-contacts__main-item">
+                <h3 class="section-contacts__main-item-title">
+                  Для связи с нами:
+                </h3>
+                <div class="section-contacts__main-contacts-links-wrap">
+                  <a href="tel:+375291654147" class="section-contacts__main-contacts-link">
+                    +375 29 165 41 47
+                  </a>
+                  <a href="mailto:info@maskota.by" class="section-contacts__main-contacts-link">
+                    info@maskota.by
+                  </a>
+                </div>
               </div>
-              <a href="" class="section-map__address-list-link contacts-shop-card__link">
-                г. Минск ул. Каменногорская, 3 Горка Дом (2-этаж)
-              </a>
-            </article>
-          </li>
-          <li class="section-contacts__shops-item">
-            <article class="section-contacts__shops-card contacts-shop-card">
-              <div class="contacts-shop-card__img-wrap">
-                <img src="" alt="" class="contacts-shop-card__img">
+              <div class="section-contacts__main-ur section-contacts__main-item">
+                <h3 class="section-contacts__main-item-title">
+                  Юридический адрес:
+                </h3>
+                <p class="section-contacts__main-item-text">
+                  222210, Минская обл., Смолевичский р-н,Китайско-Белорусский индустриальный парк «Великий камень», пр-т Минский, д. 32, пом. 101
+                </p>
               </div>
-              <a href="" class="section-map__address-list-link contacts-shop-card__link">
-                г. Минск ул. Маяковского 24, Магазин "Дверной рай"
-              </a>
-            </article>
-          </li>
-          <li class="section-contacts__shops-item">
-            <article class="section-contacts__shops-card contacts-shop-card">
-              <div class="contacts-shop-card__img-wrap">
-                <img src="" alt="" class="contacts-shop-card__img">
+            </div>
+            <div class="section-contacts__soc-media">
+              <div class="section-contacts__soc-media-title">
+                Мы в социальных сетях:
               </div>
-              <a href="" class="section-map__address-list-link contacts-shop-card__link">
-                г. Минск ул. Уручская 19-П2 (строй.рынок Уручье 2 этаж, Юркас)
-              </a>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section-feedback section">
-      <div class="container">
-        <div class="section-feedback__wrap">
-          <div class="section-feedback__ur-adress">
-            <h3 class="section-feedback__ur-adress-title">
-              Юридический адрес:
-            </h3>
-            <p class="section-feedback__ur-adress-text">
-              ООО «Двери–Проф»<br>
-              УНП 193779842<br>
-              220114, РБ, 220114 Г. Минск, ул. Макаёнка, д.12Е, помещение 282<br>
-              р/с : BY40ALFA30122F36850010270000 (BYN)<br>
-              в ЗАО<br>
-              «Альфа-банк»БИК ALFABY2X
+              <div class="section-contacts__soc-media-text">
+                <p>
+                  Подписывайтесь на нас в соцсетях и получайте еще больше полезной информации!
+                </p>
+              </div>
+              <ul class="section-contacts__soc-media-list">
+                <li class="section-contacts__soc-media-item">
+                  <a href="" class="soc-media__link">
+                    <img src="img/icons/tiktok.svg" alt="" class="soc-media__link-icon">
+                    <span class="soc-media__link-text">fastbuy_by</span>
+                  </a>
+                </li>
+                <li class="section-contacts__soc-media-item">
+                  <a href="" class="soc-media__link">
+                    <img src="img/icons/instagram.svg" alt="" class="soc-media__link-icon">
+                    <span class="soc-media__link-text">fastbuy_by</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-contacts__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfad58ad98ef264de9fcf7d0e60c5cd53f46feb5b1214fdf96c55dbc48d9c283&amp;source=constructor" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="section-contacts__soc-media section-contacts__soc-media_mob">
+          <div class="section-contacts__soc-media-title">
+            Мы в социальных сетях:
+          </div>
+          <div class="section-contacts__soc-media-text">
+            <p>
+              Подписывайтесь на нас в соцсетях и получайте еще больше полезной информации!
             </p>
           </div>
-          <div class="section-feedback__form-wrap">
-            <div class="section-feedback__form-title">
-              Обратная связь
-            </div>
-            <form action="#" method="post" class="section-feedback__form form" formValidate_JS>
-              <input type="hidden" name="action" value="request">
-              <input type="hidden" name="form" value="Обратная связь">
-              <div class="section-feedback__form-container form-container">
-                <div class="section-feedback__form-inputs-wrap">
-                  <div class="section-feedback__form-inputs">
-                    <div class="input-wrap">
-                      <label for="name" class="form-label">
-                        <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
-                      </label>
-                    </div>
-                    <div class="input-wrap">
-                      <label for="phone" class="form-label">
-                        <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Ваш номер телефона">
-                      </label>
-                    </div>
-                    <div class="input-wrap">
-                      <label for="email" class="form-label">
-                        <input type="text" name="email" class="form-input" required placeholder="Ваш e-mail">
-                      </label>
-                    </div>
+          <ul class="section-contacts__soc-media-list">
+            <li class="section-contacts__soc-media-item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/tiktok.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="section-contacts__soc-media-item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/instagram.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-faq-form section">
+      <div class="container">
+        <div class="section-faq-form__form-wrap">
+          <div class="section-faq-form__form-title">
+            Не нашли ответ на свой вопрос?
+          </div>
+          <p class="section-faq-form__form-desc">
+            Укажите Ваши контакты и мы ответим на все Ваши вопросы в личном письме
+          </p>
+          <form action="#" method="post" class="section-faq-form__form form" formValidate_JS>
+            <input type="hidden" name="action" value="request">
+            <input type="hidden" name="form" value="Обратная связь">
+            <div class="section-faq-form__form-container form-container">
+              <div class="section-faq-form__form-inputs-wrap">
+                <div class="section-faq-form__form-inputs">
+                  <div class="input-wrap">
+                    <label for="name" class="form-label">
+                      <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                    </label>
                   </div>
-                  <div class="input-wrap textarea">
-                    <label for="message" class="form-label">
-                      <textarea type="text" name="message" class="form-input form-textarea" placeholder="Сообщение"></textarea>
+                  <div class="input-wrap">
+                    <label for="email" class="form-label">
+                      <input type="text" name="email" class="form-input" required placeholder="Ваш e-mail">
                     </label>
                   </div>
                 </div>
-                <div class="section-feedback__form-btn-wrap">
-                  <p class="section-feedback__form-hint form-hint">
-                    *Отправляя форму, вы даёте согласие на обработку <a href="" class="agreement-link" target="_blank">персональных данных</a>.
-                  </p>
-                  <button class="section-feedback__form-btn form-btn animated btn">
-                    <span>Отправить</span>
-                  </button>
+                <div class="input-wrap textarea">
+                  <label for="message" class="form-label">
+                    <textarea type="text" name="message" class="form-input form-textarea" placeholder="Ваш вопрос"></textarea>
+                  </label>
                 </div>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-map">
-      <div class="section-map__wrap">
-        <div class="section-map__contacts">
-          <h2 class="section-map__title">
-            Контакты
-          </h2>
-          <div class="section-map__contacts-list">
-            <div class="section-map__contacts-item section-map__contacts-address">
-              <h3 class="section-map__contacts-title">
-                Адрес:
-              </h3>
-              <p class="section-map__contacts-text">
-                220114, РБ, 220114 Г. Минск, ул. Макаёнка, д.12Е, помещение 282
-              </p>
+              <div class="section-faq-form__form-btn-wrap">
+                <div class="form-checkbox">
+                  <div agreementcontrol_js="">
+                    <label for="agreement"></label>
+                    <input type="checkbox" name="agreement" agreementcontrolcheckbox_js="" >
+                  </div>
+                  <p>
+                    Согласие с <a class="agreement-link" href="" target="_blank">политикой конфиденциальности</a>
+                  </p>
+                </div>
+                <button class="section-faq-form__form-btn form-btn btn" agreementcontrolbtn_js="">
+                  <span>Задать вопрос</span>
+                </button>
+              </div>
             </div>
-            <div class="section-map__contacts-item section-map__contacts-phone">
-              <h3 class="section-map__contacts-title">
-                Телефон:
-              </h3>
-              <a href="tel:+375447709353" class="section-map__contacts-link section-map__contacts-link_phone">
-                +375 (44) 770-93-53
-              </a>
-            </div>
-            <div class="section-map__contacts-item section-map__contacts-phone">
-              <h3 class="section-map__contacts-title">
-                Почта:
-              </h3>
-              <a href="mailto:opt@dverprom.by" class="section-map__contacts-link section-map__contacts-link_email">
-                Opt@Dverprom.by
-              </a>
-            </div>
-          </div>
-          <div class="section-map__address-list-wrap">
-            <h3 class="section-map__address-list-title">
-              Адреса розничных салонов:
-            </h3>
-            <ul class="section-map__address-list">
-              <li class="section-map__address-list-item">
-                <a href="" class="section-map__address-list-link">
-                  г. Минск ул. Каменногорская, 3 Горка Дом (2-этаж)
-                </a>
-              </li>
-              <li class="section-map__address-list-item">
-                <a href="" class="section-map__address-list-link">
-                  г. Минск ул. Маяковского 24, Магазин "Дверной рай"
-                </a>
-              </li>
-              <li class="section-map__address-list-item">
-                <a href="" class="section-map__address-list-link">
-                  г. Минск ул. Уручская 19-П2 (строй.рынок Уручье 2 этаж, Юркас)
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-map__map contacts-map-js">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A849adc45dd910596740e3a70cfcaf68645830da11be0a1d16e36a91db8c46fad&amp;source=constructor" width="100%" height="583" frameborder="0"></iframe>
+          </form>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="footer__content-wrap">
-        <div class="footer__main-info">
-          <a href="/" class="footer__logo logo" aria-label="Логотип Radema">
-            <img class="logo__img" src="img/logo-white.svg" alt="Logo">
-          </a>
-          <div class="footer__about">
-           <p class="footer__about-text">
-            ООО «Двери–Проф» УНП 193779842
-           </p>
-          </div>
-          <ul class=" footer__messengers messangers__list">
-            <li class="messangers__item">
-              <a href="" class="messangers__link" aria-label="Telegram ссылка" target="_blank">
-                <img class="messangers__link-icon" src="img/viber.svg" alt="">
-              </a>
-            </li>
-            <li class="messangers__item">
-              <a href="" class="messangers__link" aria-label="Instagram ссылка" target="_blank">
-                <img class="messangers__link-icon" src="img/telegram.svg" alt="">
-              </a>
-            </li>
-            <li class="messangers__item">
-              <a href="" class="messangers__link" aria-label="Почта ссылка" target="_blank">
-                <img class="messangers__link-icon" src="img/whats.svg" alt="">
-              </a>
-            </li>
-          </ul>
+      <div class="footer__top">
+        <a href="/" class="footer__logo logo" aria-label="Логотип Radema">
+          <img class="logo__img" src="img/logo.webp" alt="Logo">
+        </a>
+        <div class="footer__about">
+          <p class="footer__about-text">
+            Применяй правильно<br>и узнавай о новинках первым
+          </p>
         </div>
-        <div class="footer__catalog-nav-wrap">
-          <a href="" class="footer__catalog-nav-title menu__link footer__nav-link">
-            Каталог
-          </a>
-          <nav class="footer-catalog-nav">
-            <ul class="footer-nav__list footer-catalog-nav__list menu">
-              <li class="footer-nav__item footer-catalog-nav__item">
-                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
-                  Двери для объектов
-                </a>
-              </li>
-              <li class="footer-nav__item footer-catalog-nav__item">
-                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
-                  Двери для помещений
-                </a>
-              </li>
-              <li class="footer-nav__item footer-catalog-nav__item">
-                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
-                  Двери из массива производства ПОКОШ
-                </a>
-              </li>
-              <li class="footer-nav__item footer-catalog-nav__item">
-                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
-                  Двери межкомнатные ПМЦ
-                </a>
-              </li>
-              <li class="footer-nav__item footer-catalog-nav__item">
-                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
-                  Двери по функционалу
-                </a>
-              </li>
-              <li class="footer-nav__item footer-catalog-nav__item">
-                <a class="footer-nav__link footer__catalog-nav-link  menu__link" href="">
-                  Межкомнатные двери из экошпона
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer__subscribe-wrap">
+          <form class="footer__subscribe-form subscribe-form mail-form" novalidate="novalidate">
+            <input type="hidden" name="action" value="request">
+            <input type="hidden" name="form" value="Подписаться на рассылку">
+            <div class="form-container">
+              <label for="email" class="form-label">
+                <input type="email" name="email" class="form-input" placeholder="Ваш E-mail" required="">
+              </label>
+              <button class="form-btn btn" agreementcontrolbtn_js="">
+                  <span>Подписаться</span>
+              </button>
+              <div class="form-checkbox">
+                <div agreementcontrol_js="">
+                  <label for="agreement"></label>
+                  <input type="checkbox" name="agreement" agreementcontrolcheckbox_js="" >
+                </div>
+                <p>
+                  Согласие с <a class="agreement-link" href="" target="_blank">политикой конфиденциальности</a>
+                </p>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
+      <div class="footer__bottom">
         <div class="footer__nav-wrap">
           <nav class="footer-nav">
             <ul class="footer-nav__list menu">
               <li class="footer-nav__item">
                 <a class="footer-nav__link menu__link" href="">
-                  О компании
+                  Каталог
                 </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для стирки
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для посуды
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для уборки
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для тела
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Для обуви
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="footer-nav__item">
                 <a class="footer-nav__link menu__link" href="">
-                  Возврат товара
+                  База знаний
                 </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Стирка
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Посуда
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Уборка
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Обувь
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="footer-nav__item">
                 <a class="footer-nav__link menu__link" href="">
-                  Контакты
+                  О нас
                 </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="footer-nav__item">
                 <a class="footer-nav__link menu__link" href="">
-                  Доставка и монтаж
+                  Информация
                 </a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__link menu__link" href="">
-                  Партнеры
-                </a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Частые вопросы
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">
+                      Где купить?
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="footer__dop-content">
-          <a href="tel:+375447709353" class="footer__phone phone-link">
-            <img class="phone-link__icon" src="img/phone-icon.svg" alt="">
-            <span class="phone-link__text">+375 (44) 770-93-53</span>
-          </a>
-          <button class="footer__btn btn animated" popupOpen="zamer">
-            Бесплатный замер
-          </button>
-          <div class="footer__created">
-            <a class="footer__created-link" href="https://target-group.by/" target="_blank">
-              <img src="img/target.svg" alt="Target group icon" class="footer__bottom-created-img">
+        <div class="footer__contacts-wrap contacts-wrap contacts-block">
+          <div class="contacts-block__wrap">
+            <a href="tel:+375296121281" class="contacts-block__link contacts-block__link_phone">
+              <img src="img/icons/phone-white.svg" alt="" class="contacts-block__link-icon">
+              <span class="contacts-block__link-text">+375 29 612 1281</span>
+            </a>
+            <a href="mailto:info@maskota.by" class="contacts-block__link contacts-block__link_email">
+              <img src="img/icons/email-white.svg" alt="" class="contacts-block__link-icon">
+              <span class="contacts-block__link-text">info@maskota.by</span>
             </a>
           </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="footer__bottom-copyrights">
-            © 2024 Все права защищены
+          <button class="contacts-block__btn btn btn-ghost">
+            Связаться с нами
+          </button>
+          <ul class="contacts-block__soc-media soc-media">
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/youtube-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/insta-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/vk-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+            <li class="soc-media__item">
+              <a href="" class="soc-media__link">
+                <img src="img/icons/tiktok-white.svg" alt="" class="soc-media__link-icon">
+                <span class="soc-media__link-text">fastbuy_by</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -629,61 +856,6 @@
       <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"></path>
     </svg>
   </button>
-
-
-<div class="popup zamer-popup fade" popupID="zamer">
-    <div class="popup__container">
-      <div class="popup__block zamer-popup__block">
-        <div class="zamer-popup__content popup__content">
-          <div class="zamer-popup__img-wrap popup__img-wrap">
-            <img src="img/popup-img.webp" alt="" class="zamer-popup__img popup__img">
-          </div>
-          <div class="zamer-popup__main popup__main">
-            <div class="zamer-popup__form-title popup__form-title">
-              Заявка на замер
-            </div>
-            <p class="zamer-popup__form-text popup__form-text">
-              Укажите ваше имя и контактный телефон. В&nbsp;самое&nbsp;ближайшее время наш оператор Вам&nbsp;перезвонит.
-            </p>
-            <form action="#" method="POST" class="zamer-popup__form popup-form" formValidate_JS>
-              <input type="hidden" name="action" value="request">
-              <input type="hidden" name="form" value="Заявка на замер">
-              <div class="zamer-popup__form-container form-container">
-                <div class="input-wrap  required">
-                  <label for="name" class="form-label">
-                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
-                  </label>
-                </div>
-                <div class="input-wrap required">
-                  <label for="phone" class="form-label">
-                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
-                  </label>
-                </div>
-                <button class="form-btn animated btn" agreementControlBtn_JS>
-                  <span>Вызвать замерщика</span>
-                </button>
-                <div class="zamer-popup__form-checkbox popup-form__checkbox form-checkbox">
-                  <div agreementControl_JS class="checked">
-                      <label for="agreement"></label>
-                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
-                  </div>
-                  <p>
-                    Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
-                  </p>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="zamer-popup__close popup__close" popupClose_JS>
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-    <div class="popup__blur" popupClose_JS></div>
-  </div>
-  </div>
 
   <div class="popup zamer-popup fade" popupID="cooperation">
     <div class="popup__container">
@@ -739,19 +911,53 @@
   </div>
   </div>
 
+  <div class="popup lang-choose-popup fade" popupID="lang-choose">
+    <div class="popup__container">
+      <div class="popup__block lang-choose-popup__block">
+        <div class="lang-choose-popup__content popup__content">
+          <div class="lang-choose-popup__main popup__main">
+            <div class="lang-choose-popup__title popup__form-title">
+              Выберите страну
+            </div>
+            <div class="lang-choose-popup__text popup__form-text">
+              Позже Вы сможете изменить свой выбор в меню
+            </div>
+            <div class="lang-choose__radio-buttons">
+              <label class="lang-choose__radio-btn-label">
+                <input type="radio" name="lang-choose" value="BEL" checked>
+                <div class="lang-choose__radio-btn">
+                  <img src="img/by.svg" alt="" class="lang-choose__radio-icon">
+                  <span class="lang-choose__radio-text">Беларусь</span>
+                </div>
+              </label>
+              <label class="lang-choose__radio-btn-label">
+                <input type="radio" name="lang-choose" value="RU">
+                <div class="lang-choose__radio-btn">
+                  <img src="img/rus.svg" alt="" class="lang-choose__radio-icon">
+                  <span class="lang-choose__radio-text">Россия</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="lang-choose__close popup__close" popupClose_JS>
+            <img src="img/icons/close-grey.svg" alt="" class="popup__close-icon">
+          </div>
+        </div>
+      </div>
+    <div class="popup__blur" popupClose_JS></div>
+  </div>
+  </div>
+
   <div class="popup thanks-popup fade" popupID="thanks-popup">
     <div class="popup__container">
       <div class="popup__block thanks-popup__block">
         <div class="thanks-popup__content popup__content">
-          <div class="thanks-popup__img-wrap popup__img-wrap">
-            <img src="img/popup-img.webp" alt="" class="thanks-popup__img popup__img">
-          </div>
           <div class="thanks-popup__main popup__main">
             <div class="thanks-popup__title popup__form-title">
-              СПАСИБО ЗА ЗАКАЗ!
+              Спасибо, ваш вопрос отправлен!
             </div>
             <div class="thanks-popup__text popup__form-text">
-              Наши специалисты свяжутся с Вами в ближайшее время
+              Вернемся к вам с ответом! Возможно, вы также найдете полезную информацию в разделе <a href="/faq.html">Частые вопросы.</a>
             </div>
           </div>
           <div class="zamer-popup__close popup__close" popupClose_JS>
@@ -768,58 +974,13 @@
 
   <script src="js/polyfill.min.js"></script>
   <script src="js/lazyload.min.js"></script>
-  <script src="js/odometer.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/intl-tel-input/js/intlTelInputWithUtils.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/calculator.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    $(document).ready(function() {
-      var hasAnimated = false;
-      // Функция для проверки частичной видимости элемента в области просмотра
-      function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-          rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.bottom > 0 &&
-          rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
-          rect.right > 0
-        );
-      }
-      function checkAndAnimateNumbers() {
-        var $numbersList = $('.number-js');
-          if($numbersList[0]) {
-            var targetValue = $numbersList.data('number');
-          var initialVal = targetValue.toString().split('').map(e => 0).join('');
-          if (!hasAnimated && isElementInViewport($('.section-hero__adv')[0])) {
-            od = new Odometer({
-              el: $numbersList[0],
-              value: initialVal,
-              duration: 2300,
-              format: '',
-            });
-            od.update(targetValue);
-            hasAnimated = true;
-            // Отменяем дальнейшие проверки после выполнения анимации
-            $(window).off('scroll', checkAndAnimateNumbers);
-          }
-        }
-      };
-      // Проверка при загрузке страницы
-      checkAndAnimateNumbers();
-        // Проверка при прокрутке страницы
-      $(window).on('scroll', checkAndAnimateNumbers);
-    });
-  </script>
-  <script>
-		// $('[phoneMask_JS]').mask('+375(99)999-99-99');
-    // $('[phoneMask_JS]').on('focus', function() {
-    //   $(this).attr('placeholder', '+7(___)___-__-__');
-    // });
-    // $('[phoneMask_JS]').on('blur', function() {
-    //   $(this).attr('placeholder', 'Номер телефона');
-    // });
     $('[phoneMask_JS]').each(function() {
       var input = $(this)[0];
       var iti = window.intlTelInput(input, {
@@ -876,3 +1037,5 @@
   </script>
 </body>
 </html>
+
+

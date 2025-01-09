@@ -15,22 +15,22 @@
   &-icon  {
     display: block;
     position: relative;
-    height: resp-size(90);
-    width: resp-size(90);
+    height: resp(90);
+    width: resp(90);
     border-radius: 50%;
     @include _767 {
-      height: resp-size(50, 360);
-      width: resp-size(50, 360);
+      height: resp(50, 360);
+      width: resp(50, 360);
     }
     &::before, &::after {
       content: '';
       border: 2px solid $primary;
       border-radius: 50%;
-      height: resp-size(90);
-      width: resp-size(90);
+      height: resp(90);
+      width: resp(90);
       @include _767 {
-        height: resp-size(50, 360);
-        width: resp-size(50, 360);
+        height: resp(50, 360);
+        width: resp(50, 360);
       }
       position: absolute;
       left: 0px;

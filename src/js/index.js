@@ -1688,6 +1688,7 @@ if (savedLanguage) {
     $(this).removeClass('selected');
   });
   $(`.header__marketplace-links[data-lang="${savedLanguage.toLowerCase()}"]`).addClass('selected');
+  $(`.header__marketplace-links[data-lang="${savedLanguage}"]`).addClass('selected');
 } else {
   popupOpen('region');
   $('.region-popup__btn').on('click', function() {

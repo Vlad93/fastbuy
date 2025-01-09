@@ -1,52 +1,150 @@
 .section-contacts {
-  &__shops {
-    display: flex;
-    gap: resp(87);
-    &-item {
-      flex: 1;
-    }
+  .page-title {
+    margin-bottom: resp(32);
     @include _767 {
+      margin-top: 0;
+    }
+  }
+  &__wrap {
+    display: flex;
+    gap: resp(20);
+    @include _767 {
+      margin-bottom: resp(24, 360);
       flex-direction: column;
       align-items: flex-start;
+      gap: resp(20, 360);
+    }
+  }
+  &__main {
+    padding-top: resp(16);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(50);
+    @include _767 {
+      padding-top: 0;
       width: 100%;
-      gap: resp(15, 360);
+      gap: resp(16, 360);
     }
-  }
-}
-
-.contacts-shop-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: resp(26);
-  &__img-wrap {
-    width: 100%;
-    height: resp(233);
-    background-color: #D9D9D9;
-    @include _767 {
-      height: auto;
-      min-height: resp(176, 360);
-    }
-  }
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  &__link {
-    gap: resp(17);
-    @include _767 {
-      gap: resp(12, 360);
-    }
-    &::before {
-      min-width: resp(24);
-      height: resp(24);
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: resp(16);
       @include _767 {
-        min-width: resp(24, 360);
-        width: resp(24, 360);
-        height: resp(24, 360);
+        gap: resp(16, 360);
       }
+      &-title {
+        font-size: resp(16);
+        @include font(Proxima Nova, 400, sans-serif);
+        line-height: 1.2em;
+        color: #6c6c6c;
+        @include _767 {
+          font-size: resp(16, 360);
+        }
+      }
+      &-text {
+        font-size: resp(16);
+        line-height: 1.3em;
+        @include _767 {
+          font-size: resp(16, 360);
+        }
+      }
+    }
+    &-contacts-links-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(12);
+      @include _767 {
+        gap: resp(12, 360);
+      }
+    }
+    &-contacts-link {
+      font-size: resp(24);
+      line-height: 1.2em;
+      transition: color .3s ease;
+      @include interactive {
+        &:hover {
+          color: $secondary;
+        }
+      }
+      @include _767 {
+        font-size: resp(24, 360);
+      }
+    }
+  }
+  &__soc-media {
+    @include _767 {
+      display: none;
+    }
+    &_mob {
+      display: none;
+      @include _767 {
+        padding: resp(24, 360);
+        display: flex;
+        border-radius: resp(8, 360);
+        gap: resp(8, 360);
+      }
+    }
+    padding: resp(36) resp(85) resp(36) resp(36);
+    border-radius: resp(8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(8);
+    background-color: #EFEDF8;
+    &-title {
+      font-size: resp(24);
+      line-height: 1.2em;
+      @include font(Proxima Nova, 400, sans-serif);
+      @include _767 {
+        font-size: resp(24, 360);
+      }
+    }
+    &-text {
+      line-height: 1.2em;
+      font-size: resp(16);
+      color: #6c6c6c;
+      @include _767 {
+        font-size: resp(16, 360);
+      }
+    }
+    &-list {
+      margin-top: resp(16);
+      display: flex;
+      align-items: center;
+      gap: resp(32);
+      @include _767 {
+        margin-top: resp(16, 360);
+        gap: resp(32, 360);
+      }
+    }
+  }
+  &__map {
+    height: auto;
+    min-height: resp(400);
+    border-radius: resp(8);
+    overflow: hidden;
+    min-width: 57%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    @include _767 {
+      border-radius: resp(8, 360);
+      width: 100%;
+      height: resp(224, 360);
+    }
+  }
+  &__info-wrap {
+    max-width: resp(390);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(32);
+    @include _767 {
+      max-width: 100%;
+      gap: resp(32, 360);
     }
   }
 }

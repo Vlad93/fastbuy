@@ -50,6 +50,10 @@
     border-radius: resp(8);
     background: $secondary;
     transition: opacity .3s ease, visibility .3s ease, color .3s ease, background-color .3s ease;
+    svg {
+      width: 40%;
+      height: auto;
+    }
     @include interactive {
       &:hover .to-top__icon {
         transform: rotate(180deg);

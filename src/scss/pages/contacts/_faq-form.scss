@@ -1,0 +1,114 @@
+.section-faq-form {
+  &__form-wrap {
+    margin: 0 auto;
+    max-width: resp(692);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: resp(16);
+    @include _767 {
+      gap: resp(8, 360);
+      max-width: 100%;
+    }
+  }
+  &__form {
+    &-title {
+      font-size: resp(40);
+      line-height: 1.2em;
+      text-align: center;
+      color: #000;
+      @include _767 {
+        font-size: resp(24, 360);
+      }
+    }
+    &-desc {
+      margin-bottom: resp(20);
+      text-align: center;
+      max-width: resp(396);
+      line-height: 1.3em;
+      color: #6C6C6C;
+      @include _767 {
+        margin-bottom: resp(18, 360);
+        max-width: 100%;
+        font-size: resp(16, 360);
+      }
+    }
+    &-container {
+      margin: 0;
+      gap: resp(30);
+      @include _767 {
+        gap: resp(20, 360);
+      }
+    }
+    &-inputs-wrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: resp(16);
+      @include _767 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: resp(8, 360);
+      }
+    }
+    &-inputs {
+      min-width: resp(272);
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: resp(16);
+      @include _767 {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: resp(8, 360);
+      }
+    }
+    & .form-input, & .form-textarea {
+      padding: resp(13) resp(24);
+      font-weight: 400;
+      font-size: resp(16);
+      line-height: 1.2em;
+      color: #000;
+      border: none;
+      border-radius: resp(8);
+      border: 1px solid #ECECEC;
+      background-color: #fff;
+      transition: border-color .3s ease;
+      &:focus {
+        border-color: $secondary;
+      }
+      @include _767 {
+        border-radius: resp(8, 360);
+        padding: resp(15, 360) resp(12, 360);
+        font-size: resp(14, 360);
+      }
+      &::placeholder {
+        color: #6C6C6C;
+      }
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+    & .form-textarea {
+      height: 100%;
+    }
+    &-btn {
+      max-width: 100%;
+    }
+    .form-checkbox {
+      p, a {
+        color: #6C6C6C;
+      }
+    }
+    &-btn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: resp(24);
+      @include _767 {
+        gap: resp(24, 360);
+      }
+    }
+  }
+}

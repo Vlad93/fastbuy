@@ -1,102 +1,152 @@
-.section-main__video-wrap {
-  width: 100%;
-  height: auto;
-}
-.section-main__video {
-  width: 100%;
-  min-height: resp(600);
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  @include _767 {
-    min-height: resp(186, 360);
+.section-about-page {
+  .page-title {
+    margin-bottom: resp(32);
+    @include _767 {
+      margin-bottom: 0;
+    }
   }
-}
-.section-goal {
-  position: relative;
-  padding-top: resp(60);
-  @include _767 {
-    padding-top: 0;
+  &__text-content {
+    width: 100%;
   }
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: resp(128);
-    top: 0;
-    width: resp(350);
-    height: 100%;
-    object-fit: contain;
-    background: url('../img/goal.webp') no-repeat left top / 100% auto;
+  &__text-top {
+    padding-top: resp(20);
+    max-width: resp(640);
+    @include _767 {
+      padding-top: 0;
+      max-width: 100%;
+    }
+    &.editor {
+      line-height: 1.3em;
+      p:not(:last-child) {
+        margin-bottom: resp(24);
+        @include _767 {
+          margin-bottom: resp(16, 360);
+        }
+      }
+    }
+  }
+  &__main {
+    margin-bottom: resp(50);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    @include _767 {
+      margin-bottom: resp(30, 360);
+      gap: resp(20, 360);
+      flex-direction: column;
+    }
+    &-imgs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: resp(20);
+      min-width: resp(387);
+      width: resp(387);
+      @include _767 {
+        align-items: flex-start;
+        width: 100%;
+        gap: resp(4, 360);
+      }
+      .section-about__video-wrap {
+        width: 100%;
+        height: auto;
+        @include _767 {
+          display: block;
+          width: resp(169, 360);
+          height: resp(112, 360);
+        }
+        .section-about__video-btn {
+          transform: translate(-50%, 45%);
+          @include _767 {
+            left: 100%;
+            transform: translate(resp(18, 360), 35%);
+          }
+        }
+      }
+    }
+    &-img-top-wrap {
+      height: 100%;
+      border-radius: resp(8);
+      overflow: hidden;
+      @include _767 {
+        border-radius: resp(8, 360);
+      }
+      img {
+        @include _767 {
+          height: 100%;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+    }
+    &-img-bottom-wrap {
+      margin-right: resp(20);
+      width: resp(206);
+      height: auto;
+      border-radius: resp(8);
+      overflow: hidden;
+      @include _767 {
+        margin: 0 auto;
+        width: resp(168, 360);
+        border-radius: resp(8, 360);
+      }
+    }
+  }
+  &__text-accent {
+    margin-top: resp(60);
+    width: 100%;
+    line-height: 1.3em;
+    padding: resp(36);
+    border-radius: resp(8);
+    background-color: #EFEDF8;
     @include _767 {
       display: none;
+      margin-top: resp(30, 360);
+      width: 100%;
+      line-height: 1.3em;
+      font-size: resp(16, 360);
+      padding: resp(24, 360);
+      border-radius: resp(8, 360);
+    }
+    &_mob {
+      display: none;
+      @include _767 {
+        display: block;
+      }
     }
   }
-  &__title {
-    margin-left: auto;
-    max-width: 70%;
-    @include _767 {
-      max-width: 100%;
-    }
-  }
-  &__content {
-    margin-left: auto;
+  &__dop {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 70%;
+    gap: resp(60);
     @include _767 {
-      max-width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(30, 360);
+    }
+    &-img-wrap {
+      min-width: resp(391);
+      width: resp(391);
+      border-radius: resp(8);
+      overflow: hidden;
+      @include _767 {
+        width: 100%;
+        border-radius: resp(8, 360);
+      }
+    }
+    &-content {
+      max-width: resp(560);
+      padding-top: resp(20);
+      @include _767 {
+        padding-top: 0;
+        max-width: 100%;
+      }
+      p:not(:last-child) {
+        margin-bottom: resp(24);
+        @include _767 {
+          margin-bottom: resp(20, 360);
+        }
+      }
     }
   }
-}
 
-.section-advantages {
-  &__billets {
-    display: flex;
-    flex-wrap: wrap;
-    gap: resp(40);
-    @include _767 {
-      gap: resp(15, 360);
-    }
-  }
-  &__billets-item {
-    flex: 1 1 calc(50% - resp(20));
-    @include _767 {
-      flex: 1 1 100%;
-    }
-  }
-  &__card {
-    height: 100%;
-    padding: resp(30);
-    border-radius: resp(20);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: resp(20);
-    background-color: #F4F3F3;
-    @include _767 {
-      padding: resp(10, 360) resp(14, 360);
-      gap: resp(10, 360);
-    }
-    &-title {
-      font-weight: 600;
-      font-size: resp(24);
-      line-height: 1.2em;
-      letter-spacing: 0.05em;
-      color: 600;
-      @include _767 {
-        font-size: resp(16, 360);
-      }
-    }
-    &-text {
-      font-size: resp(20);
-      line-height: 1.25em;
-      letter-spacing: 0.05em;
-      @include _767 {
-        font-size: resp(14, 360);
-      }
-    }
-  }
 }
