@@ -91,7 +91,7 @@
   &__short-desc {
     line-height: 1.2em;
     @include _767 {
-      order: 3;
+      // order: 3;
       font-size: resp(16, 360);
     }
   }

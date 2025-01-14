@@ -1,4 +1,14 @@
 .section-catalog {
+  &__categories-swiper-wrap {
+    max-width: 91.2%;
+    margin: resp(32) 0 resp(40) auto;
+    @include _767 {
+      margin: 0;
+      margin-left: auto;
+      max-width: calc(100% - resp(16, 360));
+      margin-bottom: resp(44, 360);
+    }
+  }
   &__categories-cards {
     width: 100%;
     padding: resp(32) 0 resp(40);

@@ -1,9 +1,10 @@
 // How to Add Colors to JavaScript Console Outputs (Examples)  https://www.codingem.com/javascript-console-colors/
 
 var AdvicesApiData = '';
+let BtnСalculator = document.querySelector('.btn-calc');
 if(BtnСalculator) {
   GetAllAdviceByApi();
-}
+
 function GetAllAdviceByApi() {
     const apiUrl = 'https://fastbuy365.by/wp-json/wp/v2/advice?_fields=id,meta&per_page=100';
     fetch(apiUrl).then(response => response.json()).then(data => {
@@ -48,7 +49,6 @@ function findAdvice(pollution, surface) {
 
 let SelTypePollution = document.getElementById('typePollution');
 let SelTypeSurface = document.getElementById('typeSurface');
-let BtnСalculator = document.querySelector('.btn-calc');
 let tagAdvice = document.querySelector('.section-calculator__content-result');
 let tagAdviceImage = document.getElementById('calculator-img');
 
@@ -121,5 +121,4 @@ if(BtnAdviceReadMode) {
 if(BtnAdviceHide) {
   BtnAdviceHide.addEventListener('click', BtnAdviceHideOnClick);
 }
-
-
+}

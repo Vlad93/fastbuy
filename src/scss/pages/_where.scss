@@ -1,0 +1,297 @@
+.section-where {
+  .page-title {
+    margin-bottom: resp(32);
+    @include _767 {
+      margin-bottom: resp(16, 360);
+    }
+  }
+  &__banner {
+    position: relative;
+    min-height: resp(425);
+    padding: resp(56) resp(102);
+    border-radius: resp(8);
+    overflow: hidden;
+    @include _767 {
+      min-height: resp(512, 360);
+      padding: resp(44, 360) resp(24, 360);
+      border-radius: resp(8);
+    }
+    &-text {
+      max-width: 70%;
+      margin-left: auto;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.2em;
+      @include font(Proxima Nova, 400, sans-serif);
+      font-size: resp(32);
+      color: $primary;
+      @include _767 {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        gap: resp(16, 360);
+        font-size: resp(20, 360);
+      }
+    }
+    &-img-wrap {
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-position: left bottom;
+      object-fit: cover;
+    }
+  }
+}
+.section-where-online {
+  &__wrap {
+    padding: 0 resp(100);
+    display: flex;
+    justify-content: space-between;
+    gap: resp(20);
+    @include _767 {
+      padding: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(24, 360);
+    }
+  }
+  &__marketplaces-wrap {
+    @include _767 {
+      width: 100%;
+    }
+  }
+  &__marketplaces-list {
+    width: resp(590);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: resp(20);
+    @include _767 {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: resp(12, 360);
+    }
+  }
+  &__marketplace-btn {
+    width: 100%;
+    transition: opacity .3s ease, transform .3s ease;
+    @include interactive {
+      &:hover {
+        transform: scale(1.015);
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.section-where-offline {
+  .section-title-wrap {
+    justify-content: center;
+  }
+  &__filters-wrap {
+    margin-bottom: resp(20);
+    display: flex;
+    gap: resp(20);
+    .nice-select {
+      border: 1.5px solid #EEEFF1;
+      transition: border-color .3s ease;
+      &.open {
+        border-color: #cdbbfa;
+      }
+    }
+    @include _767 {
+      margin-bottom: resp(24, 360);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(8, 360);
+    }
+  }
+  &__filters-btn {
+    @include _767 {
+      width: 100%;
+      margin-top: resp(16, 360);
+    }
+  }
+  .section-where-offline-tabs__slide {
+    width: auto;
+  }
+  .section-where-offline-tabs__btn {
+    display: flex;
+    align-items: center;
+    gap: resp(4);
+    line-height: 1.2em;
+    color: $primary;
+    background-color: #E6E1F8;
+    transition: background-color .3s ease, color .3s ease;
+    @include interactive {
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+    &.active {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+  &__map-wrap {
+    margin-bottom: resp(64);
+    border-radius: resp(8);
+    overflow: hidden;
+    height: resp(560);
+    @include _767 {
+      margin-bottom: resp(44, 360);
+      height: resp(224, 360);
+      border-radius: resp(8, 360);
+    }
+  }
+  &__tabs {
+    margin-bottom: resp(20);
+    @include _767 {
+      margin-bottom: resp(16, 360);
+    }
+  }
+  .where-offline-tabs {
+    &__item {
+      padding-right: resp(8);
+      max-height: resp(575);
+      overflow-y: auto;
+      @include _767 {
+        max-height: resp(872, 360);
+      }
+       /* Стили для вебkit-браузеров */
+      &::-webkit-scrollbar {
+        width: resp(14); /* Ширина скроллбара */
+        background-color: #F1F1F1;
+        border-radius: resp(100);
+        @include _767 {
+          width: resp(12, 360);
+          border-radius: resp(80, 360);
+        } /* Цвет фона скроллбара */
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #C9C9CA; /* Цвет ползунка */
+        border-radius: resp(100);
+        @include _767 {
+          border-radius: resp(80, 360);
+        } /* /* Закругление углов ползунка */
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #C9C9CA; /* Цвет ползунка при наведении */
+      }
+      // /* Стили для Firefox */
+      // scrollbar-width: thin; /* Тонкий скроллбар */
+      // scrollbar-color: #C9C9CA #F1F1F1; /* Цвет ползунка и фона */
+      &-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: resp(8);
+        @include _767 {
+          gap: resp(8, 360);
+        }
+      }
+    }
+  }
+  .where-offline-card {
+    padding: resp(24);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: resp(16);
+    background-color: #fff;
+    border-radius: resp(8);
+    border: 1.5px solid #EEEFF1;
+    @include _767 {
+      padding: resp(24, 360);
+      gap: resp(16, 360);
+      border-radius: resp(8, 360);
+    }
+    &__wrap {
+      max-width: 80%;
+      flex-wrap: wrap;
+      display: flex;
+      gap: resp(20);
+      line-height: 1.2em;
+      @include _767 {
+        max-width: 100%;
+        gap: resp(4);
+      }
+    }
+    &__name {
+      font-weight: 600;
+      line-height: 1.2em;
+      @include _767 {
+        font-size: resp(16, 360);
+      }
+    }
+    &__address {
+      line-height: 1.2em;
+      @include _767 {
+        font-size: resp(16, 360);
+      }
+    }
+    &__worktime, &__phone {
+      display: flex;
+      align-items: center;
+      line-height: 1.2em;
+      gap: resp(8);
+      @include _767 {
+        gap: resp(8, 360);
+        font-size: resp(16, 360);
+      }
+    }
+    &__phone {
+      margin-top: resp(-8);
+      transition: color .3s ease;
+      @include _767 {
+        margin-top: resp(-8, 360);
+      }
+      @include interactive {
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+    &__icon {
+      width: resp(20);
+      height: resp(20);
+      object-position: center;
+      object-fit: contain;
+      @include _767 {
+        width: resp(20, 360);
+        height: resp(20, 360);
+      }
+    }
+    &__map-link {
+      line-height: 1.2em;
+      border: none;
+      text-decoration: underline;
+      text-underline-offset: resp(4);
+      transition: color .3s ease;
+      @include _767 {
+        font-size: resp(16, 360);
+        text-underline-offset: resp(4, 360);
+      }
+      .where-offline-card__icon {
+        transition: transform .3s ease;
+      }
+      @include interactive {
+        &:hover {
+          color: $secondary;
+          .where-offline-card__icon {
+            transform: scale(1.02);
+          }
+        }
+      }
+    }
+  }
+}

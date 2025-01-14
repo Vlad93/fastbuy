@@ -107,7 +107,7 @@
     object-fit: contain;
     object-position: center bottom;
     @include _767 {
-      object-fit: cover;
+      // object-fit: cover;
     }
   }
 }
