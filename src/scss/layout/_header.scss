@@ -399,7 +399,7 @@
       display: block;
       width: resp(10);
       height: resp(10);
-      background: url('../img/icons/dropdown-blue.svg') no-repeat center / auto 100%;
+      background: url('../img/icons/dropdown-blue.svg') no-repeat center / 100% auto;
       transition: transform .3s ease;
     }
     @include interactive {

@@ -1026,38 +1026,33 @@ $(document).ready(function () {
       }
     });
   });
-  $('[galleryGridSwiper_JS]').each(function () {
+  $('[sertificatesSwiper_JS]').each(function () {
     var swiper = new Swiper($(this)[0], {
-      speed: 300,
-      slidesPerView: 1,
-      spaceBetween: 10,
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
+      speed: 700,
+      slidesPerView: 1.6,
+      spaceBetween: 16,
+      scrollbar: {
+        enabled: true,
+        el: ".swiper-scrollbar",
+        draggable: true,
+        hide: false,
       },
-      navigation: {
-        nextEl: '.swiper-navigation__btn-next',
-        prevEl: '.swiper-navigation__btn-prev',
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<button class="' + className + '">' + (index + 1) + '</button>';
+      breakpoints: {
+        0: {
+          slidesPerView: 1.6,
+          spaceBetween: 16,
+          scrollbar: {
+            enabled: true,
+          },
         },
-      },
-      on: {
-        slideChange: function() {
-          let el = document.querySelector('.section-main-gallery');
-          let isSticky = document.querySelector('.header.fixed');
-          let headerHeight = 0;
-          isSticky ? headerHeight = document.querySelector('.header.fixed').offsetHeight : 0;
-          const elementTop = el.offsetTop;
-          if(el) {
-            window.scrollTo({ top: elementTop - headerHeight, behavior: 'smooth' });
-          }
+        767: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          scrollbar: {
+            enabled: false,
+          },
         },
-      },
+      }
     })
   })
   $('[productGallerySlider_js]').each(function () {

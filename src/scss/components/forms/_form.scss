@@ -198,14 +198,13 @@
 }
 
 .iti__selected-dial-code {
-  letter-spacing: .08em;
   line-height: 1.3em;
   font-family: Gilroy, sans-serif;
-  font-size: resp(24);
+  font-size: resp(16);
 }
 @media screen and (max-width: 767px) {
   .iti__selected-dial-code {
-    font-size: calc((14 / 360)* 100vw);
+    font-size: calc((16 / 360)* 100vw);
   }
 }
 .iti {
