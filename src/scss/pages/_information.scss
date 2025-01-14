@@ -32,9 +32,11 @@
       font-weight: 400;
       text-decoration: underline;
       text-underline-offset: resp(5);
+      font-size: resp(16);
       line-height: 1.2em;
       transition: color .3s ease;
       @include _767 {
+        font-size: resp(16, 360);
         text-underline-offset: resp(5, 360);
       }
       @include interactive {
