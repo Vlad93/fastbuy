@@ -1732,8 +1732,8 @@ if (savedLanguage) {
     $('.section-where-online__marketplaces-list').each(function() {
       $(this).hide();
     });
-    $(`.section-where-online__marketplaces-list[data-lang="${savedLanguage}"]`).fadeIn();
-    $(`.section-where-online__marketplaces-list[data-lang="${savedLanguage.toLowerCase()}"]`).fadeIn();
+    $(`.section-where-online__marketplaces-list[data-lang="${lang}"]`).fadeIn();
+    $(`.section-where-online__marketplaces-list[data-lang="${lang.toLowerCase()}"]`).fadeIn();
   });
   if($(window).outerWidth() >= 767) {
     $('html').removeAttr('style');
