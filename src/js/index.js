@@ -1679,6 +1679,19 @@ $('.header__marketplace-links-btn').on('click', function (e) {
   $('.marketplace-links.selected').toggleClass('is-active');
 });
 
+$('.header__lang-btn').on('click', function (e) {
+  $(this).toggleClass('is-active');
+  $('.header__lang-dropdown-content').toggleClass('is-active');
+});
+
+$('body').on('click', function (e) {
+  if($('.header__lang-dropdown-content').hasClass('is-active') && !($(e.target).closest($('.header__lang')).length)) {
+    console.log($(e.target))
+    $('.header__lang-dropdown-content').removeClass('is-active');
+    $('.header__lang-btn').removeClass('is-active');
+  }
+});
+
 $('body').on('click', function (e) {
   if($('.marketplace-links.selected').hasClass('is-active') && !($(e.target).closest($('.header__marketplace-links-wrap')).length)) {
     $('.marketplace-links.selected').removeClass('is-active');
@@ -1699,8 +1712,9 @@ $('.header__search-close-btn').on('click', function(e) {
 
 const savedLanguage = localStorage.getItem('selectedLanguage');
 if (savedLanguage) {
-  $('select.header__lang').val(`${savedLanguage}`).change();
-  $('.header__lang').val(`${savedLanguage}`).niceSelect('update');
+  $(`.header__lang input[name="lang"][value="${savedLanguage}"]`).prop('checked', true);
+  $('.header__lang-btn').text(`${savedLanguage}`);
+  // $('.header__lang').val(`${savedLanguage}`).niceSelect('update');
   // Устанавливаем выбранный язык в радиокнопках
   $(`input[name="lang-choose"][value="${savedLanguage}"]`).prop('checked', true);
   $('.header__lang-mob').data('lang', savedLanguage);
@@ -1720,14 +1734,17 @@ if (savedLanguage) {
   $('.region-popup__btn').on('click', function() {
     const lang =  $('.lang-choose__radio-btn-label input[type="radio"]:checked').val();
     localStorage.setItem('selectedLanguage', lang);
-    $('select.header__lang').val(`${lang}`).change();
-    $('.header__lang').val(`${lang}`).niceSelect('update');
+    $(`.header__lang input[name="lang"][value="${lang}"]`).prop('checked', true);
+    $('.header__lang-btn').text(`${lang}`);
+    // $('select.header__lang').val(`${lang}`).change();
+    // $('.header__lang').val(`${lang}`).niceSelect('update');
     $(`input[name="lang-choose"][value="${lang}"]`).prop('checked', true);
     $('.header__lang-mob').data('lang', lang);
     $('.header__lang-mob').text(lang);
     $('.header__marketplace-links').each(function() {
       $(this).removeClass('selected');
     });
+    $(`.header__marketplace-links[data-lang="${lang}"]`).addClass('selected');
     $(`.header__marketplace-links[data-lang="${lang.toLowerCase()}"]`).addClass('selected');
     $('.section-where-online__marketplaces-list').each(function() {
       $(this).hide();
@@ -1741,28 +1758,34 @@ if (savedLanguage) {
 }
 
 // Сохранение выбранного языка в localStorage при изменении селекта
-$('.header__lang').on('change', function() {
-  localStorage.setItem('selectedLanguage', $(this).find('option:selected').val());
-  const savedLanguage =  $(this).find('option:selected').val();
+$(`.header__lang input[name="lang"]`).on('change', function() {
+  const selectedLang = $(this).val();
+  localStorage.setItem('selectedLanguage', selectedLang);
+  $('.header__lang-btn').text(`${selectedLang}`);
+  $('.header__lang-dropdown-content').removeClass('is-active');
+  $('.header__lang-btn').removeClass('is-active');
   $('.header__marketplace-links').each(function() {
     $(this).removeClass('selected');
   });
-  $(`input[name="lang-choose"][value="${savedLanguage}"]`).prop('checked', true);
-  $('.header__lang-mob').data('lang', savedLanguage);
-  $('.header__lang-mob').text(savedLanguage);
-  $(`.header__marketplace-links[data-lang="${$('.header__lang option:selected').val().toLowerCase()}"]`).addClass('selected');
+  $(`input[name="lang-choose"][value="${selectedLang}"]`).prop('checked', true);
+  $('.header__lang-mob').data('lang', selectedLang);
+  $('.header__lang-mob').text(selectedLang);
+  $(`.header__marketplace-links[data-lang="${selectedLang}"]`).addClass('selected');
+  $(`.header__marketplace-links[data-lang="${selectedLang.toLowerCase()}"]`).addClass('selected');
   $('.section-where-online__marketplaces-list').each(function() {
     $(this).hide();
   });
-  $(`.section-where-online__marketplaces-list[data-lang="${savedLanguage}"]`).fadeIn();
-  $(`.section-where-online__marketplaces-list[data-lang="${savedLanguage.toLowerCase()}"]`).fadeIn();
+  $(`.section-where-online__marketplaces-list[data-lang="${selectedLang}"]`).fadeIn();
+  $(`.section-where-online__marketplaces-list[data-lang="${selectedLang.toLowerCase()}"]`).fadeIn();
 });
 // Обработчик клика для радиокнопок
 $('.lang-choose__radio-btn-label input[type="radio"]').on('change', function() {
   const selectedLang = $(this).val();
   localStorage.setItem('selectedLanguage', selectedLang); // Сохраняем выбранный язык
-  $('select.header__lang').val(`${selectedLang}`).change();
-  $('.header__lang').val(selectedLang).niceSelect('update'); // Обновляем селектор
+  $(`.header__lang input[name="lang"][value="${selectedLang}"]`).prop('checked', true);
+  $('.header__lang-btn').text(`${selectedLang}`);
+  // $('select.header__lang').val(`${selectedLang}`).change();
+  // $('.header__lang').val(selectedLang).niceSelect('update'); // Обновляем селектор
   $('.header__marketplace-links').each(function() {
     $(this).removeClass('selected');
   });
@@ -1773,6 +1796,7 @@ $('.lang-choose__radio-btn-label input[type="radio"]').on('change', function() {
   $(`.section-where-online__marketplaces-list[data-lang="${selectedLang.toLowerCase()}"]`).fadeIn();
   $('.header__lang-mob').data('lang', selectedLang);
   $('.header__lang-mob').text(selectedLang);
+  $(`.header__marketplace-links[data-lang="${selectedLang}"]`).addClass('selected');
   $(`.header__marketplace-links[data-lang="${selectedLang.toLowerCase()}"]`).addClass('selected');
   popupClose();
 });

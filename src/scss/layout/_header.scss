@@ -10,6 +10,80 @@
     position: fixed;
   }
   &__lang {
+    position: relative;
+    .lang-choose {
+      &__radio-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &__radio-btn-label {
+        width: 100%;
+        display: flex;
+        flex: none;
+      }
+      &__radio-btn-label:nth-child(2n-1) .lang-choose__radio-btn {
+        border: none;
+      }
+      &__radio-btn {
+        width: 100%;
+        border-radius: resp(8);
+        transition: background-color .3s ease;
+        @include interactive {
+          &:hover {
+            background-color: #e6e1f8;
+          }
+        }
+      }
+    }
+    &-dropdown-content {
+      min-width: resp(222);
+      padding: resp(16);
+      position: absolute;
+      top: 100%;
+      transform: translateY(35%);
+      right: 0;
+      width: max-content;
+      z-index: 1;
+      gap: resp(4);
+      border-radius: resp(8);
+      background-color: #F8F8F8;
+      transform-origin: 0 0;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .12);
+      transition: opacity .3s ease;
+      &:where(:not(.is-active)) {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      line-height: 1em;
+      gap: calc((11 / 1440)* 100vw);
+      cursor: pointer;
+      z-index: 2;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: calc((16 / 1440)* 100vw);
+      border: none;
+      &::after {
+        content: '';
+        display: block;
+        width: resp(12);
+        height: resp(12);
+        background: url('../img/icons/dropdown-icon.svg') no-repeat center / 100% auto;
+        transition: transform .3s ease;
+        @include _767 {
+          width: resp(12, 360);
+          height: resp(12, 360);
+        }
+      }
+      &.is-active::after {
+        transform: rotate(180deg);
+      }
+    }
     @include _767 {
       display: none;
       &_mob {

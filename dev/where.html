@@ -102,12 +102,35 @@
                 </button>
               </div>
             </div>
-            <select class="header__lang" name="lang">
+            <!-- <select class="header__lang" name="lang">
               <option value="BEL">
                 BEL
               </option>
               <option value="RU">RU</option>
-            </select>
+            </select> -->
+            <div class="header__lang">
+              <button class="header__lang-btn btn-dropdown">
+                BEL
+              </button>
+              <div class="header__lang-dropdown-content">
+                <div class="lang-choose__radio-buttons">
+                  <label class="lang-choose__radio-btn-label">
+                    <input type="radio" name="lang" value="BEL" checked>
+                    <div class="lang-choose__radio-btn">
+                      <img src="img/by.svg" alt="" class="lang-choose__radio-icon">
+                      <span class="lang-choose__radio-text">Беларусь</span>
+                    </div>
+                  </label>
+                  <label class="lang-choose__radio-btn-label">
+                    <input type="radio" name="lang" value="RU">
+                    <div class="lang-choose__radio-btn">
+                      <img src="img/rus.svg" alt="" class="lang-choose__radio-icon">
+                      <span class="lang-choose__radio-text">Россия</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
             <button class="header__mob-btn" headerBtn_JS>
               <span class="header__mob-btn-line"></span>
             </button>
